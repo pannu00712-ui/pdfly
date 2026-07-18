@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="../favicon.ico" sizes="any"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png"/>
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to Convert PDF to PNG: Lossless Images for Documents | PDFly</title>
+  <meta name="description" content="Convert PDF pages to lossless PNG images in seconds — sharp text, crisp diagrams, and optional transparency. Free and browser-based." />
+  <link rel="canonical" href="https://pdfly.uk/blog/pdf-to-png.html" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="How to Convert PDF to PNG" />
+  <meta property="og:description" content="Convert PDF pages to lossless PNG images in seconds — sharp text, crisp diagrams, and optional transparency. Free and browser-based." />
+  <meta property="og:url" content="https://pdfly.uk/blog/pdf-to-png.html" />
+  <meta property="og:image" content="https://pdfly.uk/og-image.png" />
+  <meta property="og:site_name" content="PDFly" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="How to Convert PDF to PNG" />
+  <meta name="twitter:description" content="Convert PDF pages to lossless PNG images in seconds — sharp text, crisp diagrams, and optional transparency. Free and browser-based." />
+  <meta name="twitter:image" content="https://pdfly.uk/og-image.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={darkMode:'class',theme:{extend:{fontFamily:{display:['Syne','sans-serif'],body:['DM Sans','sans-serif']},colors:{forge:{50:'#fff7ed',400:'#fb923c',500:'#f97316',600:'#ea580c'},ink:{50:'#f8f7f4',100:'#f0ede6',200:'#e2ddd4',300:'#c9c2b6',400:'#9c9287',500:'#6b6358',700:'#3a342c',800:'#1c1a16',900:'#0e0d0b',950:'#080807'}}}}}</script>
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Article","headline":"How to Convert PDF to PNG: Lossless Images for Documents","description":"Turn PDF pages into lossless PNG images that keep text and diagrams pixel-perfect.","author":{"@type":"Person","name":"Alex Rivera"},"publisher":{"@type":"Organization","name":"PDFly"},"datePublished":"2026-07-12","dateModified":"2026-07-12"}
+  </script>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What's the difference between PDF to PNG and PDF to JPG?", "acceptedAnswer": {"@type": "Answer", "text": "PNG is lossless (no quality loss) but larger files. JPG is compressed (some quality loss) but smaller files. Use PNG for text and diagrams; JPG for photos and sharing."}}, {"@type": "Question", "name": "Can I convert just one page to PNG?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — most tools let you select a specific page or range of pages to convert."}}, {"@type": "Question", "name": "Does PNG support transparency in PDFs?", "acceptedAnswer": {"@type": "Answer", "text": "PNG supports transparency, but it depends on the PDF. If the PDF has transparent elements, PNG can preserve them."}}]}
+  </script>
+</head>
+<body class="bg-ink-50 dark:bg-ink-950 text-ink-800 dark:text-ink-100 font-body antialiased">
+
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-ink-50/90 dark:bg-ink-950/90 backdrop-blur-xl border-b border-ink-200 dark:border-ink-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6"><div class="flex items-center justify-between h-16">
+      <a href="../index.html" class="flex items-center gap-2.5">
+        <div class="w-8 h-8 bg-gradient-to-br from-forge-400 to-forge-600 rounded-lg flex items-center justify-center"><svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg></div>
+        <span class="font-display font-800 text-xl text-ink-900 dark:text-white">PDF<span class="text-forge-500">ly</span></span>
+      </a>
+      <div class="flex items-center gap-3">
+        <a href="../tools/pdf-to-png.html" class="hidden sm:flex items-center gap-1.5 text-sm font-medium text-white bg-forge-500 hover:bg-forge-600 px-4 py-2 rounded-lg transition-colors">Try This Tool</a>
+        <button id="darkToggle" class="w-9 h-9 rounded-lg flex items-center justify-center text-ink-500 hover:bg-ink-100 dark:hover:bg-ink-800 transition-colors">
+          <svg class="w-4 h-4 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+          <svg class="w-4 h-4 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+        </button>
+      </div>
+    </div></div>
+  </nav>
+
+  <article class="pt-28 pb-20 px-4 max-w-2xl mx-auto">
+    <div class="mb-8">
+      <a href="index.html" class="text-xs text-forge-500 hover:text-forge-600 font-medium">← Back to Blog</a>
+      <p class="text-xs font-display font-600 text-forge-500 uppercase tracking-widest mt-4 mb-3">PDF Guide</p>
+      <h1 class="font-display font-800 text-3xl sm:text-4xl text-ink-900 dark:text-white mb-4 leading-tight">How to Convert PDF to PNG: Lossless Images for Documents</h1>
+      <div class="flex items-center gap-3 text-xs text-ink-400">
+        <span>By <a href="../pages/author.html" class="text-forge-500 hover:underline">Alex Rivera</a></span>
+        <span>·</span>
+        <span>Updated July 2026</span>
+        <span>·</span>
+        <span>4 min read</span>
+      </div>
+    </div>
+
+    <div class="prose-content space-y-5 text-ink-600 dark:text-ink-400 leading-relaxed">
+      <p>You've got a PDF with fine text, crisp diagrams, and detailed charts. You need to turn it into images — but JPG compression would blur the text. You need PNG: lossless, sharp, and perfect for documents.</p>
+
+      <p>PNG preserves every pixel exactly as it appears in the PDF. No compression artifacts, no blurry text, no fuzzy edges. It's the right choice when quality matters more than file size.</p>
+
+      <h2 class="font-display font-700 text-xl text-ink-800 dark:text-ink-200 pt-2">Why PNG instead of JPG?</h2>
+      <p>Both formats have their place. Here's when PNG wins:</p>
+      <ul class="space-y-2 list-disc list-inside">
+        <li><strong class="text-ink-700 dark:text-ink-300">Text-heavy documents:</strong> PNG keeps text edges sharp.</li>
+        <li><strong class="text-ink-700 dark:text-ink-300">Diagrams and charts:</strong> Lines and shapes stay crisp.</li>
+        <li><strong class="text-ink-700 dark:text-ink-300">Transparency:</strong> PNG supports transparent backgrounds.</li>
+        <li><strong class="text-ink-700 dark:text-ink-300">Archiving:</strong> PNG is lossless, so you never lose quality.</li>
+      </ul>
+
+      <h2 class="font-display font-700 text-xl text-ink-800 dark:text-ink-200 pt-2">The fastest way to convert PDF to PNG</h2>
+      <p>You don't need to take screenshots or use image editors. A dedicated tool does it in seconds.</p>
+      <ol class="space-y-3 list-decimal list-inside">
+        <li>Open a tool like <a href="../tools/pdf-to-png.html" class="text-forge-500 hover:underline">PDFly's PDF to PNG</a>.</li>
+        <li>Upload your PDF.</li>
+        <li>Choose your resolution or quality setting.</li>
+        <li>Click process — every page becomes a PNG image.</li>
+        <li>Download the images as a ZIP file.</li>
+      </ol>
+      <p>That's it. You get one PNG per page, with all the original quality.</p>
+
+      <h2 class="font-display font-700 text-xl text-ink-800 dark:text-ink-200 pt-2">What about file size?</h2>
+      <p>PNG files are larger than JPGs — sometimes significantly. That's the trade-off for lossless quality. A high-quality JPG might be 1-2MB per page; a PNG might be 5-10MB. If file size is a concern, consider using JPG instead.</p>
+
+      <h2 class="font-display font-700 text-xl text-ink-800 dark:text-ink-200 pt-2">Use cases for PDF to PNG</h2>
+      <ul class="space-y-2 list-disc list-inside">
+        <li><strong class="text-ink-700 dark:text-ink-300">Web design:</strong> PNGs are ideal for web graphics with text.</li>
+        <li><strong class="text-ink-700 dark:text-ink-300">Print-ready images:</strong> When you need pixel-perfect output.</li>
+        <li><strong class="text-ink-700 dark:text-ink-300">Image editing:</strong> PNGs are easier to edit in Photoshop or GIMP.</li>
+        <li><strong class="text-ink-700 dark:text-ink-300">Transparency overlay:</strong> If you need to overlay images on other backgrounds.</li>
+      </ul>
+
+      <div class="mt-10 p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl text-center">
+        <p class="font-display font-700 text-ink-800 dark:text-ink-100 mb-1">Need crisp, lossless images from a PDF?</p>
+        <p class="text-sm text-ink-500 dark:text-ink-400 mb-4">Convert PDF to PNG in seconds — no uploads, no signup, no watermarks.</p>
+        <a href="../tools/pdf-to-png.html" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-forge-500 hover:bg-forge-600 text-white text-sm font-medium transition-colors">Open PDF to PNG Tool</a>
+      </div>
+
+      <section class="faq-section mt-12 pt-6 border-t border-ink-200 dark:border-ink-800">
+        <h2 class="font-display font-700 text-xl text-ink-800 dark:text-ink-200 pt-2 mb-4">Frequently Asked Questions</h2>
+      
+        <div class="space-y-4">
+          <div>
+            <h3 class="font-display font-600 text-ink-800 dark:text-ink-200 text-base">What's the difference between PDF to PNG and PDF to JPG?</h3>
+            <p class="text-ink-500 dark:text-ink-400 text-sm">PNG is lossless (no quality loss) but larger files. JPG is compressed (some quality loss) but smaller files. Use PNG for text and diagrams; JPG for photos and sharing.</p>
+          </div>
+          <div>
+            <h3 class="font-display font-600 text-ink-800 dark:text-ink-200 text-base">Can I convert just one page to PNG?</h3>
+            <p class="text-ink-500 dark:text-ink-400 text-sm">Yes — most tools let you select a specific page or range of pages to convert.</p>
+          </div>
+          <div>
+            <h3 class="font-display font-600 text-ink-800 dark:text-ink-200 text-base">Does PNG support transparency in PDFs?</h3>
+            <p class="text-ink-500 dark:text-ink-400 text-sm">PNG supports transparency, but it depends on the PDF. If the PDF has transparent elements, PNG can preserve them.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </article>
+
+  <footer class="border-t border-ink-200 dark:border-ink-800 py-8 bg-white dark:bg-ink-900">
+    <div class="max-w-2xl mx-auto px-4 text-center text-sm text-ink-400">
+      <p>© 2025 <a href="../index.html" class="hover:text-forge-500 transition-colors">PDFly</a> · <a href="../pages/privacy.html" class="hover:text-forge-500 transition-colors">Privacy</a> · <a href="../pages/terms.html" class="hover:text-forge-500 transition-colors">Terms</a> · <a href="../pages/security.html" class="hover:text-forge-500 transition-colors">Security</a> · <a href="../pages/faq.html" class="hover:text-forge-500 transition-colors">FAQ</a></p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

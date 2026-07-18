@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="../favicon.ico" sizes="any"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png"/>
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to Convert Excel to PDF (And Keep Your Spreadsheet Looking Professional) | PDFly</title>
+  <meta name="description" content="Convert an Excel spreadsheet to PDF online for free while preserving formulas, charts, and formatting. Browser-based, no signup." />
+  <link rel="canonical" href="https://pdfly.uk/blog/excel-to-pdf.html" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="How to Convert Excel to PDF" />
+  <meta property="og:description" content="Convert an Excel spreadsheet to PDF online for free while preserving formulas, charts, and formatting. Browser-based, no signup." />
+  <meta property="og:url" content="https://pdfly.uk/blog/excel-to-pdf.html" />
+  <meta property="og:image" content="https://pdfly.uk/og-image.png" />
+  <meta property="og:site_name" content="PDFly" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="How to Convert Excel to PDF" />
+  <meta name="twitter:description" content="Convert an Excel spreadsheet to PDF online for free while preserving formulas, charts, and formatting. Browser-based, no signup." />
+  <meta name="twitter:image" content="https://pdfly.uk/og-image.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={darkMode:'class',theme:{extend:{fontFamily:{display:['Syne','sans-serif'],body:['DM Sans','sans-serif']},colors:{forge:{50:'#fff7ed',400:'#fb923c',500:'#f97316',600:'#ea580c'},ink:{50:'#f8f7f4',100:'#f0ede6',200:'#e2ddd4',300:'#c9c2b6',400:'#9c9287',500:'#6b6358',700:'#3a342c',800:'#1c1a16',900:'#0e0d0b',950:'#080807'}}}}}</script>
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Article","headline":"How to Convert Excel to PDF (And Keep Your Spreadsheet Looking Professional)","description":"Lock a spreadsheet's layout, charts, and formatting into a fixed PDF that looks identical on every device.","author":{"@type":"Person","name":"Alex Rivera"},"publisher":{"@type":"Organization","name":"PDFly"},"datePublished":"2026-07-12","dateModified":"2026-07-12"}
+  </script>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does converting Excel to PDF remove formulas?", "acceptedAnswer": {"@type": "Answer", "text": "The formulas are no longer editable in the PDF, but the calculated values are preserved exactly as they appeared in your spreadsheet."}}, {"@type": "Question", "name": "Can I convert a specific sheet or range of cells?", "acceptedAnswer": {"@type": "Answer", "text": "Most online tools convert the entire workbook or the active sheet. For more control, you can save your specific selection in Excel and then convert that file."}}, {"@type": "Question", "name": "Will my charts look the same in PDF?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — charts are rendered as images in the PDF, so they'll look exactly as they did in Excel."}}]}
+  </script>
+</head>
+<body class="bg-ink-50 dark:bg-ink-950 text-ink-800 dark:text-ink-100 font-body antialiased">
+
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-ink-50/90 dark:bg-ink-950/90 backdrop-blur-xl border-b border-ink-200 dark:border-ink-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6"><div class="flex items-center justify-between h-16">
+      <a href="../index.html" class="flex items-center gap-2.5">
+        <div class="w-8 h-8 bg-gradient-to-br from-forge-400 to-forge-600 rounded-lg flex items-center justify-center"><svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg></div>
+        <span class="font-display font-800 text-xl text-ink-900 dark:text-white">PDF<span class="text-forge-500">ly</span></span>
+      </a>
+      <div class="flex items-center gap-3">
+        <a href="../tools/excel-to-pdf.html" class="hidden sm:flex items-center gap-1.5 text-sm font-medium text-white bg-forge-500 hover:bg-forge-600 px-4 py-2 rounded-lg transition-colors">Try This Tool</a>
+        <button id="darkToggle" class="w-9 h-9 rounded-lg flex items-center justify-center text-ink-500 hover:bg-ink-100 dark:hover:bg-ink-800 transition-colors">
+          <svg class="w-4 h-4 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+          <svg class="w-4 h-4 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+        </button>
+      </div>
+    </div></div>
+  </nav>
+
+  <article class="pt-28 pb-20 px-4 max-w-2xl mx-auto">
+    <div class="mb-8">
+      <a href="index.html" class="text-xs text-forge-500 hover:text-forge-600 font-medium">← Back to Blog</a>
+      <p class="text-xs font-display font-600 text-forge-500 uppercase tracking-widest mt-4 mb-3">PDF Guide</p>
+      <h1 class="font-display font-800 text-3xl sm:text-4xl text-ink-900 dark:text-white mb-4 leading-tight">How to Convert Excel to PDF (And Keep Your Spreadsheet Looking Professional)</h1>
+      <div class="flex items-center gap-3 text-xs text-ink-400">
+        <span>By <a href="../pages/author.html" class="text-forge-500 hover:underline">Alex Rivera</a></span>
+        <span>·</span>
+        <span>Updated July 2026</span>
+        <span>·</span>
+        <span>4 min read</span>
+      </div>
+    </div>
+
+    <div class="prose-content space-y-5 text-ink-600 dark:text-ink-400 leading-relaxed">
+      <p>You've built a beautiful spreadsheet. The numbers line up, the formulas work, and the charts look great. But when you send it to a client, they open it in Google Sheets and everything falls apart — the formatting breaks, the fonts change, and suddenly you're explaining why the report doesn't look "right."</p>
+
+      <p>This is exactly why you convert Excel to PDF. A PDF preserves your spreadsheet exactly as you designed it — the fonts, the colors, the page breaks, everything. And unlike a spreadsheet, a PDF can't be accidentally edited, making it perfect for reports, invoices, and financial statements.</p>
+
+      <h2 class="font-display font-700 text-xl text-ink-800 dark:text-ink-200 pt-2">Why Excel formatting gets messy</h2>
+      <p>Excel is a spreadsheet editor, not a layout tool. When you open an .xlsx file in a different viewer — Google Sheets, LibreOffice, or even a different version of Excel — it's common for things to shift:</p>
+      <ul class="space-y-2 list-disc list-inside">
+        <li>Column widths change.</li>
+        <li>Fonts fall back to replacements.</li>
+        <li>Charts resize or lose their styling.</li>
+        <li>Page breaks move, splitting tables in awkward places.</li>
+        <li>Colors may not render the same way.</li>
+      </ul>
+      <p>A PDF fixes all of that. It's a fixed-layout format, meaning what you see is what everyone else gets.</p>
+
+      <h2 class="font-display font-700 text-xl text-ink-800 dark:text-ink-200 pt-2">The fastest way to convert Excel to PDF</h2>
+      <p>You don't need to open Excel, use print-to-PDF, or adjust margins manually. A dedicated conversion tool does it all in seconds.</p>
+      <ol class="space-y-3 list-decimal list-inside">
+        <li>Open a tool like <a href="../tools/excel-to-pdf.html" class="text-forge-500 hover:underline">PDFly's Excel to PDF</a>.</li>
+        <li>Upload your .xlsx or .xls file.</li>
+        <li>Wait a few seconds while the tool processes the file.</li>
+        <li>Download your PDF — ready to send, print, or archive.</li>
+      </ol>
+      <p>That's it. The tool handles the conversion, preserving your formatting and making sure everything fits on the page.</p>
+
+      <h2 class="font-display font-700 text-xl text-ink-800 dark:text-ink-200 pt-2">What about large spreadsheets?</h2>
+      <p>If your spreadsheet has hundreds of rows, the tool will automatically handle page breaks and multi-page layout. Most tools also let you choose between:</p>
+      <ul class="space-y-2 list-disc list-inside">
+        <li><strong class="text-ink-700 dark:text-ink-300">Fit to page:</strong> Everything shrinks to fit on one page.</li>
+        <li><strong class="text-ink-700 dark:text-ink-300">Actual size:</strong> The spreadsheet is split across multiple pages, with column and row labels repeated as needed.</li>
+      </ul>
+      <p>For most financial reports, "actual size" is better — it keeps numbers readable.</p>
+
+      <h2 class="font-display font-700 text-xl text-ink-800 dark:text-ink-200 pt-2">What gets preserved in the conversion?</h2>
+      <p>A good Excel-to-PDF converter preserves everything that matters:</p>
+      <ul class="space-y-2 list-disc list-inside">
+        <li><strong class="text-ink-700 dark:text-ink-300">Formulas and values:</strong> The numbers remain correct, even if the formulas are no longer editable.</li>
+        <li><strong class="text-ink-700 dark:text-ink-300">Charts and graphs:</strong> Visual data stays intact and clear.</li>
+        <li><strong class="text-ink-700 dark:text-ink-300">Cell styling:</strong> Colors, borders, and font styles remain exactly as you set them.</li>
+        <li><strong class="text-ink-700 dark:text-ink-300">Page layout:</strong> Margins, page breaks, and orientation are preserved.</li>
+      </ul>
+
+      <div class="mt-10 p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl text-center">
+        <p class="font-display font-700 text-ink-800 dark:text-ink-100 mb-1">Need to turn a spreadsheet into a PDF?</p>
+        <p class="text-sm text-ink-500 dark:text-ink-400 mb-4">Convert Excel to PDF in seconds — no uploads, no signup, no watermarks.</p>
+        <a href="../tools/excel-to-pdf.html" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-forge-500 hover:bg-forge-600 text-white text-sm font-medium transition-colors">Open Excel to PDF Tool</a>
+      </div>
+
+      <section class="faq-section mt-12 pt-6 border-t border-ink-200 dark:border-ink-800">
+        <h2 class="font-display font-700 text-xl text-ink-800 dark:text-ink-200 pt-2 mb-4">Frequently Asked Questions</h2>
+      
+        <div class="space-y-4">
+          <div>
+            <h3 class="font-display font-600 text-ink-800 dark:text-ink-200 text-base">Does converting Excel to PDF remove formulas?</h3>
+            <p class="text-ink-500 dark:text-ink-400 text-sm">The formulas are no longer editable in the PDF, but the calculated values are preserved exactly as they appeared in your spreadsheet.</p>
+          </div>
+          <div>
+            <h3 class="font-display font-600 text-ink-800 dark:text-ink-200 text-base">Can I convert a specific sheet or range of cells?</h3>
+            <p class="text-ink-500 dark:text-ink-400 text-sm">Most online tools convert the entire workbook or the active sheet. For more control, you can save your specific selection in Excel and then convert that file.</p>
+          </div>
+          <div>
+            <h3 class="font-display font-600 text-ink-800 dark:text-ink-200 text-base">Will my charts look the same in PDF?</h3>
+            <p class="text-ink-500 dark:text-ink-400 text-sm">Yes — charts are rendered as images in the PDF, so they'll look exactly as they did in Excel.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </article>
+
+  <footer class="border-t border-ink-200 dark:border-ink-800 py-8 bg-white dark:bg-ink-900">
+    <div class="max-w-2xl mx-auto px-4 text-center text-sm text-ink-400">
+      <p>© 2025 <a href="../index.html" class="hover:text-forge-500 transition-colors">PDFly</a> · <a href="../pages/privacy.html" class="hover:text-forge-500 transition-colors">Privacy</a> · <a href="../pages/terms.html" class="hover:text-forge-500 transition-colors">Terms</a> · <a href="../pages/security.html" class="hover:text-forge-500 transition-colors">Security</a> · <a href="../pages/faq.html" class="hover:text-forge-500 transition-colors">FAQ</a></p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

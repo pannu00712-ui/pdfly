@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8"/>
+  <link rel="icon" href="../favicon.ico" sizes="any"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png"/>
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Compare Two PDFs Online Free — Find Differences | PDFly</title>
+  <meta name="description" content="Compare two PDF files and instantly see what text was added, removed, or changed between them. Free, side-by-side, 100% browser-based."/>
+  <link rel="canonical" href="https://pdfly.uk/tools/compare-pdf.html"/>
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Compare PDF Files Online for Free" />
+<meta property="og:description" content="Compare two PDF files online for free — spot differences in text, images, and formatting. No uploads, no signup, no watermarks. Files stay on your device." />
+<meta property="og:url" content="https://pdfly.uk/tools/compare-pdf.html" />
+<meta property="og:image" content="https://pdfly.uk/og-image.png" />
+<meta property="og:site_name" content="PDFly" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Compare PDF Files Online for Free" />
+<meta name="twitter:description" content="Compare two PDF files online for free — spot differences in text, images, and formatting. No uploads, no signup, no watermarks. Files stay on your device." />
+<link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={darkMode:'class',theme:{extend:{fontFamily:{display:['Syne','sans-serif'],body:['DM Sans','sans-serif']},colors:{forge:{50:'#fff7ed',400:'#fb923c',500:'#f97316',600:'#ea580c'},ink:{50:'#f8f7f4',100:'#f0ede6',200:'#e2ddd4',300:'#c9c2b6',400:'#9c9287',500:'#6b6358',700:'#3a342c',800:'#1c1a16',900:'#0e0d0b',950:'#080807'}}}}}</script>
+  <link rel="stylesheet" href="../assets/css/main.css"/>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does it compare layout or just text?","acceptedAnswer":{"@type":"Answer","text":"This tool compares the readable text content word by word. Visual/layout-only changes (like font or color) aren't detected."}},{"@type":"Question","name":"Can I compare scanned PDFs?","acceptedAnswer":{"@type":"Answer","text":"Only if they already have a text layer. Run scanned files through OCR PDF first so their text can be extracted and compared."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://pdfly.uk"},{"@type":"ListItem","position":2,"name":"Compare PDF"}]}</script></head>
+<body class="bg-ink-50 dark:bg-ink-950 text-ink-800 dark:text-ink-100 font-body antialiased"><nav class="fixed top-0 left-0 right-0 z-50 bg-ink-50/90 dark:bg-ink-950/90 backdrop-blur-xl border-b border-ink-200 dark:border-ink-800">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6"><div class="flex items-center justify-between h-16">
+    <a href="../index.html" class="flex items-center gap-2.5"><div class="w-8 h-8 bg-gradient-to-br from-forge-400 to-forge-600 rounded-lg flex items-center justify-center"><svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg></div><span class="font-display font-800 text-xl text-ink-900 dark:text-white">PDF<span class="text-forge-500">ly</span></span></a>
+    <div class="flex items-center gap-3">
+      <a href="../index.html" class="hidden sm:flex items-center gap-1 text-sm text-ink-400 hover:text-forge-500 transition-colors"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg> All Tools</a>
+      <button id="darkToggle" class="w-9 h-9 rounded-lg flex items-center justify-center text-ink-500 hover:bg-ink-100 dark:hover:bg-ink-800 transition-colors"><svg class="w-4 h-4 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg><svg class="w-4 h-4 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg></button>
+    </div>
+  </div></div>
+</nav><div class="tool-hero">
+  <div class="relative max-w-2xl mx-auto px-4">
+    <div class="step-pill">🔍 Document Comparison</div>
+    <h1 class="font-display font-800 text-4xl sm:text-5xl text-ink-900 dark:text-white mb-3">Compare PDF</h1>
+    <p class="text-ink-500 dark:text-ink-400 text-lg max-w-lg mx-auto">Upload two PDFs and see exactly what text changed between them.</p>
+  <div class="flex items-center justify-center gap-4 mt-5 flex-wrap">
+    <div class="flex items-center gap-2 text-sm font-medium text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-800 px-4 py-2 rounded-full">
+      <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+      Your files never leave your device
+    </div>
+    <div class="flex items-center gap-2 text-sm font-medium text-blue-700 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 px-4 py-2 rounded-full">
+      <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+      100% Browser-based
+    </div>
+  </div>
+  </div>
+</div><div class="max-w-2xl mx-auto px-4 mb-8"><div class="ad-slot ad-leaderboard"><span class="text-xs">Advertisement</span></div></div><main class="tool-section">
+  <div class="grid grid-cols-2 gap-3 mb-6">
+    <div id="dropZoneA" class="drop-zone !p-6">
+      <input type="file" id="fileInputA" class="hidden" accept=".pdf,application/pdf"/>
+      <div class="pointer-events-none">
+        <div class="w-10 h-10 mx-auto mb-2 rounded-xl bg-red-100 dark:bg-red-900/30 flex items-center justify-center"><span class="font-display font-700 text-red-500">A</span></div>
+        <p id="labelA" class="font-display font-600 text-ink-700 dark:text-ink-300 text-sm">Original PDF</p>
+        <p class="text-xs text-ink-400 mt-1">click to browse</p>
+      </div>
+    </div>
+    <div id="dropZoneB" class="drop-zone !p-6">
+      <input type="file" id="fileInputB" class="hidden" accept=".pdf,application/pdf"/>
+      <div class="pointer-events-none">
+        <div class="w-10 h-10 mx-auto mb-2 rounded-xl bg-green-100 dark:bg-green-900/30 flex items-center justify-center"><span class="font-display font-700 text-green-600">B</span></div>
+        <p id="labelB" class="font-display font-600 text-ink-700 dark:text-ink-300 text-sm">Revised PDF</p>
+        <p class="text-xs text-ink-400 mt-1">click to browse</p>
+      </div>
+    </div>
+  </div>  <div id="progressWrap" class="hidden mb-4 p-4 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl">
+    <div class="flex items-center justify-between mb-2"><p id="progressLabel" class="text-sm font-display font-600 text-ink-700 dark:text-ink-300">Comparing…</p><p id="progressPct" class="text-xs text-ink-400">0%</p></div>
+    <div class="progress-bar-wrap"><div id="progressBar" class="progress-bar" style="width:0%"></div></div>
+  </div>  <button id="compareBtn" onclick="comparePdfs()" class="hidden w-full btn-primary justify-center text-base py-3.5 mb-4">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4M16 17H4m0 0l4 4m-4-4l4-4"/></svg>
+    Compare PDFs
+  </button>  <div id="result" class="hidden result-card">
+    <div class="flex items-center gap-3 mb-4">
+      <div class="w-10 h-10 rounded-xl bg-green-100 dark:bg-green-900/30 flex items-center justify-center flex-shrink-0"><svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg></div>
+      <div><p class="font-display font-700 text-ink-800 dark:text-ink-100">Comparison Complete</p><p id="resultInfo" class="text-xs text-ink-500 mt-0.5"></p></div>
+    </div>
+    <div class="flex items-center gap-3 mb-3 text-xs">
+      <span class="flex items-center gap-1"><span class="w-3 h-3 rounded bg-red-200 dark:bg-red-900/50 inline-block"></span> Removed</span>
+      <span class="flex items-center gap-1"><span class="w-3 h-3 rounded bg-green-200 dark:bg-green-900/50 inline-block"></span> Added</span>
+    </div>
+    <div id="diffOutput" class="text-sm leading-relaxed bg-ink-50 dark:bg-ink-800/50 border border-ink-200 dark:border-ink-700 rounded-xl p-4 max-h-96 overflow-y-auto whitespace-pre-wrap"></div>
+  </div></main><footer class="border-t border-ink-200 dark:border-ink-800 py-8 mt-4 bg-white dark:bg-ink-900">
+  <div class="max-w-2xl mx-auto px-4 text-center text-sm text-ink-400"><p>© 2025 <a href="../index.html" class="hover:text-forge-500 transition-colors">PDFly</a> · <a href="../pages/privacy.html" class="hover:text-forge-500 transition-colors">Privacy</a> · <a href="../pages/terms.html" class="hover:text-forge-500 transition-colors">Terms</a> · <a href="../pages/security.html" class="hover:text-forge-500 transition-colors">Security</a> · <a href="../pages/disclaimer.html" class="hover:text-forge-500 transition-colors">Disclaimer</a></p></div>
+</footer>
+<script src="../assets/js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script>
+pdfjsLib.GlobalWorkerOptions.workerSrc='https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+let fileA=null,fileB=null;
+const dropZoneA=document.getElementById('dropZoneA'),fileInputA=document.getElementById('fileInputA');
+const dropZoneB=document.getElementById('dropZoneB'),fileInputB=document.getElementById('fileInputB');
+setupDropZone(dropZoneA,fileInputA,files=>setFile('A',files),{accept:'.pdf,application/pdf'});
+setupDropZone(dropZoneB,fileInputB,files=>setFile('B',files),{accept:'.pdf,application/pdf'});
+function setFile(which,files){
+  const f=files.find(f=>f.type==='application/pdf'||f.name.toLowerCase().endsWith('.pdf'));
+  if(!f){showToast('Please select a PDF file','error');return;}
+  if(which==='A'){fileA=f;document.getElementById('labelA').textContent=f.name;}
+  else{fileB=f;document.getElementById('labelB').textContent=f.name;}
+  if(fileA&&fileB)document.getElementById('compareBtn').classList.remove('hidden');
+  document.getElementById('result').classList.add('hidden');
+}
+async function extractAllText(file,onProgress){
+  const ab=await readFileAsArrayBuffer(file);
+  const pdf=await pdfjsLib.getDocument({data:ab}).promise;
+  let text='';
+  for(let i=1;i<=pdf.numPages;i++){
+    const page=await pdf.getPage(i);
+    const content=await page.getTextContent();
+    text+=content.items.map(it=>it.str).join(' ')+'\n';
+    if(onProgress)onProgress(i,pdf.numPages);
+  }
+  return text.trim();
+}
+// Simple word-level LCS diff
+function diffWords(oldText,newText){
+  const a=oldText.split(/(\s+)/).filter(x=>x.length);
+  const b=newText.split(/(\s+)/).filter(x=>x.length);
+  const CAP=6000;
+  if(a.length>CAP||b.length>CAP){
+    return oldText===newText?[{type:'same',text:newText}]:[{type:'removed',text:oldText},{type:'added',text:newText}];
+  }
+  const m=a.length,n=b.length;
+  const dp=Array.from({length:m+1},()=>new Uint16Array(n+1));
+  for(let i=m-1;i>=0;i--)for(let j=n-1;j>=0;j--)
+    dp[i][j]=a[i]===b[j]?dp[i+1][j+1]+1:Math.max(dp[i+1][j],dp[i][j+1]);
+  const ops=[];let i=0,j=0;
+  while(i<m&&j<n){
+    if(a[i]===b[j]){ops.push({type:'same',text:a[i]});i++;j++;}
+    else if(dp[i+1][j]>=dp[i][j+1]){ops.push({type:'removed',text:a[i]});i++;}
+    else{ops.push({type:'added',text:b[j]});j++;}
+  }
+  while(i<m){ops.push({type:'removed',text:a[i]});i++;}
+  while(j<n){ops.push({type:'added',text:b[j]});j++;}
+  // merge consecutive same-type ops
+  const merged=[];
+  ops.forEach(op=>{
+    if(merged.length&&merged[merged.length-1].type===op.type)merged[merged.length-1].text+=op.text;
+    else merged.push({...op});
+  });
+  return merged;
+}
+async function comparePdfs(){
+  if(!fileA||!fileB)return;
+  const btn=document.getElementById('compareBtn');setLoading(btn,true);
+  const prog=document.getElementById('progressWrap'),label=document.getElementById('progressLabel'),pct=document.getElementById('progressPct');
+  prog.classList.remove('hidden');
+  try{
+    label.textContent='Reading PDF A…';
+    const textA=await extractAllText(fileA,(i,t)=>{const p=Math.round(i/t*45);pct.textContent=p+'%';animateProgress('progressBar',p-2,p,100);});
+    label.textContent='Reading PDF B…';
+    const textB=await extractAllText(fileB,(i,t)=>{const p=45+Math.round(i/t*45);pct.textContent=p+'%';animateProgress('progressBar',p-2,p,100);});
+    label.textContent='Computing differences…';pct.textContent='95%';animateProgress('progressBar',90,95,150);
+    const diff=diffWords(textA,textB);
+    const added=diff.filter(d=>d.type==='added').length;
+    const removed=diff.filter(d=>d.type==='removed').length;
+    const out=document.getElementById('diffOutput');
+    out.innerHTML='';
+    diff.forEach(d=>{
+      const span=document.createElement('span');
+      if(d.type==='added')span.className='bg-green-200 dark:bg-green-900/50 text-green-900 dark:text-green-300 rounded px-0.5';
+      else if(d.type==='removed')span.className='bg-red-200 dark:bg-red-900/50 text-red-900 dark:text-red-300 line-through rounded px-0.5';
+      span.textContent=d.text;
+      out.appendChild(span);
+    });
+    pct.textContent='100%';animateProgress('progressBar',95,100,150);
+    await new Promise(r=>setTimeout(r,250));prog.classList.add('hidden');
+    document.getElementById('resultInfo').textContent=textA===textB?'The documents are textually identical':`${added} segments added · ${removed} segments removed`;
+    document.getElementById('result').classList.remove('hidden');
+    document.getElementById('result').scrollIntoView({behavior:'smooth',block:'center'});
+    showToast('Comparison complete!');
+  }catch(e){console.error(e);prog.classList.add('hidden');showToast('Comparison failed','error');}
+  finally{setLoading(btn,false);}
+}
+</script>
+</body></html>

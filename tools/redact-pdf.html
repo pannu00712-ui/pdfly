@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8"/>
+  <link rel="icon" href="../favicon.ico" sizes="any"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png"/>
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Redact PDF Online Free — Black Out Text Permanently | PDFly</title>
+  <meta name="description" content="Permanently black out sensitive text or images in a PDF. Unlike a text highlight, this tool rasterizes the page so redacted content can't be recovered. 100% browser-based."/>
+  <link rel="canonical" href="https://pdfly.uk/tools/redact-pdf.html"/>
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Redact PDF Online for Free" />
+<meta property="og:description" content="Redact PDF files online for free — permanently remove sensitive information from your documents. No uploads, no signup, no watermarks. Files stay on your device." />
+<meta property="og:url" content="https://pdfly.uk/tools/redact-pdf.html" />
+<meta property="og:image" content="https://pdfly.uk/og-image.png" />
+<meta property="og:site_name" content="PDFly" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Redact PDF Online for Free" />
+<meta name="twitter:description" content="Redact PDF files online for free — permanently remove sensitive information from your documents. No uploads, no signup, no watermarks. Files stay on your device." />
+<link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={darkMode:'class',theme:{extend:{fontFamily:{display:['Syne','sans-serif'],body:['DM Sans','sans-serif']},colors:{forge:{50:'#fff7ed',400:'#fb923c',500:'#f97316',600:'#ea580c'},ink:{50:'#f8f7f4',100:'#f0ede6',200:'#e2ddd4',300:'#c9c2b6',400:'#9c9287',500:'#6b6358',700:'#3a342c',800:'#1c1a16',900:'#0e0d0b',950:'#080807'}}}}}</script>
+  <link rel="stylesheet" href="../assets/css/main.css"/>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is this real redaction or just a black box on top?","acceptedAnswer":{"@type":"Answer","text":"Real redaction. Each page is converted to a flattened image before the black boxes are baked in, so there's no hidden text layer left underneath to copy or extract."}},{"@type":"Question","name":"Will the PDF still be searchable after redaction?","acceptedAnswer":{"@type":"Answer","text":"No. Because pages become images, the output PDF is no longer text-searchable. This is intentional — it's what guarantees the redacted content is actually gone."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://pdfly.uk"},{"@type":"ListItem","position":2,"name":"Redact PDF"}]}</script></head>
+<body class="bg-ink-50 dark:bg-ink-950 text-ink-800 dark:text-ink-100 font-body antialiased"><nav class="fixed top-0 left-0 right-0 z-50 bg-ink-50/90 dark:bg-ink-950/90 backdrop-blur-xl border-b border-ink-200 dark:border-ink-800">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6"><div class="flex items-center justify-between h-16">
+    <a href="../index.html" class="flex items-center gap-2.5"><div class="w-8 h-8 bg-gradient-to-br from-forge-400 to-forge-600 rounded-lg flex items-center justify-center"><svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg></div><span class="font-display font-800 text-xl text-ink-900 dark:text-white">PDF<span class="text-forge-500">ly</span></span></a>
+    <div class="flex items-center gap-3">
+      <a href="../index.html" class="hidden sm:flex items-center gap-1 text-sm text-ink-400 hover:text-forge-500 transition-colors"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg> All Tools</a>
+      <button id="darkToggle" class="w-9 h-9 rounded-lg flex items-center justify-center text-ink-500 hover:bg-ink-100 dark:hover:bg-ink-800 transition-colors"><svg class="w-4 h-4 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg><svg class="w-4 h-4 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg></button>
+    </div>
+  </div></div>
+</nav><div class="tool-hero">
+  <div class="relative max-w-2xl mx-auto px-4">
+    <div class="step-pill">⬛ Permanent Redaction</div>
+    <h1 class="font-display font-800 text-4xl sm:text-5xl text-ink-900 dark:text-white mb-3">Redact PDF</h1>
+    <p class="text-ink-500 dark:text-ink-400 text-lg max-w-lg mx-auto">Draw boxes over sensitive content — it's permanently flattened out, not just covered.</p>
+  <div class="flex items-center justify-center gap-4 mt-5 flex-wrap">
+    <div class="flex items-center gap-2 text-sm font-medium text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-800 px-4 py-2 rounded-full">
+      <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+      Your file never leaves your device
+    </div>
+    <div class="flex items-center gap-2 text-sm font-medium text-purple-700 dark:text-purple-400 bg-purple-50 dark:bg-purple-900/20 border border-purple-200 dark:border-purple-800 px-4 py-2 rounded-full">
+      <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+      Content is truly removed, not covered
+    </div>
+  </div>
+  </div>
+</div><div class="max-w-2xl mx-auto px-4 mb-8"><div class="ad-slot ad-leaderboard"><span class="text-xs">Advertisement</span></div></div><main class="tool-section">  <div id="dropZone" class="drop-zone mb-6">
+    <input type="file" id="fileInput" class="hidden" accept=".pdf,application/pdf"/>
+    <div class="pointer-events-none">
+      <div class="w-16 h-16 mx-auto mb-4 rounded-2xl bg-teal-100 dark:bg-teal-900/30 flex items-center justify-center"><svg class="w-8 h-8 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/></svg></div>
+      <p class="font-display font-600 text-ink-700 dark:text-ink-300 text-lg mb-1">Drop your PDF here</p>
+      <p class="text-sm text-ink-400">or click to browse · Single PDF</p>
+    </div>
+  </div>
+  <div id="editorWrap" class="hidden mb-6">
+    <div class="flex items-center justify-between mb-3 flex-wrap gap-2">
+      <div class="flex items-center gap-2">
+        <button id="prevBtn" onclick="changePage(-1)" class="w-9 h-9 rounded-lg flex items-center justify-center bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 text-ink-500 hover:text-forge-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg></button>
+        <span class="text-sm text-ink-500">Page <span id="pageNum">1</span> of <span id="pageTotal">1</span></span>
+        <button id="nextBtn" onclick="changePage(1)" class="w-9 h-9 rounded-lg flex items-center justify-center bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 text-ink-500 hover:text-forge-500"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></button>
+      </div>
+      <button onclick="clearPageBoxes()" class="text-xs text-red-500 hover:text-red-600 font-medium">Clear boxes on this page</button>
+    </div>
+    <p class="text-xs text-ink-400 mb-3">Click and drag on the page to draw a black redaction box.</p>
+    <div class="relative border border-ink-200 dark:border-ink-800 rounded-2xl overflow-hidden bg-white dark:bg-ink-900 mx-auto" style="max-width:fit-content;">
+      <canvas id="pageCanvas" class="block max-w-full h-auto"></canvas>
+      <canvas id="overlayCanvas" class="absolute top-0 left-0 max-w-full h-auto cursor-crosshair"></canvas>
+    </div>
+  </div>  <div id="progressWrap" class="hidden mb-4 p-4 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl">
+    <div class="flex items-center justify-between mb-2"><p id="progressLabel" class="text-sm font-display font-600 text-ink-700 dark:text-ink-300">Applying redactions…</p><p id="progressPct" class="text-xs text-ink-400">0%</p></div>
+    <div class="progress-bar-wrap"><div id="progressBar" class="progress-bar" style="width:0%"></div></div>
+  </div>  <button id="applyBtn" onclick="applyRedactions()" class="hidden w-full btn-primary justify-center text-base py-3.5 mb-4" style="background:linear-gradient(135deg,#1c1a16,#3a342c);">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+    Apply Redactions & Download
+  </button>  <div id="result" class="hidden result-card">
+    <div class="flex items-center gap-3 mb-4">
+      <div class="w-10 h-10 rounded-xl bg-green-100 dark:bg-green-900/30 flex items-center justify-center flex-shrink-0"><svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg></div>
+      <div><p class="font-display font-700 text-ink-800 dark:text-ink-100">Redacted!</p><p id="resultInfo" class="text-xs text-ink-500 mt-0.5"></p></div>
+    </div>
+    <button id="downloadBtn" class="w-full btn-primary justify-center"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>Download Redacted PDF</button>
+  </div></main><footer class="border-t border-ink-200 dark:border-ink-800 py-8 mt-4 bg-white dark:bg-ink-900">
+  <div class="max-w-2xl mx-auto px-4 text-center text-sm text-ink-400"><p>© 2025 <a href="../index.html" class="hover:text-forge-500 transition-colors">PDFly</a> · <a href="../pages/privacy.html" class="hover:text-forge-500 transition-colors">Privacy</a> · <a href="../pages/terms.html" class="hover:text-forge-500 transition-colors">Terms</a> · <a href="../pages/security.html" class="hover:text-forge-500 transition-colors">Security</a> · <a href="../pages/disclaimer.html" class="hover:text-forge-500 transition-colors">Disclaimer</a></p></div>
+</footer>
+<script src="../assets/js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script>
+pdfjsLib.GlobalWorkerOptions.workerSrc='https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+let pdfFile=null,pdfDoc=null,totalPages=0,currentPage=1;
+let boxesByPage={}; // {pageNum:[{x,y,w,h}]} in preview canvas coordinate space (scale=1.2)
+const PREVIEW_SCALE=1.2, EXPORT_SCALE=2.0;
+const dropZone=document.getElementById('dropZone'),fileInput=document.getElementById('fileInput');
+setupDropZone(dropZone,fileInput,handleFile,{accept:'.pdf,application/pdf'});
+async function handleFile(files){
+  const f=files.find(f=>f.type==='application/pdf'||f.name.toLowerCase().endsWith('.pdf'));
+  if(!f){showToast('Please select a PDF file','error');return;}
+  pdfFile=f;boxesByPage={};currentPage=1;
+  const ab=await readFileAsArrayBuffer(f);
+  pdfDoc=await pdfjsLib.getDocument({data:ab}).promise;
+  totalPages=pdfDoc.numPages;
+  document.getElementById('pageTotal').textContent=totalPages;
+  ['editorWrap','applyBtn'].forEach(id=>document.getElementById(id).classList.remove('hidden'));
+  document.getElementById('result').classList.add('hidden');
+  await renderPage();
+}
+async function renderPage(){
+  const page=await pdfDoc.getPage(currentPage);
+  const vp=page.getViewport({scale:PREVIEW_SCALE});
+  const canvas=document.getElementById('pageCanvas');
+  canvas.width=vp.width;canvas.height=vp.height;
+  await page.render({canvasContext:canvas.getContext('2d'),viewport:vp}).promise;
+  const overlay=document.getElementById('overlayCanvas');
+  overlay.width=vp.width;overlay.height=vp.height;
+  document.getElementById('pageNum').textContent=currentPage;
+  redrawOverlay();
+  setupDrawing(overlay);
+}
+function redrawOverlay(){
+  const overlay=document.getElementById('overlayCanvas');
+  const ctx=overlay.getContext('2d');
+  ctx.clearRect(0,0,overlay.width,overlay.height);
+  ctx.fillStyle='black';
+  (boxesByPage[currentPage]||[]).forEach(b=>ctx.fillRect(b.x,b.y,b.w,b.h));
+}
+let drawing=false,startX=0,startY=0;
+function setupDrawing(overlay){
+  overlay.onmousedown=e=>{
+    const r=overlay.getBoundingClientRect();
+    const scaleX=overlay.width/r.width, scaleY=overlay.height/r.height;
+    startX=(e.clientX-r.left)*scaleX;startY=(e.clientY-r.top)*scaleY;
+    drawing=true;
+  };
+  overlay.onmousemove=e=>{
+    if(!drawing)return;
+    const r=overlay.getBoundingClientRect();
+    const scaleX=overlay.width/r.width, scaleY=overlay.height/r.height;
+    const curX=(e.clientX-r.left)*scaleX,curY=(e.clientY-r.top)*scaleY;
+    redrawOverlay();
+    const ctx=overlay.getContext('2d');ctx.fillStyle='black';
+    ctx.fillRect(Math.min(startX,curX),Math.min(startY,curY),Math.abs(curX-startX),Math.abs(curY-startY));
+  };
+  overlay.onmouseup=e=>{
+    if(!drawing)return;drawing=false;
+    const r=overlay.getBoundingClientRect();
+    const scaleX=overlay.width/r.width, scaleY=overlay.height/r.height;
+    const curX=(e.clientX-r.left)*scaleX,curY=(e.clientY-r.top)*scaleY;
+    const box={x:Math.min(startX,curX),y:Math.min(startY,curY),w:Math.abs(curX-startX),h:Math.abs(curY-startY)};
+    if(box.w>5&&box.h>5){
+      if(!boxesByPage[currentPage])boxesByPage[currentPage]=[];
+      boxesByPage[currentPage].push(box);
+    }
+    redrawOverlay();
+  };
+}
+function clearPageBoxes(){boxesByPage[currentPage]=[];redrawOverlay();}
+async function changePage(delta){
+  const next=currentPage+delta;
+  if(next<1||next>totalPages)return;
+  currentPage=next;
+  await renderPage();
+}
+async function applyRedactions(){
+  if(!pdfFile)return;
+  const hasBoxes=Object.values(boxesByPage).some(arr=>arr&&arr.length);
+  if(!hasBoxes){showToast('Draw at least one redaction box first','error');return;}
+  const btn=document.getElementById('applyBtn');setLoading(btn,true);
+  const prog=document.getElementById('progressWrap'),label=document.getElementById('progressLabel'),pct=document.getElementById('progressPct');
+  prog.classList.remove('hidden');
+  try{
+    const{PDFDocument}=PDFLib;
+    const newPdf=await PDFDocument.create();
+    for(let i=1;i<=totalPages;i++){
+      label.textContent=`Flattening page ${i} of ${totalPages}…`;
+      const p=Math.round((i-1)/totalPages*90);pct.textContent=p+'%';animateProgress('progressBar',p,Math.round(i/totalPages*90),150);
+      const page=await pdfDoc.getPage(i);
+      const vp=page.getViewport({scale:EXPORT_SCALE});
+      const canvas=document.createElement('canvas');
+      canvas.width=vp.width;canvas.height=vp.height;
+      const ctx=canvas.getContext('2d');
+      await page.render({canvasContext:ctx,viewport:vp}).promise;
+      const ratio=EXPORT_SCALE/PREVIEW_SCALE;
+      ctx.fillStyle='black';
+      (boxesByPage[i]||[]).forEach(b=>ctx.fillRect(b.x*ratio,b.y*ratio,b.w*ratio,b.h*ratio));
+      const dataUrl=canvas.toDataURL('image/jpeg',0.9);
+      const res=await fetch(dataUrl);const imgBytes=await res.arrayBuffer();
+      const img=await newPdf.embedJpg(imgBytes);
+      const pg=newPdf.addPage([vp.width,vp.height]);
+      pg.drawImage(img,{x:0,y:0,width:vp.width,height:vp.height});
+    }
+    pct.textContent='100%';animateProgress('progressBar',90,100,200);
+    const bytes=await newPdf.save();
+    await new Promise(r=>setTimeout(r,300));prog.classList.add('hidden');
+    const blob=new Blob([bytes],{type:'application/pdf'});
+    const name=pdfFile.name.replace(/\.pdf$/i,'')+'-redacted.pdf';
+    document.getElementById('resultInfo').textContent=`${totalPages} pages · ${formatSize(blob.size)}`;
+    document.getElementById('result').classList.remove('hidden');
+    document.getElementById('result').scrollIntoView({behavior:'smooth',block:'center'});
+    document.getElementById('downloadBtn').onclick=()=>{downloadBlob(blob,name);showToast('Redacted PDF downloaded!');};
+    showToast('Redactions applied!');
+  }catch(e){console.error(e);prog.classList.add('hidden');showToast('Failed to apply redactions','error');}
+  finally{setLoading(btn,false);}
+}
+</script>
+</body></html>

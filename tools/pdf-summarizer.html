@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="../favicon.ico" sizes="any"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png"/>
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PDF Summarizer Free — AI Document Summary Online | PDFForge</title>
+  <meta name="description" content="Get an instant AI-generated summary of any PDF for free. Paste in a long document and get the key points in seconds." />
+  <link rel="canonical" href="https://pdfly.uk/tools/pdf-summarizer.html" />
+  <meta name="robots" content="index, follow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={darkMode:'class',theme:{extend:{fontFamily:{display:['Syne','sans-serif'],body:['DM Sans','sans-serif']},colors:{forge:{50:'#fff7ed',400:'#fb923c',500:'#f97316',600:'#ea580c'},ink:{50:'#f8f7f4',100:'#f0ede6',200:'#e2ddd4',300:'#c9c2b6',400:'#9c9287',500:'#6b6358',700:'#3a342c',800:'#1c1a16',900:'#0e0d0b',950:'#080807'}}}}}</script>
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"PDF Summarizer — PDFForge","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+</head>
+<body class="bg-ink-50 dark:bg-ink-950 text-ink-800 dark:text-ink-100 font-body antialiased">
+
+<nav class="fixed top-0 left-0 right-0 z-50 bg-ink-50/90 dark:bg-ink-950/90 backdrop-blur-xl border-b border-ink-200 dark:border-ink-800">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6"><div class="flex items-center justify-between h-16">
+    <a href="../index.html" class="flex items-center gap-2.5"><div class="w-8 h-8 bg-gradient-to-br from-forge-400 to-forge-600 rounded-lg flex items-center justify-center"><svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg></div><span class="font-display font-800 text-xl text-ink-900 dark:text-white">PDF<span class="text-forge-500">Forge</span></span></a>
+    <a href="../index.html" class="hidden sm:flex items-center gap-1 text-sm text-ink-400 hover:text-forge-500 transition-colors"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg> All Tools</a>
+  </div></div>
+</nav>
+
+<div class="tool-hero" style="padding-bottom:24px">
+  <div class="absolute inset-0 pointer-events-none"><div class="absolute top-16 left-1/3 w-72 h-72 bg-purple-400/10 rounded-full blur-3xl"></div></div>
+  <div class="relative max-w-2xl mx-auto px-4">
+    <div class="step-pill">✨ AI Powered</div>
+    <h1 class="font-display font-800 text-4xl sm:text-5xl text-ink-900 dark:text-white mb-3">PDF Summarizer</h1>
+    <p class="text-ink-500 dark:text-ink-400 text-lg max-w-lg mx-auto">Upload a long PDF and get an accurate, concise summary in seconds.</p>
+  </div>
+</div>
+
+<main class="max-w-2xl mx-auto px-4 pb-24">
+
+  <div id="dropZone" class="drop-zone mb-6">
+    <input type="file" id="fileInput" class="hidden" accept=".pdf,application/pdf"/>
+    <div class="pointer-events-none">
+      <div class="w-16 h-16 mx-auto mb-4 rounded-2xl flex items-center justify-center" style="background:rgba(124,58,237,0.1)"><svg class="w-8 h-8" style="color:#7c3aed" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg></div>
+      <p class="font-display font-600 text-ink-700 dark:text-ink-300 text-lg mb-1">Drop a PDF here</p>
+      <p class="text-sm text-ink-400">or click to browse</p>
+    </div>
+  </div>
+
+  <div id="fileInfo" class="hidden flex items-center justify-between mb-6 p-3 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-xl">
+    <p class="text-sm font-display font-600 text-ink-700 dark:text-ink-300 truncate" id="fileLabel"></p>
+    <button onclick="resetTool()" class="text-xs text-red-400 hover:text-red-500 flex-shrink-0 ml-3">Remove</button>
+  </div>
+
+  <button id="summarizeBtn" onclick="summarize()" class="hidden w-full btn-primary justify-center text-base py-3.5 mb-6" style="background:linear-gradient(135deg,#7c3aed,#4f46e5)">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+    Summarize with AI
+  </button>
+
+  <div id="result" class="hidden result-card">
+    <div class="flex items-center justify-between mb-4">
+      <p class="font-display font-700 text-ink-800 dark:text-ink-100">Summary</p>
+      <button onclick="copySummary()" class="text-xs text-forge-500 hover:underline">Copy</button>
+    </div>
+    <p id="summaryText" class="text-sm text-ink-600 dark:text-ink-300 leading-relaxed whitespace-pre-wrap"></p>
+  </div>
+  <p class="text-xs text-ink-400 text-center mt-4">AI-generated summaries may omit nuance. Always check the original document for critical details.</p>
+
+  <div class="mt-14 pt-10 border-t border-ink-200 dark:border-ink-800">
+    <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-6">FAQ</h2>
+    <div>
+      <div class="faq-item"><button class="faq-question">How long can my PDF be?<span class="faq-icon"><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 4v16m8-8H4"/></svg></span></button><div class="faq-answer">Text up to roughly 40,000 characters (about 15-20 pages of dense text) is summarized in one pass; longer documents are truncated to that limit.</div></div>
+      <div class="faq-item"><button class="faq-question">Does it work on scanned PDFs?<span class="faq-icon"><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 4v16m8-8H4"/></svg></span></button><div class="faq-answer">Only if the PDF already has a text layer. Purely scanned/image PDFs need OCR first — try our OCR PDF tool beforehand.</div></div>
+    </div>
+  </div>
+</main>
+
+<footer class="border-t border-ink-200 dark:border-ink-800 py-8 bg-white dark:bg-ink-900">
+  <div class="max-w-2xl mx-auto px-4 text-center text-sm text-ink-400">
+    <p>© 2025 <a href="../index.html" class="hover:text-forge-500 transition-colors">PDFForge</a> · <a href="../pages/privacy.html" class="hover:text-forge-500 transition-colors">Privacy</a> · <a href="../pages/terms.html" class="hover:text-forge-500 transition-colors">Terms</a> · <a href="../pages/disclaimer.html" class="hover:text-forge-500 transition-colors">Disclaimer</a></p>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script>
+pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+const MAX_CHARS = 40000;
+let docText = '';
+
+const dropZone=document.getElementById('dropZone'), fileInput=document.getElementById('fileInput');
+setupDropZone(dropZone, fileInput, handleFiles, {multiple:false, accept:'.pdf,application/pdf'});
+
+function handleFiles(files){
+  const f = files.find(x=>x.type==='application/pdf'||x.name.toLowerCase().endsWith('.pdf'));
+  if(!f){ showToast('Please select a PDF file','error'); return; }
+  loadPDF(f);
+}
+
+async function loadPDF(file){
+  try{
+    const bytes = await readFileAsArrayBuffer(file);
+    const pdf = await pdfjsLib.getDocument({data: bytes}).promise;
+    let text = '';
+    for(let i=1; i<=pdf.numPages; i++){
+      const page = await pdf.getPage(i);
+      const content = await page.getTextContent();
+      text += content.items.map(it=>it.str).join(' ') + '\n\n';
+      if(text.length > MAX_CHARS) break;
+    }
+    if(!text.trim()){ throw new Error('empty'); }
+    docText = text.slice(0, MAX_CHARS);
+    document.getElementById('fileLabel').textContent = file.name + (text.length > MAX_CHARS ? ' (truncated for length)' : '');
+    document.getElementById('fileInfo').classList.remove('hidden');
+    document.getElementById('summarizeBtn').classList.remove('hidden');
+    document.getElementById('result').classList.add('hidden');
+  }catch(e){
+    console.error(e);
+    showToast('Could not extract text from this PDF. It may be scanned/image-based.','error');
+  }
+}
+
+async function summarize(){
+  const btn = document.getElementById('summarizeBtn');
+  setLoading(btn, true);
+  try{
+    const res = await fetch('/api/pdf-summarizer', {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({ text: docText })
+    });
+    const data = await res.json();
+    if(!res.ok){ showToast(data.message || 'Something went wrong','error'); }
+    else {
+      document.getElementById('summaryText').textContent = data.summary;
+      document.getElementById('result').classList.remove('hidden');
+      showToast('Summary ready','success');
+    }
+  }catch(e){ console.error(e); showToast('Network error, please try again','error'); }
+  setLoading(btn, false, 'Summarize with AI');
+}
+
+function copySummary(){
+  navigator.clipboard.writeText(document.getElementById('summaryText').textContent);
+  showToast('Copied to clipboard','success');
+}
+
+function resetTool(){
+  docText='';
+  document.getElementById('fileInfo').classList.add('hidden');
+  document.getElementById('summarizeBtn').classList.add('hidden');
+  document.getElementById('result').classList.add('hidden');
+  fileInput.value='';
+}
+</script>
+</body>
+</html>
