@@ -1,9 +1,9 @@
-PDFForge — PDF to JPG: SEO Content
+PDFly — PDF to JPG: SEO Content
 Page: pdfly.uk/tools/pdf-to-jpg
 Tool: PDF to JPG
 
 Meta Title
-Convert PDF to JPG Online — No Upload, Stays on Your Device | PDFForge
+Convert PDF to JPG Online — No Upload, Stays on Your Device | PDFly
 
 Meta Description
 Turn PDF pages into JPG images, right in your browser. No upload, no server, no account needed. Free forever.
@@ -15,7 +15,7 @@ Sub-headline
 Export every PDF page as a high-quality JPG — all done locally in your browser.
 
 The "Why This Is Different" Intro Block
-Converting to images usually means a server renders your document first. PDFForge renders each page directly in your browser, so your file is never exposed to a third party during conversion.
+Converting to images usually means a server renders your document first. PDFly renders each page directly in your browser, so your file is never exposed to a third party during conversion.
 
 How It Works (3 Steps)
 
@@ -64,4 +64,4 @@ Is there a size limit?
 No hard limit, depends on your device's memory.
 
 Closing CTA Block
-Turning PDF pages into images shouldn't mean uploading your file first. PDFForge converts it right in your browser — fast, private, free.
+Turning PDF pages into images shouldn't mean uploading your file first. PDFly converts it right in your browser — fast, private, free.

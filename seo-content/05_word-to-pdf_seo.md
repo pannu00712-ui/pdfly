@@ -1,4 +1,4 @@
-# PDFForge — Word to PDF Page: SEO Content
+# PDFly — Word to PDF Page: SEO Content
 **Page:** pdfly.uk/tools/word-to-pdf
 **Tool:** Word to PDF
 **Word Count:** ~760 words
@@ -6,7 +6,7 @@
 ---
 
 ## 1. Meta Title
-Word to PDF Converter Online — No Upload, Stays on Your Device | PDFForge
+Word to PDF Converter Online — No Upload, Stays on Your Device | PDFly
 
 ## 2. Meta Description
 Convert Word documents to PDF right in your browser. No server, no signup, no file upload. Formatting stays intact. Free forever.
@@ -25,7 +25,7 @@ Turn any .docx file into a PDF in seconds — your document never leaves your de
 
 Most Word-to-PDF tools online work by receiving your file on their server, converting it there, and sending the PDF back. Your document — with its letterhead, salary figures, legal clauses, or client data — sits on their machine during that process.
 
-PDFForge converts Word to PDF entirely inside your browser. Your device handles the conversion using its own processing power. The .docx file never gets transmitted anywhere. Sensitive documents — NDAs, offer letters, client proposals, financial statements — stay exactly where they should: on your machine. Close the tab, and there's nothing left anywhere except the PDF in your downloads folder.
+PDFly converts Word to PDF entirely inside your browser. Your device handles the conversion using its own processing power. The .docx file never gets transmitted anywhere. Sensitive documents — NDAs, offer letters, client proposals, financial statements — stay exactly where they should: on your machine. Close the tab, and there's nothing left anywhere except the PDF in your downloads folder.
 
 ---
 
@@ -58,7 +58,7 @@ The PDF downloads directly to your device. Open it in any PDF viewer — it's a 
 
 Before converting, make sure your Word document's fonts are either standard system fonts (Arial, Calibri, Times New Roman) or embedded in the file — unusual custom fonts may substitute during browser-based conversion. If your layout looks off in the PDF output, switch your document font to Calibri or Arial in Word first, then reconvert.
 
-If you need to combine the converted PDF with another document afterward, use **PDFForge Merge PDF** — also fully browser-based, no upload required.
+If you need to combine the converted PDF with another document afterward, use **PDFly Merge PDF** — also fully browser-based, no upload required.
 
 ---
 
@@ -81,13 +81,13 @@ Yes. Hyperlinks in your Word document are preserved as clickable links in the ou
 Yes. Embedded images — photos, logos, charts — are included in the PDF at their original quality.
 
 **Can I convert a .doc file (older Word format), or only .docx?**
-PDFForge works with .docx files. If you have an older .doc file, open it in Word or Google Docs and save as .docx first, then convert.
+PDFly works with .docx files. If you have an older .doc file, open it in Word or Google Docs and save as .docx first, then convert.
 
-**Does the PDF output have any watermark or PDFForge branding?**
-None. The PDF is clean — no watermarks, no branding, no hidden metadata from PDFForge.
+**Does the PDF output have any watermark or PDFly branding?**
+None. The PDF is clean — no watermarks, no branding, no hidden metadata from PDFly.
 
 **What if my Word file has a password on it?**
-Password-protected Word files need to be unlocked in Word first (File → Info → Protect Document → Remove protection), then converted. PDFForge can't remove Word file passwords — that's handled by Word itself.
+Password-protected Word files need to be unlocked in Word first (File → Info → Protect Document → Remove protection), then converted. PDFly can't remove Word file passwords — that's handled by Word itself.
 
 ---
 
@@ -95,4 +95,4 @@ Password-protected Word files need to be unlocked in Word first (File → Info �
 
 Your Word documents contain real information — proposals, contracts, invoices. They shouldn't have to travel to a server just to become a PDF.
 
-PDFForge converts them right in your browser. Fast, private, and free. Drop your .docx above and get your PDF.
+PDFly converts them right in your browser. Fast, private, and free. Drop your .docx above and get your PDF.

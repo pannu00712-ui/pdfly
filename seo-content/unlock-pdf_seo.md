@@ -1,9 +1,9 @@
-PDFForge — Unlock PDF: SEO Content
+PDFly — Unlock PDF: SEO Content
 Page: pdfly.uk/tools/unlock-pdf
 Tool: Unlock PDF
 
 Meta Title
-Unlock PDF Online — Remove Password, No Upload | PDFForge
+Unlock PDF Online — Remove Password, No Upload | PDFly
 
 Meta Description
 Remove password protection from a PDF you have the password for, right in your browser. No upload, no server, no account needed.
@@ -15,7 +15,7 @@ Sub-headline
 Enter the password once, remove it permanently — all processed on your device.
 
 The "Why This Is Different" Intro Block
-Unlocking a password-protected PDF means handling a file that was deliberately secured. PDFForge does this directly in your browser — your password and document are never sent to a server to perform the unlock.
+Unlocking a password-protected PDF means handling a file that was deliberately secured. PDFly does this directly in your browser — your password and document are never sent to a server to perform the unlock.
 
 How It Works (3 Steps)
 
@@ -64,4 +64,4 @@ Is there a file size limit?
 No hard limit, depends on your device's memory.
 
 Closing CTA Block
-Removing a password you already know shouldn't mean uploading your file somewhere. PDFForge unlocks it right in your browser — fast, private, free.
+Removing a password you already know shouldn't mean uploading your file somewhere. PDFly unlocks it right in your browser — fast, private, free.

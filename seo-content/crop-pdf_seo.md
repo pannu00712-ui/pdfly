@@ -1,10 +1,10 @@
-PDFForge — Crop PDF: SEO Content
+PDFly — Crop PDF: SEO Content
 Page: pdfly.uk/tools/crop-pdf
 Tool: Crop PDF
 Word Count: ~700 words
 
 Meta Title
-Crop PDF Pages Online — No Upload, Stays on Your Device | PDFForge
+Crop PDF Pages Online — No Upload, Stays on Your Device | PDFly
 
 Meta Description
 Trim margins or crop page areas on any PDF, right in your browser. No upload, no server, no account needed. Free forever.
@@ -16,7 +16,7 @@ Sub-headline
 Cut out unwanted white space or crop to a specific area — your browser does the work, your file stays on your device.
 
 The "Why This Is Different" Intro Block
-Cropping seems minor, but it still means handing over your full document to most online tools. PDFForge handles cropping directly in your browser, using your device's own rendering — so a scanned form, report, or personal document never needs to leave your tab just to trim its margins.
+Cropping seems minor, but it still means handing over your full document to most online tools. PDFly handles cropping directly in your browser, using your device's own rendering — so a scanned form, report, or personal document never needs to leave your tab just to trim its margins.
 
 How It Works (3 Steps)
 
@@ -40,7 +40,7 @@ HR/finance: Crop a scanned ID down to just the photo and details, removing scann
 Personal documents: Cut a passport scan down to the exact size required by a visa application form.
 
 Pro Tip 💡
-If your scanned pages have inconsistent margins, crop the worst-offending pages individually rather than applying one crop size to the whole document. Pair with the PDFForge Compress PDF tool afterward if file size still matters.
+If your scanned pages have inconsistent margins, crop the worst-offending pages individually rather than applying one crop size to the whole document. Pair with the PDFly Compress PDF tool afterward if file size still matters.
 
 Common Mistakes to Avoid
 
@@ -68,6 +68,6 @@ Is there a limit to how much I can crop?
 No artificial limit — you can crop down to any area size you select.
 
 Closing CTA Block
-Trimming a PDF's margins shouldn't require uploading it anywhere first. PDFForge crops it right in your browser — fast, private, free.
+Trimming a PDF's margins shouldn't require uploading it anywhere first. PDFly crops it right in your browser — fast, private, free.
 
 Ready? Drop your file above and start cropping.

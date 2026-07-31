@@ -1,9 +1,9 @@
-PDFForge — PDF to PowerPoint: SEO Content
+PDFly — PDF to PowerPoint: SEO Content
 Page: pdfly.uk/tools/pdf-to-ppt
 Tool: PDF to PowerPoint
 
 Meta Title
-Convert PDF to PowerPoint Online — No Upload, Stays on Your Device | PDFForge
+Convert PDF to PowerPoint Online — No Upload, Stays on Your Device | PDFly
 
 Meta Description
 Turn PDF pages into editable PowerPoint slides, right in your browser. No upload, no server, no account needed.
@@ -15,7 +15,7 @@ Sub-headline
 Convert PDF content into PPTX slides you can actually edit — processed locally.
 
 The "Why This Is Different" Intro Block
-Presentation files often contain unreleased pitches or internal data. PDFForge converts PDF to PPTX directly in your browser, so your slide content never sits on an external server during conversion.
+Presentation files often contain unreleased pitches or internal data. PDFly converts PDF to PPTX directly in your browser, so your slide content never sits on an external server during conversion.
 
 How It Works (3 Steps)
 
@@ -64,4 +64,4 @@ Does this preserve images?
 Yes, images are carried over into the slides.
 
 Closing CTA Block
-Getting editable slides back shouldn't require uploading your PDF first. PDFForge converts it right in your browser — fast, private, free.
+Getting editable slides back shouldn't require uploading your PDF first. PDFly converts it right in your browser — fast, private, free.

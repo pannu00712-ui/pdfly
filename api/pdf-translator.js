@@ -34,7 +34,7 @@ module.exports = async function handler(req, res) {
     const translation = await chatCompletion([
       { role: 'system', content: 'You translate text faithfully, preserving meaning, tone, and paragraph structure. Output only the translation, no commentary.' },
       { role: 'user', content: `Translate the following text to ${targetLang}:\n\n${text}` },
-    ], { maxTokens: 1200 });
+    ], { maxTokens: 8000 });
 
     return res.status(200).json({ translation });
   } catch (e) {

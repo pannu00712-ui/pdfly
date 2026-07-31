@@ -1,10 +1,10 @@
-PDFForge — Remove Pages: SEO Content
+PDFly — Remove Pages: SEO Content
 Page: pdfly.uk/tools/remove-pages
 Tool: Remove Pages
 Word Count: ~700 words
 
 Meta Title
-Remove Pages from PDF Online — No Upload, Stays on Your Device | PDFForge
+Remove Pages from PDF Online — No Upload, Stays on Your Device | PDFly
 
 Meta Description
 Delete unwanted pages from any PDF, right in your browser. No upload, no server, no account needed. Free forever.
@@ -16,7 +16,7 @@ Sub-headline
 Pick the pages to remove, confirm, download — all without your file ever leaving your device.
 
 The "Why This Is Different" Intro Block
-Removing a page sounds simple, but most online tools still make you upload the whole document to do it — even if it's a 50-page contract just to delete one cover page. PDFForge skips that step entirely. Page removal happens inside your browser, using your device's own processing. Nothing gets sent to a server, so sensitive content stays exactly where it should — with you.
+Removing a page sounds simple, but most online tools still make you upload the whole document to do it — even if it's a 50-page contract just to delete one cover page. PDFly skips that step entirely. Page removal happens inside your browser, using your device's own processing. Nothing gets sent to a server, so sensitive content stays exactly where it should — with you.
 
 How It Works (3 Steps)
 
@@ -40,7 +40,7 @@ HR/finance: Delete a confidential internal page before sharing a report external
 Personal documents: Remove an extra page from a scanned form that got picked up by accident.
 
 Pro Tip 💡
-Removing pages reduces file size automatically — if you still need it smaller, run it through the PDFForge Compress PDF tool right after, still no upload either way.
+Removing pages reduces file size automatically — if you still need it smaller, run it through the PDFly Compress PDF tool right after, still no upload either way.
 
 Common Mistakes to Avoid
 
@@ -68,6 +68,6 @@ What happens to the removed pages?
 They're simply excluded from the new file. Nothing is stored or sent anywhere.
 
 Closing CTA Block
-Cleaning up a PDF shouldn't mean uploading it somewhere first. PDFForge removes pages right in your browser — fast, private, free.
+Cleaning up a PDF shouldn't mean uploading it somewhere first. PDFly removes pages right in your browser — fast, private, free.
 
 Ready? Drop your file above and start removing.

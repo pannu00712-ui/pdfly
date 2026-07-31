@@ -1,10 +1,10 @@
-PDFForge — Rotate PDF: SEO Content
+PDFly — Rotate PDF: SEO Content
 Page: pdfly.uk/tools/rotate-pdf
 Tool: Rotate PDF
 Word Count: ~700 words
 
 Meta Title
-Rotate PDF Pages Online — No Upload, Stays on Your Device | PDFForge
+Rotate PDF Pages Online — No Upload, Stays on Your Device | PDFly
 
 Meta Description
 Fix sideways or upside-down PDF pages, right in your browser. No upload, no server, no account needed. Free forever.
@@ -16,7 +16,7 @@ Sub-headline
 Rotate any page 90°, 180°, or 270° — your browser does it, your file never leaves your device.
 
 The "Why This Is Different" Intro Block
-A sideways scan is annoying, but it shouldn't mean uploading your document to fix it. PDFForge rotates pages using your browser's own processing power — no server round-trip, no waiting on an upload bar, no copy of your file sitting anywhere else.
+A sideways scan is annoying, but it shouldn't mean uploading your document to fix it. PDFly rotates pages using your browser's own processing power — no server round-trip, no waiting on an upload bar, no copy of your file sitting anywhere else.
 
 How It Works (3 Steps)
 
@@ -40,7 +40,7 @@ HR/finance: Straighten a scanned ID or form that was photographed at an angle.
 Personal documents: Fix a passport or visa scan rotation before uploading to a government portal.
 
 Pro Tip 💡
-If only a few pages in a large PDF are rotated wrong, rotate just those — you don't need to apply rotation to the whole file. Combine with the PDFForge Merge PDF tool afterward if you're putting corrected pages together with others.
+If only a few pages in a large PDF are rotated wrong, rotate just those — you don't need to apply rotation to the whole file. Combine with the PDFly Merge PDF tool afterward if you're putting corrected pages together with others.
 
 Common Mistakes to Avoid
 
@@ -68,6 +68,6 @@ Is there a limit on file size for rotating?
 No hard limit — your device's memory is the only constraint.
 
 Closing CTA Block
-Fixing orientation shouldn't require uploading your document anywhere. PDFForge rotates it right in your browser — fast, private, free.
+Fixing orientation shouldn't require uploading your document anywhere. PDFly rotates it right in your browser — fast, private, free.
 
 Ready? Drop your file above and rotate it.

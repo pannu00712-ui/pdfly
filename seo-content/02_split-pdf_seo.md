@@ -1,4 +1,4 @@
-# PDFForge — Split PDF Page: SEO Content
+# PDFly — Split PDF Page: SEO Content
 **Page:** pdfly.uk/tools/split-pdf
 **Tool:** Split PDF
 **Word Count:** ~760 words
@@ -6,7 +6,7 @@
 ---
 
 ## 1. Meta Title
-Split PDF Online — No Upload, Stays on Your Device | PDFForge
+Split PDF Online — No Upload, Stays on Your Device | PDFly
 
 ## 2. Meta Description
 Extract pages or split a PDF into separate files — all inside your browser. No server upload, no signup, completely free. Works on any PDF, any size.
@@ -27,7 +27,7 @@ When you split a PDF using most online tools, the entire file gets uploaded to t
 
 Now consider what people split. A 40-page legal agreement where you only need pages 12–15. A bank statement PDF you want to share partially. A medical report with pages for different doctors. These aren't files you want traveling to unknown servers.
 
-PDFForge splits PDFs entirely in your browser. You pick the pages, your device does the splitting, and the output downloads directly to you. Nothing is transmitted, nothing is stored, nothing is logged. The only thing that moves is the final download — from your browser to your downloads folder.
+PDFly splits PDFs entirely in your browser. You pick the pages, your device does the splitting, and the output downloads directly to you. Nothing is transmitted, nothing is stored, nothing is logged. The only thing that moves is the final download — from your browser to your downloads folder.
 
 ---
 
@@ -60,7 +60,7 @@ Hit Split and your browser produces the output files instantly. Download them in
 
 If you're splitting a multi-section PDF into several parts, do it in one session — load the file once and make multiple splits before closing the tab. Reloading the PDF each time is unnecessary and slower.
 
-And if the pages you extract need to be combined with files from another document afterward, use **PDFForge Merge PDF** right after. Same browser session, no uploads either way.
+And if the pages you extract need to be combined with files from another document afterward, use **PDFly Merge PDF** right after. Same browser session, no uploads either way.
 
 ---
 
@@ -77,24 +77,24 @@ And if the pages you extract need to be combined with files from another documen
 ## 10. FAQ
 
 **Can I split a PDF into every single page as separate files?**
-Yes. PDFForge has an option to extract every page as its own PDF. You'll get a ZIP file with all pages numbered in order. Useful for sorting, archiving, or selectively sharing pages.
+Yes. PDFly has an option to extract every page as its own PDF. You'll get a ZIP file with all pages numbered in order. Useful for sorting, archiving, or selectively sharing pages.
 
 **Does splitting a PDF reduce the quality of content on those pages?**
 No. Splitting just separates pages — it doesn't re-render or recompress anything. Every extracted page is a pixel-perfect copy of the original.
 
 **Can I split a password-protected PDF?**
-If the PDF has an open password (requires a password just to view), you'll need to unlock it first using **PDFForge Unlock PDF**, then split. If it only has permissions restrictions (no open password), splitting usually works fine.
+If the PDF has an open password (requires a password just to view), you'll need to unlock it first using **PDFly Unlock PDF**, then split. If it only has permissions restrictions (no open password), splitting usually works fine.
 
 **What's the maximum number of pages I can split from?**
-There's no page limit set by PDFForge. The practical limit is your device's available memory. Splitting a 500-page PDF works fine on any reasonably modern laptop or phone.
+There's no page limit set by PDFly. The practical limit is your device's available memory. Splitting a 500-page PDF works fine on any reasonably modern laptop or phone.
 
 **Are my files stored anywhere after I split them?**
-No. Everything happens in your browser and is cleared when you close the tab. PDFForge has no server receiving your files, so there's nothing to store or delete.
+No. Everything happens in your browser and is cleared when you close the tab. PDFly has no server receiving your files, so there's nothing to store or delete.
 
 ---
 
 ## 11. Closing CTA
 
-Some pages are meant to be shared. Some aren't. PDFForge lets you split exactly what you need and keep the rest private — because none of it ever leaves your device in the first place.
+Some pages are meant to be shared. Some aren't. PDFly lets you split exactly what you need and keep the rest private — because none of it ever leaves your device in the first place.
 
 Free, instant, and genuinely browser-only. Drop your PDF above and make the split.

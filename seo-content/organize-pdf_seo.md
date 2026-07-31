@@ -1,10 +1,10 @@
-PDFForge — Organize PDF: SEO Content
+PDFly — Organize PDF: SEO Content
 Page: pdfly.uk/tools/organize-pdf
 Tool: Organize PDF
 Word Count: ~700 words
 
 Meta Title
-Organize PDF Pages Online — No Upload, Stays on Your Device | PDFForge
+Organize PDF Pages Online — No Upload, Stays on Your Device | PDFly
 
 Meta Description
 Reorder, rearrange, and organize PDF pages exactly how you want, right in your browser. No upload, no server, no account needed.
@@ -16,7 +16,7 @@ Sub-headline
 Drag pages into the order you need — everything happens on your device, nothing gets uploaded.
 
 The "Why This Is Different" Intro Block
-Reordering pages means handling your full document — which is exactly why most tools require an upload first. PDFForge doesn't. Your browser handles the rearranging directly, so a personal or business document never has to pass through someone else's server just to get its pages in the right order.
+Reordering pages means handling your full document — which is exactly why most tools require an upload first. PDFly doesn't. Your browser handles the rearranging directly, so a personal or business document never has to pass through someone else's server just to get its pages in the right order.
 
 How It Works (3 Steps)
 
@@ -40,7 +40,7 @@ HR/finance: Reorganize a multi-section report so appendices follow the main body
 Personal documents: Arrange scanned ID, address proof, and photo into the exact sequence a form requires.
 
 Pro Tip 💡
-If you're combining pages from different documents into one organized file, use the PDFForge Merge PDF tool first, then organize the combined result — both steps run browser-side, no upload needed at any point.
+If you're combining pages from different documents into one organized file, use the PDFly Merge PDF tool first, then organize the combined result — both steps run browser-side, no upload needed at any point.
 
 Common Mistakes to Avoid
 
@@ -68,6 +68,6 @@ What happens to my file after organizing?
 Nothing is stored — once you close the tab, there's no copy anywhere except your download.
 
 Closing CTA Block
-Getting your pages in the right order shouldn't mean uploading your document first. PDFForge organizes it right in your browser — fast, private, free.
+Getting your pages in the right order shouldn't mean uploading your document first. PDFly organizes it right in your browser — fast, private, free.
 
 Ready? Drop your file above and start organizing.

@@ -1,9 +1,9 @@
-PDFForge — Sign PDF: SEO Content
+PDFly — Sign PDF: SEO Content
 Page: pdfly.uk/tools/sign-pdf
 Tool: Sign PDF
 
 Meta Title
-Sign PDF Online — No Upload, Stays on Your Device | PDFForge
+Sign PDF Online — No Upload, Stays on Your Device | PDFly
 
 Meta Description
 Add your signature to any PDF, right in your browser. No upload, no server, no account needed. Free forever.
@@ -15,7 +15,7 @@ Sub-headline
 Draw, type, or upload your signature and place it on the document — all done locally.
 
 The "Why This Is Different" Intro Block
-Signing usually involves your most sensitive document — a contract or agreement. PDFForge handles signing directly in your browser, so your signed document, and your signature itself, never touch a server.
+Signing usually involves your most sensitive document — a contract or agreement. PDFly handles signing directly in your browser, so your signed document, and your signature itself, never touch a server.
 
 How It Works (3 Steps)
 
@@ -64,4 +64,4 @@ Is there a limit to signature size?
 No hard limit, resize as needed to fit the document.
 
 Closing CTA Block
-Signing a document shouldn't mean uploading it to a stranger's server first. PDFForge signs it right in your browser — fast, private, free.
+Signing a document shouldn't mean uploading it to a stranger's server first. PDFly signs it right in your browser — fast, private, free.

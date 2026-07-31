@@ -1,9 +1,9 @@
-PDFForge — OCR PDF: SEO Content
+PDFly — OCR PDF: SEO Content
 Page: pdfly.uk/tools/ocr-pdf
 Tool: OCR PDF
 
 Meta Title
-OCR PDF Online — Make Scanned PDFs Searchable | PDFForge
+OCR PDF Online — Make Scanned PDFs Searchable | PDFly
 
 Meta Description
 Convert scanned PDFs into searchable, selectable text, right in your browser. No upload, no server, no account needed.
@@ -15,7 +15,7 @@ Sub-headline
 Turn scanned images into selectable text — all processed on your device.
 
 The "Why This Is Different" Intro Block
-OCR tools usually need server-side processing power, meaning your scanned ID, contract, or notes get uploaded first. PDFForge runs OCR directly in your browser, so scanned sensitive documents never leave your device.
+OCR tools usually need server-side processing power, meaning your scanned ID, contract, or notes get uploaded first. PDFly runs OCR directly in your browser, so scanned sensitive documents never leave your device.
 
 How It Works (3 Steps)
 
@@ -64,4 +64,4 @@ Is there a page limit for OCR?
 No hard limit, runtime increases with longer documents.
 
 Closing CTA Block
-Making your scans searchable shouldn't mean uploading them to a server. PDFForge does it right in your browser — fast, private, free.
+Making your scans searchable shouldn't mean uploading them to a server. PDFly does it right in your browser — fast, private, free.

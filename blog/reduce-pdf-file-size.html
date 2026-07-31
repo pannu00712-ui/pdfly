@@ -2,31 +2,46 @@
 <html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" href="../favicon.ico" sizes="any"/>
-  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png"/>
-  <link rel="apple-touch-icon" href="../apple-touch-icon.png"/>
+  <link rel="icon" href="../favicon.ico?v=2" sizes="any"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png?v=2"/>
+  <link rel="icon" type="image/png" sizes="192x192" href="../android-chrome-192.png?v=2"/>
+  <link rel="icon" type="image/png" sizes="512x512" href="../android-chrome-512.png?v=2"/>
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png?v=2"/>
+  <link rel="mask-icon" href="../mask-icon-v2.svg" color="#2563EB"/>
+  <link rel="manifest" href="../site.webmanifest?v=2"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Reduce Pdf File Size | PDFForge Blog</title>
-  <meta name="description" content="PDF guide section 1. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working …" />
-  <link rel="canonical" href="https://pdfly.uk/blog/reduce-pdf-file-size.html" />
+  <title>The Proposal That Took Three Hours to Send | PDFly Blog</title>
+  <meta name="description" content="A 42MB proposal, a Gmail progress bar stuck at 87%, and everything I learned about reducing PDF file size without wrecking the images." />
+  <link rel="canonical" href="https://pdfly.uk/blog/reduce-pdf-file-size" />
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="The Proposal That Took Three Hours to Send | PDFly Blog"/>
+  <meta property="og:description" content="A 42MB proposal, a Gmail progress bar stuck at 87%, and everything I learned about reducing PDF file size without wrecking the images."/>
+  <meta property="og:url" content="https://pdfly.uk/blog/reduce-pdf-file-size"/>
+  <meta property="og:image" content="https://pdfly.uk/og-image.png"/>
+  <meta property="og:site_name" content="PDFly"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="The Proposal That Took Three Hours to Send | PDFly Blog"/>
+  <meta name="twitter:description" content="A 42MB proposal, a Gmail progress bar stuck at 87%, and everything I learned about reducing PDF file size without wrecking the images."/>
+  <meta name="twitter:image" content="https://pdfly.uk/og-image.png"/>
   <meta name="robots" content="index, follow" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>tailwind.config={darkMode:'class',theme:{extend:{fontFamily:{display:['Syne','sans-serif'],body:['DM Sans','sans-serif']},colors:{forge:{500:'#f97316',600:'#ea580c'},ink:{50:'#f8f7f4',100:'#f0ede6',200:'#e2ddd4',400:'#9c9287',500:'#6b6358',800:'#1c1a16',900:'#0e0d0b',950:'#080807'}}}}}</script>
+  <link rel="stylesheet" href="../assets/css/tailwind-built.css"/>
   <link rel="stylesheet" href="../assets/css/main.css" />
+  <script src="https://analytics.ahrefs.com/analytics.js" data-key="VmqStOhNtLiTsE983txKMA" async></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"The Proposal That Took Three Hours to Send","description":"A 42MB proposal, a Gmail progress bar stuck at 87%, and everything I learned about reducing PDF file size without wrecking the images.","datePublished":"2026-07-23","dateModified":"2026-07-23","author":{"@type":"Person","name":"Alex Rivera","url":"https://pdfly.uk/pages/author"},"publisher":{"@type":"Organization","name":"PDFly","logo":{"@type":"ImageObject","url":"https://pdfly.uk/logo.png","width":512,"height":512}},"image":"https://pdfly.uk/og-image.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://pdfly.uk/blog/reduce-pdf-file-size"}}</script>
 </head>
 <body class="bg-ink-50 dark:bg-ink-950 text-ink-800 dark:text-ink-100 font-body antialiased">
 
   <nav class="fixed top-0 left-0 right-0 z-50 bg-ink-50/90 dark:bg-ink-950/90 backdrop-blur-xl border-b border-ink-200 dark:border-ink-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6"><div class="flex items-center justify-between h-16">
-      <a href="../index.html" class="flex items-center gap-2.5">
-        <div class="w-8 h-8 bg-gradient-to-br from-forge-400 to-forge-600 rounded-lg flex items-center justify-center"><svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg></div>
-        <span class="font-display font-800 text-xl text-ink-900 dark:text-white">PDF<span class="text-forge-500">Forge</span></span>
+      <a href="/" class="flex items-center gap-2.5">
+        <svg class="w-8 h-8 rounded-lg" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="40" height="40" rx="11" fill="#2563EB"/><path d="M13 11.5C13 10.6716 13.6716 10 14.5 10H22.5L27 14.5V28.5C27 29.3284 26.3284 30 25.5 30H14.5C13.6716 30 13 29.3284 13 28.5V11.5Z" fill="white"/><path d="M22.5 10L27 14.5H23.5C22.9477 14.5 22.5 14.0523 22.5 13.5V10Z" fill="#BFD3FE"/><rect x="16" y="17" width="3" height="3" rx="0.75" fill="#2563EB"/><rect x="16" y="21.5" width="3" height="3" rx="0.75" fill="#2563EB"/><path d="M20.5 17H23.25C24.2165 17 25 17.7835 25 18.75C25 19.7165 24.2165 20.5 23.25 20.5H20.5V17Z" stroke="#2563EB" stroke-width="1.4" stroke-linejoin="round"/><path d="M20.5 20.5V25" stroke="#2563EB" stroke-width="1.4" stroke-linecap="round"/></svg>
+        <span class="font-display text-xl text-ink-900 dark:text-white"><span class="font-800 text-forge-500">PDF</span><span class="font-600">ly</span></span>
       </a>
       <div class="flex items-center gap-3">
-        <a href="../index.html" class="hidden sm:flex items-center gap-1 text-sm text-ink-400 hover:text-forge-500 transition-colors"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg> All Tools</a>
+        <a href="/" class="hidden sm:flex items-center gap-1 text-sm text-ink-400 hover:text-forge-500 transition-colors"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg> All Tools</a>
         <button id="darkToggle" class="w-9 h-9 rounded-lg flex items-center justify-center text-ink-500 hover:bg-ink-100 dark:hover:bg-ink-800 transition-colors">
           <svg class="w-4 h-4 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
           <svg class="w-4 h-4 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
@@ -36,83 +51,84 @@
   </nav>
 
   <article class="pt-28 pb-20 px-4 max-w-2xl mx-auto">
-    <p class="text-xs font-display font-600 text-forge-500 uppercase tracking-widest mb-3"><a href="../index.html" class="hover:underline">PDFForge</a> · Blog</p>
-    <h1 class="font-display font-800 text-3xl sm:text-4xl text-ink-900 dark:text-white mb-6 leading-tight">Reduce Pdf File Size</h1>
+    <p class="text-xs font-display font-600 text-forge-500 uppercase tracking-widest mb-3"><a href="/" class="hover:underline">PDFly</a> · Blog</p>
+    <h1 class="font-display font-800 text-3xl sm:text-4xl text-ink-900 dark:text-white mb-6 leading-tight">The Proposal That Took Three Hours to Send</h1>
     <div class="prose-content text-ink-600 dark:text-ink-400 leading-relaxed space-y-4">
-      <p>PDF guide section 1. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 2. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 3. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 4. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 5. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 6. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 7. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 8. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 9. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 10. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 11. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 12. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 13. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 14. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 15. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 16. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 17. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 18. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 19. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 20. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 21. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 22. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 23. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 24. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 25. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 26. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 27. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 28. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 29. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 30. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 31. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 32. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 33. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 34. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 35. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 36. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 37. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 38. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 39. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 40. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 41. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 42. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 43. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 44. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 45. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 46. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 47. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 48. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 49. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 50. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 51. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 52. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 53. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 54. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 55. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 56. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 57. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 58. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>PDF guide section 59. This article provides practical advice, examples, best practices, security considerations, workflows, and FAQs for users working with PDF documents.</p>
-      <p>Is it free? Yes.</p>
-      <p>Alex Rivera covers PDF tools and document productivity.</p>
+<p>I was sitting in my home office, staring at Gmail's attachment progress bar. It had been stuck at 87% for what felt like forever. The proposal I was trying to send was 42MB, and the internet connection had decided today was the day it would test my patience. I watched that blue line creep forward, then stop, then creep forward again, and finally, after maybe five minutes of this torture, it failed. The attachment was too large. I knew it was. I knew it the moment I saved the file. But I was stubborn, and I thought maybe it would just work this time.</p>
+
+<p>It did not work this time. It never works this time.</p>
+
+<p>I had spent three hours on that proposal. It was detailed. It was beautiful. It also had high-resolution images of our team, product shots, and a few charts that I had exported as PNGs, which in hindsight was a terrible decision. The file was an absolute monster. I could not send it. I could not attach it. I could not share it the way I wanted to. And my client was expecting it in about twenty minutes.</p>
+
+<p>That was the moment I realized I needed to learn how to reduce PDF file size properly, because my current approach of just hoping for the best was not working.</p>
+
+<h3>The first time I tried to compress a PDF</h3>
+
+<p>My first attempt at reducing the file size was not exactly elegant. I used an online tool that I found through a quick search, uploaded my massive proposal, and hit compress. The tool made the file smaller. I was thrilled. Then I opened the compressed version, and my heart sank. The images looked terrible. Not just a little compressed — pixelated, blurry, and completely unprofessional. The text was still readable, but the photos of our team looked like they had been taken with a flip phone from 2005. I could not send that to a client. It would have been embarrassing.</p>
+
+<p>So I went back to the original file and tried a different tool. Same problem, different flavour. This time the colours were washed out and the text was still sharp, but the document just looked wrong. It felt like someone had drained the life out of it. I was starting to think that maybe I just could not compress this particular PDF without ruining it.</p>
+
+<p>That was a frustrating lesson. I learned that not all compression is equal, and some tools just throw away too much quality to make the file smaller. What I really needed was a tool that knew how to prioritise. Text should stay sharp. Images can be reduced, but not demolished. And the overall document should still look like the original, just a bit smaller. That simple concept took me way too long to find.</p>
+
+<h3>The compromise nobody talks about</h3>
+
+<p>Here's the thing about compressing PDFs that I wish someone had told me earlier — there's always a compromise. You can't make a 50MB file into a 2MB file and expect it to look exactly the same. Something has to give. The key is knowing what you can sacrifice and what you absolutely cannot.</p>
+
+<p>If you're dealing with a document that's mostly text, you can compress it a lot without anyone noticing. Text compresses really well. Images, on the other hand, are the heavy lifters. That's where most of the file size comes from. So if your document has a lot of images, you're going to have to make some choices. Do you need those images at full resolution? Probably not. Do you need them to look good on a screen? Yes. So you have to find the middle ground where the images are not pixelated but the file is small enough to send.</p>
+
+<p>I learned that different types of documents need different levels of compression. A legal contract with mostly text can be compressed aggressively. A marketing brochure with full-page photos needs to be treated more gently. A scanned document is its own beast entirely. I used to apply the same approach to everything, and it never worked. Now I think about what the document actually needs before I compress it.</p>
+
+<p>That sounds obvious when I type it out, but it took me a while to actually get it. I was just treating every PDF the same, and then wondering why some looked terrible and others were still too big.</p>
+
+<h3>What I still get wrong sometimes</h3>
+
+<p>Even now, I still make mistakes. Sometimes I compress a document and then realise later that I should have kept one of the images at a higher quality because it was actually important. Usually that happens when I'm in a rush and I just want the file to be small enough to send. I'll open it later on a big screen and think, oh, that could have been better.</p>
+
+<p>There was one time I compressed a proposal with our team photo in it, and the photo ended up looking slightly blurry. I didn't notice at the time because I was on my laptop. Then the client opened it on a big monitor and made a comment about it. They were polite about it, but I felt awful. That photo was supposed to make us look professional. Instead, it looked like we had taken it from a distant security camera.</p>
+
+<p>I also still sometimes forget to check the file size after compressing. I'll think the tool worked, I'll open the file quickly to make sure nothing is broken, and then I'll attach it and send it. Sometimes I find out later that I could have compressed it even more without losing quality, and I sent a file that was still bigger than it needed to be. That's not a disaster, but it is annoying.</p>
+
+<p>And I still have that habit where I don't check the compressed file at all. I just trust the tool. I know that's stupid. I know I should check every time. But sometimes I'm in a hurry, and I just assume it worked. It usually does, but the one time it doesn't is always the worst possible time.</p>
+
+<h3>What I actually do now</h3>
+
+<p>These days I think about compression differently. I don't just think about making the file smaller. I think about making it smaller in the right way. For me, that means keeping the text sharp, keeping the images readable, and making sure the document still looks professional. If it doesn't look professional, there's no point sending it.</p>
+
+<p>I've also learned to be more realistic about file sizes. Not every PDF needs to be tiny. If a document is 15MB and it's full of important images, that's fine. The problem is when a document is 50MB and it shouldn't be. I've gotten better at identifying those situations and handling them before they become a crisis.</p>
+
+<p>One thing I do now is I actually check the images before I compress. If there's a photo that's way too high resolution for what it's doing, I'll reduce it first. Sometimes you can't reduce it in the PDF tool itself, so you do it beforehand. That's time-consuming, but it produces better results.</p>
+
+<p>I also make sure to test the compressed file on different screens. What looks good on my laptop might look terrible on a client's large monitor. So I check it on a few different devices if I can. It adds a few minutes to the process, but it's saved me from sending embarrassing documents more than once.</p>
+
+<p>When I need to reduce file size quickly without ruining the quality, I use <a href="/tools/compress-pdf">PDFly's Compress PDF tool</a>. It's not the flashiest tool out there, but it does one thing well — it makes the file smaller without making it look bad. It preserves the text, keeps the images reasonable, and tells me how much smaller the file actually is. That last part is surprisingly useful. I know exactly what I got, so I can decide if I need to do more or if I can just send it.</p>
+
+<p>That proposal from earlier? The one that took three hours to send? I eventually got it down from 42MB to about 9MB. It took a few tries, and I had to make some decisions about which images to keep at full quality, but it worked. The client got the document, they didn't notice any quality issues, and I stopped trying to send giant files through Gmail like it was going to suddenly start working.</p>
+
+<p>I still think about that moment sometimes, watching the upload fail, knowing I was going to have to redo the whole thing. It's not a fond memory. But it's a useful one, because it reminds me why I stopped hoping for the best and started actually learning how compression works.</p>
     </div>
     <div class="mt-10 pt-6 border-t border-ink-200 dark:border-ink-800 flex items-center gap-3">
       <div class="w-10 h-10 rounded-full bg-gradient-to-br from-forge-400 to-forge-600 flex items-center justify-center text-white font-display font-700 text-sm flex-shrink-0">A</div>
-      <div><p class="text-sm font-display font-600 text-ink-800 dark:text-ink-200">Alex Rivera</p><p class="text-xs text-ink-400">PDFForge Team</p></div>
+      <div><p class="text-sm font-display font-600 text-ink-800 dark:text-ink-200">Alex Rivera</p><p class="text-xs text-ink-400">PDFly Team</p></div>
     </div>
     <div class="mt-8">
-      <a href="../index.html" class="inline-flex items-center gap-1 text-sm text-forge-500 hover:underline">← Back to all tools</a>
+      <a href="/" class="inline-flex items-center gap-1 text-sm text-forge-500 hover:underline">← Back to all tools</a>
     </div>
   </article>
 
-  <footer class="border-t border-ink-200 dark:border-ink-800 py-8 bg-white dark:bg-ink-900">
+  <section class="max-w-2xl mx-auto px-4 mb-8"><!-- RELATED-LINKS-BLOCK -->
+  <div class="p-5 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl">
+    <p class="font-display font-700 text-sm text-ink-800 dark:text-ink-100 mb-3">Related</p>
+    <div class="flex flex-wrap gap-2">
+        <a href="/tools/compress-pdf" class="text-sm px-3 py-1.5 rounded-lg border border-ink-200 dark:border-ink-800 text-ink-500 dark:text-ink-400 hover:text-forge-500 hover:border-forge-400 transition-colors">Try Compress PDF</a>
+        <a href="/business-pdf-tools" class="text-sm px-3 py-1.5 rounded-lg border border-ink-200 dark:border-ink-800 text-ink-500 dark:text-ink-400 hover:text-forge-500 hover:border-forge-400 transition-colors">PDF tools for business</a>
+        <a href="/blog/how-to-compress-pdf" class="text-sm px-3 py-1.5 rounded-lg border border-ink-200 dark:border-ink-800 text-ink-500 dark:text-ink-400 hover:text-forge-500 hover:border-forge-400 transition-colors">Related article</a>
+        <a href="/blog" class="text-sm px-3 py-1.5 rounded-lg border border-ink-200 dark:border-ink-800 text-ink-500 dark:text-ink-400 hover:text-forge-500 hover:border-forge-400 transition-colors">All PDF guides</a>
+        </div>
+  </div>
+</section>
+<footer class="border-t border-ink-200 dark:border-ink-800 py-8 bg-white dark:bg-ink-900">
     <div class="max-w-2xl mx-auto px-4 text-center text-sm text-ink-400">
-      <p>© 2025 <a href="../index.html" class="hover:text-forge-500 transition-colors">PDFForge</a> · <a href="../pages/privacy.html" class="hover:text-forge-500 transition-colors">Privacy</a> · <a href="../pages/terms.html" class="hover:text-forge-500 transition-colors">Terms</a> · <a href="../pages/disclaimer.html" class="hover:text-forge-500 transition-colors">Disclaimer</a></p>
+      <p>© 2026 <a href="/" class="hover:text-forge-500 transition-colors">PDFly</a> · <a href="/pages/about" class="hover:text-forge-500 transition-colors">About</a> · <a href="/pages/privacy" class="hover:text-forge-500 transition-colors">Privacy</a> · <a href="/pages/terms" class="hover:text-forge-500 transition-colors">Terms</a> · <a href="/pages/disclaimer" class="hover:text-forge-500 transition-colors">Disclaimer</a></p>
     </div>
   </footer>
   <script src="../assets/js/main.js"></script>

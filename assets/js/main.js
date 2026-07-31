@@ -1,4 +1,4 @@
-/* ===== PDFForge — main.js ===== */
+/* ===== PDFly — main.js ===== */
 
 (function () {
   const saved = localStorage.getItem('pdfforge-theme');

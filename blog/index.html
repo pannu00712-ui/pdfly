@@ -2,31 +2,45 @@
 <html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" href="../favicon.ico" sizes="any"/>
-  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png"/>
-  <link rel="apple-touch-icon" href="../apple-touch-icon.png"/>
+  <link rel="icon" href="../favicon.ico?v=2" sizes="any"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png?v=2"/>
+  <link rel="icon" type="image/png" sizes="192x192" href="../android-chrome-192.png?v=2"/>
+  <link rel="icon" type="image/png" sizes="512x512" href="../android-chrome-512.png?v=2"/>
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png?v=2"/>
+  <link rel="mask-icon" href="../mask-icon-v2.svg" color="#2563EB"/>
+  <link rel="manifest" href="../site.webmanifest?v=2"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PDF Guides & Tips | PDFly Blog</title>
   <meta name="description" content="Practical guides for working with PDFs — merging, compressing, converting, signing, and securing documents. Free tips from the PDFly team." />
-  <link rel="canonical" href="https://pdfly.uk/blog/index.html" />
+  <link rel="canonical" href="https://pdfly.uk/blog" />
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="PDF Guides & Tips | PDFly Blog"/>
+  <meta property="og:description" content="Practical guides for working with PDFs — merging, compressing, converting, signing, and securing documents. Free tips from the PDFly team."/>
+  <meta property="og:url" content="https://pdfly.uk/blog"/>
+  <meta property="og:image" content="https://pdfly.uk/og-image.png"/>
+  <meta property="og:site_name" content="PDFly"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="PDF Guides & Tips | PDFly Blog"/>
+  <meta name="twitter:description" content="Practical guides for working with PDFs — merging, compressing, converting, signing, and securing documents. Free tips from the PDFly team."/>
+  <meta name="twitter:image" content="https://pdfly.uk/og-image.png"/>
   <meta name="robots" content="index, follow" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>tailwind.config={darkMode:'class',theme:{extend:{fontFamily:{display:['Syne','sans-serif'],body:['DM Sans','sans-serif']},colors:{forge:{50:'#fff7ed',400:'#fb923c',500:'#f97316',600:'#ea580c'},ink:{50:'#f8f7f4',100:'#f0ede6',200:'#e2ddd4',300:'#c9c2b6',400:'#9c9287',500:'#6b6358',700:'#3a342c',800:'#1c1a16',900:'#0e0d0b',950:'#080807'}}}}}</script>
+  <link rel="stylesheet" href="../assets/css/tailwind-built.css"/>
   <link rel="stylesheet" href="../assets/css/main.css" />
+  <script src="https://analytics.ahrefs.com/analytics.js" data-key="VmqStOhNtLiTsE983txKMA" async></script>
 </head>
 <body class="bg-ink-50 dark:bg-ink-950 text-ink-800 dark:text-ink-100 font-body antialiased">
 
   <nav class="fixed top-0 left-0 right-0 z-50 bg-ink-50/90 dark:bg-ink-950/90 backdrop-blur-xl border-b border-ink-200 dark:border-ink-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6"><div class="flex items-center justify-between h-16">
-      <a href="../index.html" class="flex items-center gap-2.5">
-        <div class="w-8 h-8 bg-gradient-to-br from-forge-400 to-forge-600 rounded-lg flex items-center justify-center"><svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg></div>
-        <span class="font-display font-800 text-xl text-ink-900 dark:text-white">PDF<span class="text-forge-500">ly</span></span>
+      <a href="/" class="flex items-center gap-2.5">
+        <svg class="w-8 h-8 rounded-lg" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="40" height="40" rx="11" fill="#2563EB"/><path d="M13 11.5C13 10.6716 13.6716 10 14.5 10H22.5L27 14.5V28.5C27 29.3284 26.3284 30 25.5 30H14.5C13.6716 30 13 29.3284 13 28.5V11.5Z" fill="white"/><path d="M22.5 10L27 14.5H23.5C22.9477 14.5 22.5 14.0523 22.5 13.5V10Z" fill="#BFD3FE"/><rect x="16" y="17" width="3" height="3" rx="0.75" fill="#2563EB"/><rect x="16" y="21.5" width="3" height="3" rx="0.75" fill="#2563EB"/><path d="M20.5 17H23.25C24.2165 17 25 17.7835 25 18.75C25 19.7165 24.2165 20.5 23.25 20.5H20.5V17Z" stroke="#2563EB" stroke-width="1.4" stroke-linejoin="round"/><path d="M20.5 20.5V25" stroke="#2563EB" stroke-width="1.4" stroke-linecap="round"/></svg>
+        <span class="font-display text-xl text-ink-900 dark:text-white"><span class="font-800 text-forge-500">PDF</span><span class="font-600">ly</span></span>
       </a>
       <div class="flex items-center gap-3">
-        <a href="../index.html" class="hidden sm:flex items-center gap-1 text-sm text-ink-400 hover:text-forge-500 transition-colors"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg> All Tools</a>
+        <a href="/" class="hidden sm:flex items-center gap-1 text-sm text-ink-400 hover:text-forge-500 transition-colors"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg> All Tools</a>
         <button id="darkToggle" class="w-9 h-9 rounded-lg flex items-center justify-center text-ink-500 hover:bg-ink-100 dark:hover:bg-ink-800 transition-colors">
           <svg class="w-4 h-4 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
           <svg class="w-4 h-4 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
@@ -42,210 +56,363 @@
       <p class="text-ink-500 dark:text-ink-400">Practical, tested guides for everyday PDF tasks.</p>
     </div>
 
+    <div class="mb-8">
+      <a href="/ai-pdf-tools" class="block p-6 bg-ai/5 border border-ai/20 rounded-2xl hover:border-ai/40 transition-all">
+        <p class="text-xs text-ai font-medium mb-2">✨ AI PDF Tools Hub</p>
+        <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">Chat, Summarize, Translate, Explain & Quiz — All AI PDF Tools in One Place</h2>
+        <p class="text-sm text-ink-500 dark:text-ink-400">Browse every AI-powered PDF tool on PDFly, compare what each one does best, and jump straight into the one you need.</p>
+      </a>
+    </div>
+
     <div class="grid gap-5">
 
-      <a href="how-to-merge-pdf-files.html" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+      <a href="/blog/best-free-pdf-tools" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+        <p class="text-xs text-forge-500 font-medium mb-2">PDF Guide · 6 min read</p>
+        <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">7 Free PDF Tools I Actually Use (And Why I Dropped Adobe)</h2>
+        <p class="text-sm text-ink-500 dark:text-ink-400">After years of paying for Adobe Acrobat, here's what I switched to and why — a hands-on look at the free PDF tools that actually hold up.</p>
+      </a>
+
+      <a href="/blog/how-to-merge-pdf-files" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
         <p class="text-xs text-forge-500 font-medium mb-2">PDF Guide · 4 min read</p>
         <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">How to Merge PDF Files Online for Free</h2>
         <p class="text-sm text-ink-500 dark:text-ink-400">Combine multiple PDFs into one document, keep the right page order, and avoid the privacy pitfalls of server-based mergers.</p>
       </a>
 
-      <a href="how-to-compress-pdf.html" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+      <a href="/blog/how-to-compress-pdf" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
         <p class="text-xs text-forge-500 font-medium mb-2">PDF Guide · 5 min read</p>
         <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">How to Compress a PDF Without Losing Quality</h2>
         <p class="text-sm text-ink-500 dark:text-ink-400">Understand what actually makes PDFs large, and how to shrink file size dramatically without visible quality loss.</p>
       </a>
 
-      <a href="how-to-convert-pdf-to-word.html" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+      <a href="/blog/reduce-pdf-file-size" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+        <p class="text-xs text-forge-500 font-medium mb-2">PDF Guide · 4 min read</p>
+        <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">The Proposal That Took Three Hours to Send</h2>
+        <p class="text-sm text-ink-500 dark:text-ink-400">A 42MB proposal, a Gmail progress bar stuck at 87%, and everything I learned about reducing PDF file size without wrecking the images.</p>
+      </a>
+
+      <a href="/blog/how-to-convert-pdf-to-word" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
         <p class="text-xs text-forge-500 font-medium mb-2">PDF Guide · 4 min read</p>
         <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">How to Convert PDF to Word Online for Free</h2>
         <p class="text-sm text-ink-500 dark:text-ink-400">What to expect from PDF-to-Word conversion, why scanned PDFs need OCR first, and how to clean up the result.</p>
       </a>
 
-      <a href="chat-with-pdf.html" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+      <a href="/blog/chat-with-pdf" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
         <p class="text-xs text-forge-500 font-medium mb-2">AI Guide · 4 min read</p>
         <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">Chat with PDF: Ask Questions and Get Answers From Your Documents</h2>
         <p class="text-sm text-ink-500 dark:text-ink-400">Ask your PDF a question and get a direct, sourced answer instead of scrolling through pages by hand.</p>
       </a>
 
-      <a href="remove-pages-from-pdf.html" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+      <a href="/blog/remove-pages-from-pdf" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
         <p class="text-xs text-forge-500 font-medium mb-2">PDF Guide · 4 min read</p>
         <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">How to Remove Pages From a PDF: Delete Unwanted Content Instantly</h2>
         <p class="text-sm text-ink-500 dark:text-ink-400">Delete blank, duplicate, or unwanted pages from a PDF in a few clicks, without touching the rest of the document.</p>
       </a>
 
-      <a href="rotate-pdf.html" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+      <a href="/blog/rotate-pdf" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
         <p class="text-xs text-forge-500 font-medium mb-2">PDF Guide · 4 min read</p>
         <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">How to Rotate a PDF: Fix Sideways Pages Instantly</h2>
         <p class="text-sm text-ink-500 dark:text-ink-400">Fix sideways or upside-down pages in a scanned or exported PDF without rescanning the whole document.</p>
       </a>
 
-      <a href="split-pdf.html" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+      <a href="/blog/split-pdf" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
         <p class="text-xs text-forge-500 font-medium mb-2">PDF Guide · 4 min read</p>
         <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">How to Split a PDF: Break Large Documents Into Manageable Files</h2>
         <p class="text-sm text-ink-500 dark:text-ink-400">Break a large PDF into smaller files by page range, file size, or every N pages, ready to email or share.</p>
       </a>
 
-      <a href="unlock-pdf.html" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+      <a href="/blog/unlock-pdf" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
         <p class="text-xs text-forge-500 font-medium mb-2">PDF Guide · 4 min read</p>
         <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">How to Unlock a PDF: Remove Password Protection (When You Know the Password)</h2>
         <p class="text-sm text-ink-500 dark:text-ink-400">Remove an open password or editing restrictions from a PDF in seconds, as long as you already know the password.</p>
       </a>
 
-      <a href="word-to-pdf.html" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+      <a href="/blog/word-to-pdf" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
         <p class="text-xs text-forge-500 font-medium mb-2">PDF Guide · 4 min read</p>
         <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">How to Convert Word to PDF: Preserve Your Documents for Sharing</h2>
         <p class="text-sm text-ink-500 dark:text-ink-400">Lock a Word document's formatting into a PDF so fonts, tables, and layout look identical on every device.</p>
       </a>
 
-      <a href="add-page-numbers-to-pdf.html" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+      <a href="/blog/add-page-numbers-to-pdf" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
         <p class="text-xs text-forge-500 font-medium mb-2">PDF Guide · 4 min read</p>
         <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">How to Add Page Numbers to a PDF (Without Breaking Your Flow)</h2>
         <p class="text-sm text-ink-500 dark:text-ink-400">Stamp page numbers onto every page of a PDF in seconds, with control over position, format, and starting page.</p>
       </a>
 
-      <a href="add-watermark-to-pdf.html" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+      <a href="/blog/add-watermark-to-pdf" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
         <p class="text-xs text-forge-500 font-medium mb-2">PDF Guide · 4 min read</p>
         <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">How to Add a Watermark to a PDF (Without Losing Your Mind)</h2>
         <p class="text-sm text-ink-500 dark:text-ink-400">Stamp a text watermark across every page of a PDF to mark drafts, protect confidential documents, or claim ownership.</p>
       </a>
 
-      <a href="crop-pdf.html" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+      <a href="/blog/crop-pdf" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
         <p class="text-xs text-forge-500 font-medium mb-2">PDF Guide · 4 min read</p>
         <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">How to Crop a PDF: Trim Margins, White Space, and Unwanted Areas</h2>
         <p class="text-sm text-ink-500 dark:text-ink-400">Trim excess margins or unwanted areas from PDF pages without permanently deleting the underlying content.</p>
       </a>
 
-      <a href="excel-to-pdf.html" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+      <a href="/blog/excel-to-pdf" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
         <p class="text-xs text-forge-500 font-medium mb-2">PDF Guide · 4 min read</p>
         <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">How to Convert Excel to PDF (And Keep Your Spreadsheet Looking Professional)</h2>
         <p class="text-sm text-ink-500 dark:text-ink-400">Lock a spreadsheet's layout, charts, and formatting into a fixed PDF that looks identical on every device.</p>
       </a>
 
-      <a href="jpg-to-pdf.html" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+      <a href="/blog/jpg-to-pdf" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
         <p class="text-xs text-forge-500 font-medium mb-2">PDF Guide · 4 min read</p>
         <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">How to Convert JPG to PDF: The Easiest Way to Turn Images Into Documents</h2>
         <p class="text-sm text-ink-500 dark:text-ink-400">Turn a batch of photos or scanned images into a single, ordered PDF document in seconds.</p>
       </a>
 
-      <a href="ocr-pdf.html" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+      <a href="/blog/ocr-pdf" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
         <p class="text-xs text-forge-500 font-medium mb-2">AI Guide · 4 min read</p>
         <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">OCR PDF: Turn Scanned Documents Into Searchable Text</h2>
         <p class="text-sm text-ink-500 dark:text-ink-400">Use OCR to turn a scanned PDF's image-only pages into real, searchable, selectable text.</p>
       </a>
 
-      <a href="reorder-pdf-pages.html" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+      <a href="/blog/reorder-pdf-pages" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
         <p class="text-xs text-forge-500 font-medium mb-2">PDF Guide · 4 min read</p>
         <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">How to Reorder PDF Pages: Drag, Drop, and Organize Your Documents</h2>
         <p class="text-sm text-ink-500 dark:text-ink-400">Fix a PDF's page order visually with drag-and-drop instead of cutting and pasting pages by hand.</p>
       </a>
 
-      <a href="pdf-summarizer.html" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+      <a href="/blog/pdf-summarizer" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
         <p class="text-xs text-forge-500 font-medium mb-2">AI Guide · 4 min read</p>
         <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">PDF Summarizer: Get the Gist of Any Document in Seconds</h2>
         <p class="text-sm text-ink-500 dark:text-ink-400">Get an AI-generated summary of a long PDF's main points, supporting details, and conclusion in seconds.</p>
       </a>
 
-      <a href="pdf-to-excel.html" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+      <a href="/blog/pdf-to-excel" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
         <p class="text-xs text-forge-500 font-medium mb-2">PDF Guide · 4 min read</p>
         <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">How to Convert PDF to Excel (Without Retyping Every Row)</h2>
         <p class="text-sm text-ink-500 dark:text-ink-400">Extract tables and data from a PDF straight into an editable spreadsheet instead of retyping everything by hand.</p>
       </a>
 
-      <a href="pdf-translator.html" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+      <a href="/blog/pdf-translator" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
         <p class="text-xs text-forge-500 font-medium mb-2">AI Guide · 4 min read</p>
         <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">PDF Translator: Turn Documents Into Multiple Languages Instantly</h2>
         <p class="text-sm text-ink-500 dark:text-ink-400">Translate an entire PDF into another language while keeping the original layout, fonts, and images intact.</p>
       </a>
 
-      <a href="pdf-to-jpg.html" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+      <a href="/blog/pdf-to-jpg" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
         <p class="text-xs text-forge-500 font-medium mb-2">PDF Guide · 4 min read</p>
         <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">How to Convert PDF to JPG (Without Losing Quality)</h2>
         <p class="text-sm text-ink-500 dark:text-ink-400">Turn each page of a PDF into a high-quality JPG image, ready for presentations, social media, or the web.</p>
       </a>
 
-      <a href="pdf-to-png.html" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+      <a href="/blog/pdf-to-png" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
         <p class="text-xs text-forge-500 font-medium mb-2">PDF Guide · 4 min read</p>
         <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">How to Convert PDF to PNG: Lossless Images for Documents</h2>
         <p class="text-sm text-ink-500 dark:text-ink-400">Turn PDF pages into lossless PNG images that keep text and diagrams pixel-perfect.</p>
       </a>
 
-      <a href="pdf-to-powerpoint.html" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+      <a href="/blog/pdf-to-powerpoint" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
         <p class="text-xs text-forge-500 font-medium mb-2">PDF Guide · 4 min read</p>
         <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">How to Convert PDF to PowerPoint: Turn Documents Into Slides</h2>
         <p class="text-sm text-ink-500 dark:text-ink-400">Turn a fixed PDF report into an editable slide deck, with each page becoming an editable PowerPoint slide.</p>
       </a>
 
-      <a href="png-to-pdf.html" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+      <a href="/blog/png-to-pdf" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
         <p class="text-xs text-forge-500 font-medium mb-2">PDF Guide · 4 min read</p>
         <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">How to Convert PNG to PDF: The Easy Way to Combine Images</h2>
         <p class="text-sm text-ink-500 dark:text-ink-400">Combine a set of PNG images into one ordered, shareable PDF without losing lossless image quality.</p>
       </a>
 
-      <a href="powerpoint-to-pdf.html" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+      <a href="/blog/powerpoint-to-pdf" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
         <p class="text-xs text-forge-500 font-medium mb-2">PDF Guide · 4 min read</p>
         <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">How to Convert PowerPoint to PDF: Share Presentations With Confidence</h2>
         <p class="text-sm text-ink-500 dark:text-ink-400">Lock a PowerPoint presentation's fonts, images, and layout into a PDF that looks the same on every device.</p>
       </a>
 
-      <a href="compare-pdf.html" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+      <a href="/blog/compare-pdf" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
         <p class="text-xs text-forge-500 font-medium mb-2">PDF Guide · 4 min read</p>
         <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">How to Compare Two PDFs: Spot Differences Instantly</h2>
         <p class="text-sm text-ink-500 dark:text-ink-400">Spot every text, image, and formatting difference between two PDF versions without scrolling through both by hand.</p>
       </a>
 
-      <a href="extract-pages-from-pdf.html" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+      <a href="/blog/extract-pages-from-pdf" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
         <p class="text-xs text-forge-500 font-medium mb-2">PDF Guide · 4 min read</p>
         <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">How to Extract Pages From a PDF: Save Only What You Need</h2>
         <p class="text-sm text-ink-500 dark:text-ink-400">Pull just the pages you need into a new PDF while leaving the original document completely untouched.</p>
       </a>
 
-      <a href="html-to-pdf.html" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+      <a href="/blog/html-to-pdf" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
         <p class="text-xs text-forge-500 font-medium mb-2">PDF Guide · 4 min read</p>
         <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">How to Convert HTML to PDF: Save Web Pages as Documents</h2>
         <p class="text-sm text-ink-500 dark:text-ink-400">Save a web page or local HTML file as a clean, formatted PDF for offline reading or archiving.</p>
       </a>
 
-      <a href="how-to-edit-a-pdf.html" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+      <a href="/blog/how-to-edit-a-pdf" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
         <p class="text-xs text-forge-500 font-medium mb-2">PDF Guide · 4 min read</p>
         <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">How to Edit a PDF: Change Text, Add Images, and More</h2>
         <p class="text-sm text-ink-500 dark:text-ink-400">Change text, add images, and annotate a PDF directly, even without access to the original source file.</p>
       </a>
 
-      <a href="pdf-to-text.html" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+      <a href="/blog/pdf-to-text" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
         <p class="text-xs text-forge-500 font-medium mb-2">PDF Guide · 4 min read</p>
         <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">How to Extract Text From a PDF: Turn PDFs Into Plain Text</h2>
         <p class="text-sm text-ink-500 dark:text-ink-400">Pull the raw text out of a PDF into a plain text file, stripped of formatting and images.</p>
       </a>
 
-      <a href="redact-pdf.html" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+      <a href="/blog/redact-pdf" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
         <p class="text-xs text-forge-500 font-medium mb-2">PDF Guide · 4 min read</p>
         <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">How to Redact a PDF: Permanently Remove Sensitive Information</h2>
         <p class="text-sm text-ink-500 dark:text-ink-400">Permanently delete sensitive text from a PDF instead of just covering it with a black box that can be removed.</p>
       </a>
 
-      <a href="repair-pdf.html" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+      <a href="/blog/repair-pdf" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
         <p class="text-xs text-forge-500 font-medium mb-2">PDF Guide · 4 min read</p>
         <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">How to Repair a Corrupted PDF: Fix Damaged Files</h2>
         <p class="text-sm text-ink-500 dark:text-ink-400">Rebuild a corrupted PDF's structure and recover as much of its readable content as possible.</p>
       </a>
 
-      <a href="text-to-pdf.html" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+      <a href="/blog/text-to-pdf" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
         <p class="text-xs text-forge-500 font-medium mb-2">PDF Guide · 4 min read</p>
         <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">How to Convert Text to PDF: Turn Plain Text Into Professional Documents</h2>
         <p class="text-sm text-ink-500 dark:text-ink-400">Turn plain text into a clean, formatted PDF with custom fonts, page size, and margins.</p>
       </a>
 
-      <a href="how-to-protect-pdf-files.html" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+      <a href="/blog/how-to-protect-pdf-files" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
         <p class="text-xs text-forge-500 font-medium mb-2">PDF Guide · 4 min read</p>
         <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">How to Protect a PDF with a Password: Keep Your Documents Secure</h2>
         <p class="text-sm text-ink-500 dark:text-ink-400">Add an open password or permissions restrictions to a PDF so only people you trust can access it.</p>
       </a>
 
-      <a href="how-to-sign-pdf-online.html" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+      <a href="/blog/how-to-sign-pdf-online" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
         <p class="text-xs text-forge-500 font-medium mb-2">PDF Guide · 4 min read</p>
         <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">How to Sign a PDF: Add Your Signature Without Printing or Scanning</h2>
         <p class="text-sm text-ink-500 dark:text-ink-400">Draw, type, or upload a signature and stamp it onto a PDF in seconds, without printing or scanning anything.</p>
+      </a>
+
+      <a href="/blog/pdf-to-zip" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+        <p class="text-xs text-forge-500 font-medium mb-2">PDF Guide · 4 min read</p>
+        <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">How to Convert PDF to ZIP: Archive Multiple PDFs</h2>
+        <p class="text-sm text-ink-500 dark:text-ink-400">Bundle multiple PDFs into a single ZIP archive for easier sharing, backup, and email attachments.</p>
+      </a>
+
+      <a href="/blog/zip-to-pdf" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+        <p class="text-xs text-forge-500 font-medium mb-2">PDF Guide · 4 min read</p>
+        <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">How to Convert ZIP to PDF: Extract and Merge Archived PDFs</h2>
+        <p class="text-sm text-ink-500 dark:text-ink-400">Extract every PDF from a ZIP archive and merge them into one document automatically.</p>
+      </a>
+
+      <a href="/blog/epub-to-pdf" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+        <p class="text-xs text-forge-500 font-medium mb-2">eBook Guide · 5 min read</p>
+        <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">How to Convert EPUB to PDF: eBooks Made Printable</h2>
+        <p class="text-sm text-ink-500 dark:text-ink-400">Turn EPUB eBooks into printable, fixed-layout PDF documents for reading, printing, or annotating.</p>
+      </a>
+
+      <a href="/blog/pdf-to-epub" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+        <p class="text-xs text-forge-500 font-medium mb-2">eBook Guide · 5 min read</p>
+        <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">How to Convert PDF to EPUB: Read PDFs on Any e-Reader</h2>
+        <p class="text-sm text-ink-500 dark:text-ink-400">Turn PDF documents into reflowable EPUB eBooks for Kindle, Kobo, and other e-readers.</p>
+      </a>
+
+
+      <a href="/blog/add-image-to-pdf" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+        <p class="text-xs text-forge-500 font-medium mb-2">PDF Guide · 5 min read</p>
+        <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">How to Add an Image to a PDF</h2>
+        <p class="text-sm text-ink-500 dark:text-ink-400">Insert logos, photos, or signatures into any PDF page. Free, browser-based, with drag-and-drop positioning.</p>
+      </a>
+
+      <a href="/blog/annotate-pdf" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+        <p class="text-xs text-forge-500 font-medium mb-2">PDF Guide · 5 min read</p>
+        <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">How to Annotate a PDF: Add Notes & Comments</h2>
+        <p class="text-sm text-ink-500 dark:text-ink-400">Add sticky notes, text boxes, and comments to any PDF page. Free, browser-based, perfect for feedback and review.</p>
+      </a>
+
+      <a href="/blog/duplicate-pages" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+        <p class="text-xs text-forge-500 font-medium mb-2">PDF Guide · 5 min read</p>
+        <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">How to Duplicate PDF Pages</h2>
+        <p class="text-sm text-ink-500 dark:text-ink-400">Copy specific pages or duplicate an entire PDF multiple times. Free, browser-based, with custom page selection.</p>
+      </a>
+
+      <a href="/blog/explain-pdf" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+        <p class="text-xs text-forge-500 font-medium mb-2">AI Guide · 5 min read</p>
+        <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">Explain PDF with AI: Understand Any Document in Plain Language</h2>
+        <p class="text-sm text-ink-500 dark:text-ink-400">Get an AI-powered explanation of any PDF in plain language. Perfect for research, studying, and quick understanding.</p>
+      </a>
+
+      <a href="/blog/extract-images" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+        <p class="text-xs text-forge-500 font-medium mb-2">PDF Guide · 5 min read</p>
+        <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">How to Extract Images from a PDF</h2>
+        <p class="text-sm text-ink-500 dark:text-ink-400">Extract every image from a PDF and download them as a ZIP. Free, browser-based, with support for JPG and PNG formats.</p>
+      </a>
+
+      <a href="/blog/fill-pdf-forms" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+        <p class="text-xs text-forge-500 font-medium mb-2">PDF Guide · 5 min read</p>
+        <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">How to Fill PDF Forms Online</h2>
+        <p class="text-sm text-ink-500 dark:text-ink-400">Fill PDF forms online for free. Type into form fields, check boxes, and fill out documents instantly. Browser-based, no signup.</p>
+      </a>
+
+      <a href="/blog/flatten-pdf" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+        <p class="text-xs text-forge-500 font-medium mb-2">PDF Guide · 5 min read</p>
+        <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">How to Flatten a PDF</h2>
+        <p class="text-sm text-ink-500 dark:text-ink-400">Flatten a PDF to merge layers, annotations, and form fields into a single uneditable document. Free, browser-based, no signup.</p>
+      </a>
+
+      <a href="/blog/generate-quiz" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+        <p class="text-xs text-forge-500 font-medium mb-2">AI Guide · 5 min read</p>
+        <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">Generate Quiz from PDF — AI-Powered</h2>
+        <p class="text-sm text-ink-500 dark:text-ink-400">Upload a PDF and let AI generate a quiz with multiple-choice questions based on the content. Perfect for students and teachers.</p>
+      </a>
+
+      <a href="/blog/highlight-pdf" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+        <p class="text-xs text-forge-500 font-medium mb-2">PDF Guide · 5 min read</p>
+        <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">How to Highlight Text in a PDF</h2>
+        <p class="text-sm text-ink-500 dark:text-ink-400">Highlight text in any PDF with a yellow highlighter. Free, browser-based, with multiple colors and adjustable opacity.</p>
+      </a>
+
+      <a href="/blog/image-compressor" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+        <p class="text-xs text-forge-500 font-medium mb-2">Image Guide · 5 min read</p>
+        <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">How to Compress Images — Reduce File Size</h2>
+        <p class="text-sm text-ink-500 dark:text-ink-400">Compress JPG, PNG, and WebP images online for free. Reduce file size while maintaining quality. Browser-based, no upload.</p>
+      </a>
+
+      <a href="/blog/image-converter" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+        <p class="text-xs text-forge-500 font-medium mb-2">Image Guide · 5 min read</p>
+        <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">How to Convert Images — PNG to JPG, WebP & More</h2>
+        <p class="text-sm text-ink-500 dark:text-ink-400">Convert images between PNG, JPG, and WebP formats online for free. Batch convert multiple images. Browser-based, no upload.</p>
+      </a>
+
+      <a href="/blog/metadata-editor" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+        <p class="text-xs text-forge-500 font-medium mb-2">PDF Guide · 5 min read</p>
+        <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">How to Edit PDF Metadata</h2>
+        <p class="text-sm text-ink-500 dark:text-ink-400">Edit PDF metadata — change title, author, subject, keywords, and creator. Free, browser-based, no signup.</p>
+      </a>
+
+      <a href="/blog/ocr-image" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+        <p class="text-xs text-forge-500 font-medium mb-2">AI Guide · 5 min read</p>
+        <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">OCR Image — Extract Text from Image</h2>
+        <p class="text-sm text-ink-500 dark:text-ink-400">Extract text from photos, screenshots, and scanned images using AI-powered OCR. Free, browser-based, no signup.</p>
+      </a>
+
+      <a href="/blog/pdf-reader" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+        <p class="text-xs text-forge-500 font-medium mb-2">PDF Guide · 5 min read</p>
+        <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">How to Read PDFs in Browser</h2>
+        <p class="text-sm text-ink-500 dark:text-ink-400">Read PDFs directly in your browser for free. Upload and view PDF documents with page navigation, zoom, and full-screen reading.</p>
+      </a>
+
+      <a href="/blog/remove-blank-pages" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+        <p class="text-xs text-forge-500 font-medium mb-2">PDF Guide · 5 min read</p>
+        <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">How to Remove Blank Pages from PDF</h2>
+        <p class="text-sm text-ink-500 dark:text-ink-400">Automatically detect and remove blank or empty pages from any PDF. Free, browser-based, with adjustable sensitivity.</p>
+      </a>
+
+      <a href="/blog/remove-watermark" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+        <p class="text-xs text-forge-500 font-medium mb-2">PDF Guide · 5 min read</p>
+        <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">How to Remove Watermark from PDF</h2>
+        <p class="text-sm text-ink-500 dark:text-ink-400">Remove watermarks, logos, and text overlays from PDF pages. Free, browser-based, with manual area selection.</p>
+      </a>
+
+      <a href="/blog/rewrite-pdf" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+        <p class="text-xs text-forge-500 font-medium mb-2">AI Guide · 5 min read</p>
+        <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">Rewrite PDF with AI — Paraphrase Tool</h2>
+        <p class="text-sm text-ink-500 dark:text-ink-400">Rewrite and paraphrase PDF content using AI. Improve readability, change tone, and restructure text. Free, browser-based, no signup.</p>
+      </a>
+
+      <a href="/blog/scan-to-pdf" class="block p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl hover:border-forge-400 transition-all">
+        <p class="text-xs text-forge-500 font-medium mb-2">PDF Guide · 5 min read</p>
+        <h2 class="font-display font-700 text-xl text-ink-900 dark:text-white mb-2">How to Scan Documents to PDF</h2>
+        <p class="text-sm text-ink-500 dark:text-ink-400">Convert scanned images or photos of documents into a clean PDF. One image per page, with customizable page size and orientation.</p>
       </a>
 
     </div>
@@ -253,7 +420,7 @@
 
   <footer class="border-t border-ink-200 dark:border-ink-800 py-8 bg-white dark:bg-ink-900">
     <div class="max-w-2xl mx-auto px-4 text-center text-sm text-ink-400">
-      <p>© 2025 <a href="../index.html" class="hover:text-forge-500 transition-colors">PDFly</a> · <a href="../pages/privacy.html" class="hover:text-forge-500 transition-colors">Privacy</a> · <a href="../pages/terms.html" class="hover:text-forge-500 transition-colors">Terms</a> · <a href="../pages/security.html" class="hover:text-forge-500 transition-colors">Security</a> · <a href="../pages/faq.html" class="hover:text-forge-500 transition-colors">FAQ</a></p>
+      <p>© 2026 <a href="/" class="hover:text-forge-500 transition-colors">PDFly</a> · <a href="/pages/privacy" class="hover:text-forge-500 transition-colors">Privacy</a> · <a href="/pages/terms" class="hover:text-forge-500 transition-colors">Terms</a> · <a href="/pages/security" class="hover:text-forge-500 transition-colors">Security</a> · <a href="/pages/faq" class="hover:text-forge-500 transition-colors">FAQ</a></p>
     </div>
   </footer>
 

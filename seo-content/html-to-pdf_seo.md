@@ -1,9 +1,9 @@
-PDFForge — HTML to PDF: SEO Content
+PDFly — HTML to PDF: SEO Content
 Page: pdfly.uk/tools/html-to-pdf
 Tool: HTML to PDF
 
 Meta Title
-Convert HTML to PDF Online — No Upload, Stays on Your Device | PDFForge
+Convert HTML to PDF Online — No Upload, Stays on Your Device | PDFly
 
 Meta Description
 Turn any webpage or HTML file into a PDF, right in your browser. No upload, no server, no account needed. Free forever.
@@ -15,7 +15,7 @@ Sub-headline
 Convert HTML content into a clean PDF in seconds — processed locally, nothing uploaded.
 
 The "Why This Is Different" Intro Block
-Most HTML-to-PDF converters fetch and render your page on their server — meaning your content (even private pages or internal docs) passes through a third party. PDFForge renders and converts entirely in your browser.
+Most HTML-to-PDF converters fetch and render your page on their server — meaning your content (even private pages or internal docs) passes through a third party. PDFly renders and converts entirely in your browser.
 
 How It Works (3 Steps)
 
@@ -64,4 +64,4 @@ Does it support multiple pages?
 Yes, long pages convert into multi-page PDFs automatically.
 
 Closing CTA Block
-Saving a webpage as PDF shouldn't mean sending it through a server. PDFForge converts it right in your browser — fast, private, free.
+Saving a webpage as PDF shouldn't mean sending it through a server. PDFly converts it right in your browser — fast, private, free.

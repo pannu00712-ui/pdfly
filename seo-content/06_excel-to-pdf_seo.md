@@ -1,4 +1,4 @@
-# PDFForge — Excel to PDF Page: SEO Content
+# PDFly — Excel to PDF Page: SEO Content
 **Page:** pdfly.uk/tools/excel-to-pdf
 **Tool:** Excel to PDF
 **Word Count:** ~755 words
@@ -6,7 +6,7 @@
 ---
 
 ## 1. Meta Title
-Excel to PDF Converter Online — No Upload, Stays on Your Device | PDFForge
+Excel to PDF Converter Online — No Upload, Stays on Your Device | PDFly
 
 ## 2. Meta Description
 Convert Excel spreadsheets to PDF directly in your browser. No file upload, no server, no account. Numbers stay private. Free forever.
@@ -25,7 +25,7 @@ Lock your spreadsheet into a shareable PDF without sending it anywhere first.
 
 Spreadsheets are among the most sensitive files people work with — revenue figures, payroll data, client pricing, budgets. When you upload an Excel file to a conversion server, that data passes through infrastructure you don't control, even if only for a few seconds.
 
-PDFForge converts Excel to PDF entirely inside your browser. No file transmission, no server processing, no third party involved. Your spreadsheet — with its formulas, figures, and financials — stays on your device from start to finish. The only thing that moves is the finished PDF, from your browser to your downloads folder.
+PDFly converts Excel to PDF entirely inside your browser. No file transmission, no server processing, no third party involved. Your spreadsheet — with its formulas, figures, and financials — stays on your device from start to finish. The only thing that moves is the finished PDF, from your browser to your downloads folder.
 
 ---
 
@@ -58,7 +58,7 @@ The PDF downloads straight to your device. Each worksheet becomes a page (or mul
 
 Before converting, freeze your column widths and set print areas in Excel (Page Layout → Print Area → Set Print Area) for each sheet you want to include. This gives you much more control over how the PDF pages are laid out — especially for wide spreadsheets that would otherwise get cut off at the edges.
 
-If the resulting PDF is large due to embedded charts or images, run it through **PDFForge Compress PDF** right after — still browser-side, still no upload.
+If the resulting PDF is large due to embedded charts or images, run it through **PDFly Compress PDF** right after — still browser-side, still no upload.
 
 ---
 
@@ -78,16 +78,16 @@ If the resulting PDF is large due to embedded charts or images, run it through *
 Yes. Embedded charts and graphs are included in the PDF output as static images — they look the same as they do in Excel, just non-interactive.
 
 **Does the PDF include all worksheets or just the active one?**
-By default, the active worksheet is converted. If you need multiple sheets, convert them separately and then use **PDFForge Merge PDF** to combine them into one document.
+By default, the active worksheet is converted. If you need multiple sheets, convert them separately and then use **PDFly Merge PDF** to combine them into one document.
 
 **Can I convert .xls files (older Excel format)?**
-PDFForge works with .xlsx files. If you have an older .xls file, open it in Excel or Google Sheets and save as .xlsx, then convert.
+PDFly works with .xlsx files. If you have an older .xls file, open it in Excel or Google Sheets and save as .xlsx, then convert.
 
 **Will formulas be visible in the PDF, or just the calculated values?**
 The PDF shows calculated values — what you see on screen — not the underlying formulas. Exactly what you'd want when sharing with clients or management.
 
 **Is there a row or column limit for conversion?**
-No limit set by PDFForge. Very large spreadsheets (thousands of rows) may take a few extra seconds to process in-browser, but will convert fully.
+No limit set by PDFly. Very large spreadsheets (thousands of rows) may take a few extra seconds to process in-browser, but will convert fully.
 
 ---
 
@@ -95,4 +95,4 @@ No limit set by PDFForge. Very large spreadsheets (thousands of rows) may take a
 
 Financial data, pricing tables, payroll sheets — these aren't files that should pass through a stranger's server for a format conversion.
 
-PDFForge converts Excel to PDF right in your browser. Private by design, free by default. Drop your .xlsx above and get your PDF.
+PDFly converts Excel to PDF right in your browser. Private by design, free by default. Drop your .xlsx above and get your PDF.

@@ -1,12 +1,12 @@
-/* ===== PDFForge — main.css ===== */
+/* ===== PDFly — main.css ===== */
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap');
 
 *, *::before, *::after { box-sizing: border-box; }
 
 :root {
-  --forge-50: #fff7ed; --forge-100: #ffedd5;
-  --forge-400: #fb923c; --forge-500: #f97316;
-  --forge-600: #ea580c; --forge-700: #c2410c;
+  --forge-50: #eff6ff; --forge-100: #dbeafe;
+  --forge-400: #2563eb; --forge-500: #2563eb;
+  --forge-600: #1d4ed8; --forge-700: #1e40af;
   --ink-50: #f8f7f4; --ink-100: #f0ede6;
   --ink-200: #e2ddd4; --ink-300: #c9c2b6;
   --ink-400: #9c9287; --ink-500: #6b6358;
@@ -22,6 +22,8 @@
 ::-webkit-scrollbar-thumb { background: var(--ink-200); border-radius: 3px; }
 .dark ::-webkit-scrollbar-thumb { background: #2a2820; }
 
+.hidden { display: none !important; }
+
 html { scroll-behavior: smooth; }
 body { font-family: 'DM Sans', sans-serif; -webkit-font-smoothing: antialiased; }
 
@@ -30,7 +32,7 @@ body { font-family: 'DM Sans', sans-serif; -webkit-font-smoothing: antialiased; 
   background: linear-gradient(180deg, var(--forge-50) 0%, transparent 100%);
   position: relative; overflow: hidden;
 }
-.dark .tool-hero { background: linear-gradient(180deg, rgba(249,115,22,.06) 0%, transparent 100%); }
+.dark .tool-hero { background: linear-gradient(180deg, rgba(37,99,235,.06) 0%, transparent 100%); }
 
 .step-pill {
   display: inline-flex; align-items: center; gap: 6px;
@@ -51,9 +53,9 @@ body { font-family: 'DM Sans', sans-serif; -webkit-font-smoothing: antialiased; 
 .dark .drop-zone { background: rgba(255,255,255,.03); border-color: rgba(255,255,255,.1); }
 .drop-zone:hover, .drop-zone.drag-over {
   border-color: var(--forge-500); background: var(--forge-50);
-  transform: scale(1.005); box-shadow: 0 0 0 4px rgba(249,115,22,.08);
+  transform: scale(1.005); box-shadow: 0 0 0 4px rgba(37,99,235,.08);
 }
-.dark .drop-zone:hover, .dark .drop-zone.drag-over { background: rgba(249,115,22,.06); border-color: var(--forge-500); }
+.dark .drop-zone:hover, .dark .drop-zone.drag-over { background: rgba(37,99,235,.06); border-color: var(--forge-500); }
 
 .file-item {
   display: flex; align-items: center; gap: 12px; padding: 12px 14px;
@@ -63,7 +65,7 @@ body { font-family: 'DM Sans', sans-serif; -webkit-font-smoothing: antialiased; 
 .dark .file-item { background: rgba(255,255,255,.04); border-color: rgba(255,255,255,.08); }
 .file-item:hover { box-shadow: var(--shadow); }
 .file-item.drag-over { border-color: var(--forge-500); background: var(--forge-50); }
-.dark .file-item.drag-over { background: rgba(249,115,22,.08); }
+.dark .file-item.drag-over { background: rgba(37,99,235,.08); }
 
 .file-item-remove {
   padding: 4px; border-radius: 6px; color: var(--ink-400);
@@ -77,11 +79,11 @@ body { font-family: 'DM Sans', sans-serif; -webkit-font-smoothing: antialiased; 
   background: var(--ink-50); transition: all .2s; font-family: 'DM Sans', sans-serif; outline: none;
 }
 .dark .range-input { background: rgba(255,255,255,.06); border-color: rgba(255,255,255,.1); color: #f0ede6; }
-.range-input:focus { border-color: var(--forge-500); box-shadow: 0 0 0 3px rgba(249,115,22,.12); }
+.range-input:focus { border-color: var(--forge-500); box-shadow: 0 0 0 3px rgba(37,99,235,.12); }
 
 input[type="range"] { -webkit-appearance: none; width: 100%; height: 6px; border-radius: 3px; background: var(--ink-200); outline: none; cursor: pointer; }
 .dark input[type="range"] { background: rgba(255,255,255,.12); }
-input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; width: 18px; height: 18px; border-radius: 50%; background: var(--forge-500); cursor: pointer; box-shadow: 0 2px 8px rgba(249,115,22,.4); transition: transform .15s; }
+input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; width: 18px; height: 18px; border-radius: 50%; background: var(--forge-500); cursor: pointer; box-shadow: 0 2px 8px rgba(37,99,235,.4); transition: transform .15s; }
 input[type="range"]::-webkit-slider-thumb:hover { transform: scale(1.2); }
 
 .btn-primary {
@@ -89,9 +91,9 @@ input[type="range"]::-webkit-slider-thumb:hover { transform: scale(1.2); }
   background: linear-gradient(135deg, var(--forge-500), var(--forge-600)); color: white;
   font-family: 'Syne', sans-serif; font-weight: 700; font-size: 14px; border-radius: var(--radius-sm);
   border: none; cursor: pointer; transition: all .2s; letter-spacing: .2px;
-  box-shadow: 0 4px 16px rgba(249,115,22,.3); text-decoration: none;
+  box-shadow: 0 4px 16px rgba(37,99,235,.3); text-decoration: none;
 }
-.btn-primary:hover { transform: translateY(-1px); box-shadow: 0 6px 24px rgba(249,115,22,.4); background: linear-gradient(135deg, var(--forge-400), var(--forge-500)); }
+.btn-primary:hover { transform: translateY(-1px); box-shadow: 0 6px 24px rgba(37,99,235,.4); background: linear-gradient(135deg, var(--forge-400), var(--forge-500)); }
 .btn-primary:active { transform: translateY(0); }
 .btn-primary:disabled { opacity: .6; cursor: not-allowed; transform: none; }
 
@@ -126,6 +128,9 @@ input[type="range"]::-webkit-slider-thumb:hover { transform: scale(1.2); }
 .dark .ad-slot { background: rgba(255,255,255,.02); border-color: rgba(255,255,255,.06); color: rgba(255,255,255,.2); }
 .ad-leaderboard { width: 100%; height: 90px; }
 .ad-rectangle { width: 100%; height: 250px; }
+.ad-in-content { width: 100%; min-height: 250px; flex-direction: column; gap: 4px; padding: 8px; }
+.ad-skyscraper { width: 100%; min-height: 600px; flex-direction: column; gap: 4px; padding: 8px; }
+.ad-footer { width: 100%; height: 60px; }
 
 .faq-item { border-bottom: 1px solid var(--ink-100); padding: 20px 0; }
 .dark .faq-item { border-color: rgba(255,255,255,.06); }

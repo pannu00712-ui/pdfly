@@ -1,10 +1,10 @@
-PDFForge — Add Watermark: SEO Content
+PDFly — Add Watermark: SEO Content
 Page: pdfly.uk/tools/add-watermark
 Tool: Add Watermark
 Word Count: ~650 words
 
 Meta Title
-Add Watermark to PDF Online — No Upload, Stays on Your Device | PDFForge
+Add Watermark to PDF Online — No Upload, Stays on Your Device | PDFly
 
 Meta Description
 Stamp text watermarks on every PDF page, right in your browser. No upload, no server, no account needed. Free forever.
@@ -16,7 +16,7 @@ Sub-headline
 Add a text watermark across every page in seconds — your browser handles it, your file never leaves your device.
 
 The "Why This Is Different" Intro Block
-Watermarking usually means uploading your draft, contract, or report so a server can stamp it. PDFForge stamps the watermark directly in your browser — your file never touches an external server, even while marking it "Confidential" or "Draft."
+Watermarking usually means uploading your draft, contract, or report so a server can stamp it. PDFly stamps the watermark directly in your browser — your file never touches an external server, even while marking it "Confidential" or "Draft."
 
 How It Works (3 Steps)
 
@@ -40,7 +40,7 @@ HR/finance: Stamp "Confidential" across internal salary or audit reports.
 Personal documents: Watermark a scanned ID copy with "For [purpose] only" before submitting it online.
 
 Pro Tip 💡
-Use lower opacity (20-30%) so the watermark doesn't obscure text underneath. Pair with PDFForge Protect PDF afterward if the file also needs a password.
+Use lower opacity (20-30%) so the watermark doesn't obscure text underneath. Pair with PDFly Protect PDF afterward if the file also needs a password.
 
 Common Mistakes to Avoid
 
@@ -68,6 +68,6 @@ Is there a limit to text length?
 No hard limit, though shorter text looks cleaner across pages.
 
 Closing CTA Block
-Marking your PDF shouldn't mean uploading it first. PDFForge watermarks it right in your browser — fast, private, free.
+Marking your PDF shouldn't mean uploading it first. PDFly watermarks it right in your browser — fast, private, free.
 
 Ready? Drop your file above and add your watermark.

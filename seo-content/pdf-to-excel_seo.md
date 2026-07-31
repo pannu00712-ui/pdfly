@@ -1,9 +1,9 @@
-PDFForge — PDF to Excel: SEO Content
+PDFly — PDF to Excel: SEO Content
 Page: pdfly.uk/tools/pdf-to-excel
 Tool: PDF to Excel
 
 Meta Title
-Convert PDF to Excel Online — No Upload, Stays on Your Device | PDFForge
+Convert PDF to Excel Online — No Upload, Stays on Your Device | PDFly
 
 Meta Description
 Extract tables from PDF into an editable XLSX file, right in your browser. No upload, no server, no account needed.
@@ -15,7 +15,7 @@ Sub-headline
 Extract tabular data from any PDF into a working spreadsheet — processed locally.
 
 The "Why This Is Different" Intro Block
-Financial reports and data tables are exactly the kind of file you don't want sitting on a stranger's server. PDFForge extracts tables directly in your browser, so spreadsheets and numbers stay private throughout.
+Financial reports and data tables are exactly the kind of file you don't want sitting on a stranger's server. PDFly extracts tables directly in your browser, so spreadsheets and numbers stay private throughout.
 
 How It Works (3 Steps)
 
@@ -64,4 +64,4 @@ Does formatting like bold/colors carry over?
 Basic formatting only; complex styling may not transfer fully.
 
 Closing CTA Block
-Getting your data back into Excel shouldn't mean uploading it somewhere first. PDFForge extracts it right in your browser — fast, private, free.
+Getting your data back into Excel shouldn't mean uploading it somewhere first. PDFly extracts it right in your browser — fast, private, free.

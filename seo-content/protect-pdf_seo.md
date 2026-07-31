@@ -1,9 +1,9 @@
-PDFForge — Protect PDF: SEO Content
+PDFly — Protect PDF: SEO Content
 Page: pdfly.uk/tools/protect-pdf
 Tool: Protect PDF
 
 Meta Title
-Protect PDF with Password Online — No Upload, Stays on Your Device | PDFForge
+Protect PDF with Password Online — No Upload, Stays on Your Device | PDFly
 
 Meta Description
 Add password encryption to any PDF, right in your browser. No upload, no server, no account needed. Free forever.
@@ -15,7 +15,7 @@ Sub-headline
 Add a password to your PDF in seconds — encryption happens locally, nothing is uploaded.
 
 The "Why This Is Different" Intro Block
-It's ironic to upload a sensitive file to a server just to make it "secure" with a password. PDFForge encrypts your PDF entirely in your browser, so the file is protected without ever being exposed during the process.
+It's ironic to upload a sensitive file to a server just to make it "secure" with a password. PDFly encrypts your PDF entirely in your browser, so the file is protected without ever being exposed during the process.
 
 How It Works (3 Steps)
 
@@ -36,7 +36,7 @@ HR/finance: Protect salary slips or sensitive reports shared internally.
 Personal documents: Add a password to a scanned ID before storing it in cloud backup.
 
 Pro Tip 💡
-Use a password you'll remember or store securely — if lost, you'll need the PDFForge Unlock PDF tool's correct password, since protected files without it can't be opened.
+Use a password you'll remember or store securely — if lost, you'll need the PDFly Unlock PDF tool's correct password, since protected files without it can't be opened.
 
 Common Mistakes to Avoid
 
@@ -52,7 +52,7 @@ What encryption standard is used?
 Standard PDF password encryption, widely compatible with PDF readers.
 
 Can I remove the password later?
-Yes, using the PDFForge Unlock PDF tool with the correct password.
+Yes, using the PDFly Unlock PDF tool with the correct password.
 
 Will this prevent printing or copying too?
 Depending on settings chosen, you can restrict printing/copying separately from the open password.
@@ -64,4 +64,4 @@ Does this work on already-protected PDFs?
 You'll need to unlock it first before adding a new password.
 
 Closing CTA Block
-Securing your PDF shouldn't mean uploading it to get it secured. PDFForge protects it right in your browser — fast, private, free.
+Securing your PDF shouldn't mean uploading it to get it secured. PDFly protects it right in your browser — fast, private, free.
