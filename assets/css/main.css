@@ -124,8 +124,6 @@ input[type="range"]::-webkit-slider-thumb:hover { transform: scale(1.2); }
 @keyframes toastIn { from { opacity: 0; transform: translateX(20px) scale(.95); } to { opacity: 1; transform: translateX(0) scale(1); } }
 @keyframes toastOut { from { opacity: 1; transform: translateX(0) scale(1); } to { opacity: 0; transform: translateX(20px) scale(.95); } }
 
-.ad-slot { display: flex; align-items: center; justify-content: center; border-radius: var(--radius-sm); border: 1px dashed var(--ink-200); background: var(--ink-50); color: var(--ink-300); font-size: 11px; font-family: 'Syne', sans-serif; letter-spacing: .5px; text-transform: uppercase; }
-.dark .ad-slot { background: rgba(255,255,255,.02); border-color: rgba(255,255,255,.06); color: rgba(255,255,255,.2); }
 .ad-leaderboard { width: 100%; height: 90px; }
 .ad-rectangle { width: 100%; height: 250px; }
 .ad-in-content { width: 100%; min-height: 250px; flex-direction: column; gap: 4px; padding: 8px; }
