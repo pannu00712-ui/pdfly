@@ -13,7 +13,7 @@
   <link rel="manifest" href="../site.webmanifest?v=2"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Word to PDF Converter Online Free — DOCX to PDF | PDFly</title>
-  <meta name="description" content="Convert Word DOCX documents to PDF online for free. Upload your .docx file and download a PDF instantly. No signup, no watermark, browser-based." />
+  <meta name="description" content="Convert Word DOCX documents to PDF online for free. Upload your .docx file and download a PDF instantly. Stays 100% on your device — no signup." />
 <link rel="canonical" href="https://pdfly.uk/tools/word-to-pdf" />
   <meta property="og:type" content="website"/>
   <meta property="og:title" content="Word to PDF Converter Online Free — DOCX to PDF | PDFly"/>
@@ -53,57 +53,64 @@
     </div></div>
   </nav>
 
-  <div class="tool-hero">
-    <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
-      <div class="absolute top-16 left-1/3 w-72 h-72 bg-cyan-400/10 rounded-full blur-3xl"></div>
-    </div>
-    <div class="relative max-w-2xl mx-auto px-4">
-      <div class="step-pill">📄 DOCX Converter</div>
-      <h1 class="font-display font-800 text-4xl sm:text-5xl text-ink-900 dark:text-white mb-3">Word to PDF</h1>
-      <p class="text-ink-500 dark:text-ink-400 text-lg max-w-lg mx-auto">Convert Microsoft Word .docx files to PDF. Preserves text content and basic formatting.</p>
-  <div class="flex items-center justify-center gap-4 mt-5 flex-wrap">
-    <div class="flex items-center gap-2 text-sm font-medium text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-800 px-4 py-2 rounded-full">
-      <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-      Your file never leaves your device
-    </div>
-    <div class="flex items-center gap-2 text-sm font-medium text-blue-700 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 px-4 py-2 rounded-full">
-      <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
-      100% Browser-based
-    </div>
-    <div class="flex items-center gap-2 text-sm font-medium text-purple-700 dark:text-purple-400 bg-purple-50 dark:bg-purple-900/20 border border-purple-200 dark:border-purple-800 px-4 py-2 rounded-full">
-      <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"/></svg>
-      No signup required
-    </div>
-  </div>
+  <div class="tool-hero-v2">
+    <div class="hero-blob" style="top:-60px;left:8%;width:280px;height:280px;background:rgba(37,99,235,.14)" aria-hidden="true"></div>
+    <div class="hero-blob" style="top:10px;right:6%;width:220px;height:220px;background:rgba(124,58,237,.12)" aria-hidden="true"></div>
+    <div class="hero-float-icon text-3xl" style="top:64px;left:9%" aria-hidden="true">📝</div>
+    <div class="hero-float-icon delay-1 text-3xl" style="top:100px;right:11%" aria-hidden="true">📄</div>
+    <div class="hero-float-icon delay-2 text-2xl" style="bottom:14px;left:16%" aria-hidden="true">✨</div>
 
+    <div class="relative max-w-2xl mx-auto px-4">
+      <div class="step-pill">📄 DOCX → PDF Converter</div>
+      <h1 class="font-display font-800 text-4xl sm:text-5xl text-ink-900 dark:text-white mb-3">Word to PDF</h1>
+      <p class="text-ink-500 dark:text-ink-400 text-lg max-w-md mx-auto mb-8">Convert Word documents to high-quality PDFs in seconds — directly in your browser.</p>
+
+      <!-- Drop Zone -->
+      <div id="dropZone" class="drop-zone-v2 max-w-xl mx-auto">
+        <input type="file" id="fileInput" class="hidden" accept=".docx,application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+        <div class="pointer-events-none">
+          <div class="drop-zone-v2-icon">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+            </svg>
+          </div>
+          <p class="font-display font-700 text-ink-800 dark:text-white text-lg mb-1">Drop your Word (.docx) file here</p>
+          <p class="text-sm text-ink-400 mb-5">or click to browse</p>
+          <span class="btn-primary px-6 py-3 text-sm">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+            Choose Word File
+          </span>
+        </div>
+      </div>
+
+      <div class="hero-badges-row">
+        <span class="hero-badge-chip"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>Local Processing</span>
+        <span class="hero-badge-chip"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>No Signup</span>
+        <span class="hero-badge-chip"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>Secure</span>
+        <span class="hero-badge-chip"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>Free Forever</span>
+      </div>
     </div>
   </div>
 
   
   <main class="tool-section">
 
+    <!-- Why choose PDFly -->
+    <div class="feature-strip mb-6">
+      <div class="feature-strip-item"><span class="emoji">⚡</span><p>Fast</p></div>
+      <div class="feature-strip-item"><span class="emoji">🔒</span><p>Secure</p></div>
+      <div class="feature-strip-item"><span class="emoji">📄</span><p>Accurate</p></div>
+      <div class="feature-strip-item"><span class="emoji">💯</span><p>Free</p></div>
+    </div>
+
     <!-- Important note about browser limitations -->
-    <div class="mb-6 p-4 bg-blue-50 dark:bg-blue-900/10 border border-blue-200 dark:border-blue-900/30 rounded-xl">
+    <div class="mb-6 p-4 bg-blue-50 dark:bg-blue-900/10 border-l-4 border border-blue-300 dark:border-blue-900/30 rounded-xl">
       <div class="flex gap-3">
-        <svg class="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        <svg class="w-6 h-6 text-blue-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
         <div>
           <p class="text-sm font-display font-600 text-blue-700 dark:text-blue-300 mb-0.5">Browser-based conversion</p>
           <p class="text-xs text-blue-600 dark:text-blue-400 leading-relaxed">This tool extracts and formats text from your .docx file into a clean PDF. Complex layouts with images and tables render as structured text. For pixel-perfect conversion, use Microsoft Word's built-in "Save as PDF".</p>
         </div>
-      </div>
-    </div>
-
-    <!-- Drop Zone -->
-    <div id="dropZone" class="drop-zone mb-6">
-      <input type="file" id="fileInput" class="hidden" accept=".docx,application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
-      <div class="pointer-events-none">
-        <div class="w-16 h-16 mx-auto mb-4 rounded-2xl bg-cyan-100 dark:bg-cyan-900/30 flex items-center justify-center">
-          <svg class="w-8 h-8 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
-          </svg>
-        </div>
-        <p class="font-display font-600 text-ink-700 dark:text-ink-300 text-lg mb-1">Drop your .docx file here</p>
-        <p class="text-sm text-ink-400">Microsoft Word documents only · .docx format</p>
       </div>
     </div>
 
@@ -236,6 +243,7 @@
 <footer class="border-t border-ink-200 dark:border-ink-800 py-8 mt-4 bg-white dark:bg-ink-900">
     <div class="max-w-2xl mx-auto px-4 text-center text-sm text-ink-400">
       <p>© 2026 <a href="/" class="hover:text-forge-500 transition-colors">PDFly</a> · <a href="/pages/about" class="hover:text-forge-500 transition-colors">About</a> · <a href="/pages/privacy" class="hover:text-forge-500 transition-colors">Privacy</a> · <a href="/pages/terms" class="hover:text-forge-500 transition-colors">Terms</a> · <a href="/pages/disclaimer" class="hover:text-forge-500 transition-colors">Disclaimer</a></p>
+      <p class="mt-3 text-xs text-ink-400">Processing happens inside your browser whenever supported by this tool. If a feature requires server processing (such as AI or OCR), it is clearly indicated on the tool page before processing begins.</p>
     </div>
   </footer>
 

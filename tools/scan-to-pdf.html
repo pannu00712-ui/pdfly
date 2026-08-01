@@ -1,229 +1,204 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+
+<html class="scroll-smooth" lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="../favicon.ico?v=2" sizes="any"/>
-  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png?v=2"/>
-  <link rel="icon" type="image/png" sizes="192x192" href="../android-chrome-192.png?v=2"/>
-  <link rel="icon" type="image/png" sizes="512x512" href="../android-chrome-512.png?v=2"/>
-  <link rel="apple-touch-icon" href="../apple-touch-icon.png?v=2"/>
-  <link rel="mask-icon" href="../mask-icon-v2.svg" color="#2563EB"/>
-  <link rel="manifest" href="../site.webmanifest?v=2"/>
-  <title>Scan to PDF — Convert Scanned Images to PDF Free | PDFly</title>
-  <meta name="description" content="Convert scanned images (JPG, PNG) to a clean PDF document online for free. Perfect for digitizing paper documents. Browser-based, no upload." />
-  <meta property="og:type" content="website"/>
-  <meta property="og:title" content="Scan to PDF — Convert Scanned Images to PDF Free"/>
-  <meta property="og:description" content="Convert scanned images (JPG, PNG) to a clean PDF document online for free. Perfect for digitizing paper documents. Browser-based, no upload."/>
-  <meta property="og:url" content="https://pdfly.uk/tools/scan-to-pdf"/>
-  <meta property="og:image" content="https://pdfly.uk/og-image.png"/>
-  <meta property="og:site_name" content="PDFly"/>
-  <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:title" content="Scan to PDF — Convert Scanned Images to PDF Free"/>
-  <meta name="twitter:description" content="Convert scanned images (JPG, PNG) to a clean PDF document online for free. Perfect for digitizing paper documents. Browser-based, no upload."/>
-  <meta name="twitter:image" content="https://pdfly.uk/og-image.png"/>
-<link rel="canonical" href="https://pdfly.uk/tools/scan-to-pdf" />
-  <meta name="robots" content="index, follow" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../assets/css/tailwind-built.css"/>
-  <link rel="stylesheet" href="../assets/css/main.css" />
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Scan to PDF — PDFly","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Convert scanned images to PDF online for free. Browser-based, private, no signup.","url":"https://pdfly.uk/tools/scan-to-pdf.html"}</script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="../favicon.ico?v=2" rel="icon" sizes="any"/>
+<link href="../favicon-32x32.png?v=2" rel="icon" sizes="32x32" type="image/png"/>
+<link href="../android-chrome-192.png?v=2" rel="icon" sizes="192x192" type="image/png"/>
+<link href="../android-chrome-512.png?v=2" rel="icon" sizes="512x512" type="image/png"/>
+<link href="../apple-touch-icon.png?v=2" rel="apple-touch-icon"/>
+<link color="#2563EB" href="../mask-icon-v2.svg" rel="mask-icon"/>
+<link href="../site.webmanifest?v=2" rel="manifest"/>
+<title>Scan to PDF — Convert Scanned Images to PDF Free | PDFly</title>
+<meta content="Convert scanned images (JPG, PNG) to a clean PDF document online for free. Perfect for digitizing paper documents. Stays 100% on your device." name="description"/>
+<meta content="website" property="og:type"/>
+<meta content="Scan to PDF — Convert Scanned Images to PDF Free" property="og:title"/>
+<meta content="Convert scanned images (JPG, PNG) to a clean PDF document online for free. Perfect for digitizing paper documents. Browser-based, no upload." property="og:description"/>
+<meta content="https://pdfly.uk/tools/scan-to-pdf" property="og:url"/>
+<meta content="https://pdfly.uk/og-image.png" property="og:image"/>
+<meta content="PDFly" property="og:site_name"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Scan to PDF — Convert Scanned Images to PDF Free" name="twitter:title"/>
+<meta content="Convert scanned images (JPG, PNG) to a clean PDF document online for free. Perfect for digitizing paper documents. Browser-based, no upload." name="twitter:description"/>
+<meta content="https://pdfly.uk/og-image.png" name="twitter:image"/>
+<link href="https://pdfly.uk/tools/scan-to-pdf" rel="canonical"/>
+<meta content="index, follow" name="robots"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&amp;family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&amp;display=swap" rel="stylesheet"/>
+<link href="../assets/css/tailwind-built.css" rel="stylesheet"/>
+<link href="../assets/css/main.css" rel="stylesheet"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Scan to PDF — PDFly","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Convert scanned images to PDF online for free. Browser-based, private, no signup.","url":"https://pdfly.uk/tools/scan-to-pdf.html"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"How to convert scanned images to PDF","step":[{"@type":"HowToStep","name":"Upload your scanned images","text":"Drop one or more JPG, PNG, or WebP images into the tool, or click to browse."},{"@type":"HowToStep","name":"Choose page settings","text":"Pick a page size (A4, Letter, or Fit to image) and orientation."},{"@type":"HowToStep","name":"Convert and download","text":"Click Convert to PDF and download the result. Each image becomes one page, in the order added."}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is Scan to PDF free?","acceptedAnswer":{"@type":"Answer","text":"Yes, converting scanned images to PDF is free on PDFly, with no signup required."}},{"@type":"Question","name":"Are my images uploaded to a server?","acceptedAnswer":{"@type":"Answer","text":"No. The conversion runs entirely in your browser using the pdf-lib library. Images are read and embedded into the PDF locally and never sent anywhere."}},{"@type":"Question","name":"What's the difference between page sizes?","acceptedAnswer":{"@type":"Answer","text":"A4 and Letter place your image on a standard fixed-size page, scaled to fit with a small margin. \"Fit to image\" instead creates a page sized to match the image itself, so there's no wasted white space or scaling."}},{"@type":"Question","name":"Will the text in my scanned images be searchable?","acceptedAnswer":{"@type":"Answer","text":"No. This tool embeds each image as a picture on the page \u2014 it does not read or recognize any text. For a searchable PDF, run the result through OCR PDF afterward."}},{"@type":"Question","name":"Can I reorder the pages before converting?","acceptedAnswer":{"@type":"Answer","text":"Images are added to the PDF in the order you upload them. Select and upload your files in the order you want them to appear as pages."}},{"@type":"Question","name":"What image formats are supported?","acceptedAnswer":{"@type":"Answer","text":"JPG/JPEG and PNG embed directly. Other formats like WebP are converted automatically during the process."}}]}</script>
-  <script src="https://analytics.ahrefs.com/analytics.js" data-key="VmqStOhNtLiTsE983txKMA" async></script>
+<script async="" data-key="VmqStOhNtLiTsE983txKMA" src="https://analytics.ahrefs.com/analytics.js"></script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://pdfly.uk"},{"@type":"ListItem","position":2,"name":"Scan to PDF","item":"https://pdfly.uk/tools/scan-to-pdf"}]}</script>
 </head>
 <body class="bg-ink-50 dark:bg-ink-950 text-ink-800 dark:text-ink-100 font-body antialiased">
+<nav class="fixed top-0 left-0 right-0 z-50 bg-ink-50/90 dark:bg-ink-950/90 backdrop-blur-xl border-b border-ink-200 dark:border-ink-800">
+<div class="max-w-7xl mx-auto px-4 sm:px-6"><div class="flex items-center justify-between h-16">
+<a class="flex items-center gap-2.5" href="/">
+<svg aria-hidden="true" class="w-8 h-8 rounded-lg" fill="none" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><rect fill="#2563EB" height="40" rx="11" width="40"></rect><path d="M13 11.5C13 10.6716 13.6716 10 14.5 10H22.5L27 14.5V28.5C27 29.3284 26.3284 30 25.5 30H14.5C13.6716 30 13 29.3284 13 28.5V11.5Z" fill="white"></path><path d="M22.5 10L27 14.5H23.5C22.9477 14.5 22.5 14.0523 22.5 13.5V10Z" fill="#BFD3FE"></path><rect fill="#2563EB" height="3" rx="0.75" width="3" x="16" y="17"></rect><rect fill="#2563EB" height="3" rx="0.75" width="3" x="16" y="21.5"></rect><path d="M20.5 17H23.25C24.2165 17 25 17.7835 25 18.75C25 19.7165 24.2165 20.5 23.25 20.5H20.5V17Z" stroke="#2563EB" stroke-linejoin="round" stroke-width="1.4"></path><path d="M20.5 20.5V25" stroke="#2563EB" stroke-linecap="round" stroke-width="1.4"></path></svg>
+<span class="font-display text-xl text-ink-900 dark:text-white"><span class="font-800 text-forge-500">PDF</span><span class="font-600">ly</span></span>
+</a>
+<div class="flex items-center gap-3">
+<a class="hidden sm:flex items-center gap-1 text-sm text-ink-400 hover:text-forge-500 transition-colors" href="/"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M10 19l-7-7m0 0l7-7m-7 7h18" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg> All Tools</a>
+<button class="w-9 h-9 rounded-lg flex items-center justify-center text-ink-500 hover:bg-ink-100 dark:hover:bg-ink-800 transition-colors" id="darkToggle">
+<svg class="w-4 h-4 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<svg class="w-4 h-4 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+</div></div>
+</nav>
+<div class="tool-hero-v2">
+<div aria-hidden="true" class="hero-blob" style="top:-60px;left:8%;width:280px;height:280px;background:rgba(37,99,235,.14)"></div>
+<div aria-hidden="true" class="hero-blob" style="top:10px;right:6%;width:220px;height:220px;background:rgba(124,58,237,.12)"></div>
+<div class="relative max-w-2xl mx-auto px-4">
+<div class="step-pill">📄 Scan to PDF</div>
+<h1 class="font-display font-800 text-4xl sm:text-5xl text-ink-900 dark:text-white mb-3">Scan to PDF</h1>
+<p class="text-ink-500 dark:text-ink-400 text-lg max-w-lg mx-auto">Convert scanned images or photos of documents into a clean PDF. One image per page.</p>
+<div class="drop-zone-v2 max-w-xl mx-auto" id="dropZone">
+<input accept="image/*" class="hidden" id="fileInput" multiple="" type="file"/>
+<div class="pointer-events-none">
+<div class="drop-zone-v2-icon">
+<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+</div>
+<p class="font-display font-700 text-ink-800 dark:text-white text-lg mb-1">Drop scanned images here</p>
+<p class="text-sm text-ink-400 mb-5">JPG, PNG, WebP · Multiple images supported</p>
+<span class="btn-primary px-6 py-3 text-sm">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 4v16m8-8H4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+            Choose Files
+          </span>
+</div>
+</div>
+<div class="hero-badges-row">
+<span class="hero-badge-chip"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>Local Processing</span>
+<span class="hero-badge-chip"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>No Signup</span>
+<span class="hero-badge-chip"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>Secure</span>
+<span class="hero-badge-chip"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>Free Forever</span>
+</div>
+</div>
+</div>
+<main class="tool-section"><div class="feature-strip mb-6">
+<div class="feature-strip-item"><span class="emoji">⚡</span><p>Fast</p></div>
+<div class="feature-strip-item"><span class="emoji">🔒</span><p>Secure</p></div>
+<div class="feature-strip-item"><span class="emoji">📄</span><p>Accurate</p></div>
+<div class="feature-strip-item"><span class="emoji">💯</span><p>Free</p></div>
+</div>
 
-  <nav class="fixed top-0 left-0 right-0 z-50 bg-ink-50/90 dark:bg-ink-950/90 backdrop-blur-xl border-b border-ink-200 dark:border-ink-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6"><div class="flex items-center justify-between h-16">
-      <a href="/" class="flex items-center gap-2.5">
-        <svg class="w-8 h-8 rounded-lg" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="40" height="40" rx="11" fill="#2563EB"/><path d="M13 11.5C13 10.6716 13.6716 10 14.5 10H22.5L27 14.5V28.5C27 29.3284 26.3284 30 25.5 30H14.5C13.6716 30 13 29.3284 13 28.5V11.5Z" fill="white"/><path d="M22.5 10L27 14.5H23.5C22.9477 14.5 22.5 14.0523 22.5 13.5V10Z" fill="#BFD3FE"/><rect x="16" y="17" width="3" height="3" rx="0.75" fill="#2563EB"/><rect x="16" y="21.5" width="3" height="3" rx="0.75" fill="#2563EB"/><path d="M20.5 17H23.25C24.2165 17 25 17.7835 25 18.75C25 19.7165 24.2165 20.5 23.25 20.5H20.5V17Z" stroke="#2563EB" stroke-width="1.4" stroke-linejoin="round"/><path d="M20.5 20.5V25" stroke="#2563EB" stroke-width="1.4" stroke-linecap="round"/></svg>
-        <span class="font-display text-xl text-ink-900 dark:text-white"><span class="font-800 text-forge-500">PDF</span><span class="font-600">ly</span></span>
-      </a>
-      <div class="flex items-center gap-3">
-        <a href="/" class="hidden sm:flex items-center gap-1 text-sm text-ink-400 hover:text-forge-500 transition-colors"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg> All Tools</a>
-        <button id="darkToggle" class="w-9 h-9 rounded-lg flex items-center justify-center text-ink-500 hover:bg-ink-100 dark:hover:bg-ink-800 transition-colors">
-          <svg class="w-4 h-4 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
-          <svg class="w-4 h-4 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
-        </button>
-      </div>
-    </div></div>
-  </nav>
+<h2 style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0">Convert your scanned images to PDF</h2>
 
-  <div class="tool-hero">
-    <div class="relative max-w-2xl mx-auto px-4">
-      <nav aria-label="Breadcrumb" class="mb-4">
-        <ol class="flex items-center justify-center gap-1.5 text-xs text-ink-400">
-          <li><a href="/" class="hover:text-forge-500 transition-colors">Home</a></li>
-          <li aria-hidden="true">/</li>
-          <li class="text-ink-600 dark:text-ink-300 font-medium" aria-current="page">Scan to PDF</li>
-        </ol>
-      </nav>
-      <div class="step-pill">📄 Scan to PDF</div>
-      <h1 class="font-display font-800 text-4xl sm:text-5xl text-ink-900 dark:text-white mb-3">Scan to PDF</h1>
-      <p class="text-ink-500 dark:text-ink-400 text-lg max-w-lg mx-auto">Convert scanned images or photos of documents into a clean PDF. One image per page.</p>
-      <div class="flex items-center justify-center gap-4 mt-5 flex-wrap">
-        <div class="flex items-center gap-2 text-sm font-medium text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-800 px-4 py-2 rounded-full">
-          <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-          Your files never leave your device
-        </div>
-        <div class="flex items-center gap-2 text-sm font-medium text-blue-700 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 px-4 py-2 rounded-full">
-          <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
-          100% Browser-based
-        </div>
-      </div>
-    </div>
-  </div>
-
-  
-  <main class="tool-section">
-    <h2 style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0">Convert your scanned images to PDF</h2>
-    <div id="dropZone" class="drop-zone mb-6" role="button" tabindex="0" aria-label="Upload scanned images to convert to PDF. Click or drag and drop.">
-      <input type="file" id="fileInput" class="hidden" accept="image/*" multiple aria-label="Choose image files"/>
-      <div class="pointer-events-none">
-        <div class="w-16 h-16 mx-auto mb-4 rounded-2xl bg-orange-100 dark:bg-orange-900/30 flex items-center justify-center">
-          <svg class="w-8 h-8 text-forge-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-        </div>
-        <p class="font-display font-600 text-ink-700 dark:text-ink-300 text-lg mb-1">Drop scanned images here</p>
-        <p class="text-sm text-ink-400">JPG, PNG, WebP · Multiple images supported</p>
-      </div>
-    </div>
-
-    
-    <div id="imageListWrap" class="hidden mb-6">
-      <div class="flex items-center justify-between mb-3">
-        <p class="text-sm font-display font-600 text-ink-700 dark:text-ink-300"><span id="imageCount">0</span> images</p>
-        <button onclick="clearImages()" class="text-xs text-red-400 hover:text-red-500 transition-colors">Clear all</button>
-      </div>
-      <div id="imageGrid" class="grid grid-cols-3 sm:grid-cols-4 gap-3"></div>
-    </div>
-
-    
-    <div id="convertOptions" class="hidden mb-6 space-y-4">
-      <div class="p-5 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl">
-        <h3 class="font-display font-600 text-sm text-ink-700 dark:text-ink-300 mb-4">PDF Settings</h3>
-        <div class="grid grid-cols-2 gap-4">
-          <div>
-            <label class="block text-xs text-ink-500 font-medium mb-1.5">Page Size</label>
-            <select id="pageSize" class="range-input">
-              <option value="A4">A4</option>
-              <option value="Letter">Letter</option>
-              <option value="fit">Fit to image</option>
-            </select>
-          </div>
-          <div>
-            <label class="block text-xs text-ink-500 font-medium mb-1.5">Orientation</label>
-            <select id="orientation" class="range-input">
-              <option value="portrait">Portrait</option>
-              <option value="landscape">Landscape</option>
-            </select>
-          </div>
-        </div>
-      </div>
-      <div class="p-5 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl">
-        <label class="block text-xs text-ink-500 font-medium mb-1.5">Output Filename</label>
-        <input id="outputName" type="text" value="scanned-document" class="range-input" />
-      </div>
-    </div>
-
-    <button id="convertBtn" onclick="convertToPDF()" class="hidden w-full btn-primary justify-center text-base py-3.5 mb-4">
-      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+<div class="hidden mb-6" id="imageListWrap">
+<div class="flex items-center justify-between mb-3">
+<p class="text-sm font-display font-600 text-ink-700 dark:text-ink-300"><span id="imageCount">0</span> images</p>
+<button class="text-xs text-red-400 hover:text-red-500 transition-colors" onclick="clearImages()">Clear all</button>
+</div>
+<div class="grid grid-cols-3 sm:grid-cols-4 gap-3" id="imageGrid"></div>
+</div>
+<div class="hidden mb-6 space-y-4" id="convertOptions">
+<div class="p-5 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl">
+<h3 class="font-display font-600 text-sm text-ink-700 dark:text-ink-300 mb-4">PDF Settings</h3>
+<div class="grid grid-cols-2 gap-4">
+<div>
+<label class="block text-xs text-ink-500 font-medium mb-1.5">Page Size</label>
+<select class="range-input" id="pageSize">
+<option value="A4">A4</option>
+<option value="Letter">Letter</option>
+<option value="fit">Fit to image</option>
+</select>
+</div>
+<div>
+<label class="block text-xs text-ink-500 font-medium mb-1.5">Orientation</label>
+<select class="range-input" id="orientation">
+<option value="portrait">Portrait</option>
+<option value="landscape">Landscape</option>
+</select>
+</div>
+</div>
+</div>
+<div class="p-5 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl">
+<label class="block text-xs text-ink-500 font-medium mb-1.5">Output Filename</label>
+<input class="range-input" id="outputName" type="text" value="scanned-document"/>
+</div>
+</div>
+<button class="hidden w-full btn-primary justify-center text-base py-3.5 mb-4" id="convertBtn" onclick="convertToPDF()">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
       Convert to PDF
     </button>
-
-    <div id="result" class="hidden result-card">
-      <div class="flex items-center gap-3 mb-4">
-        <div class="w-10 h-10 rounded-xl bg-green-100 dark:bg-green-900/30 flex items-center justify-center flex-shrink-0"><svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg></div>
-        <div><p class="font-display font-700 text-ink-800 dark:text-ink-100">PDF Created!</p><p id="resultInfo" class="text-xs text-ink-500 mt-0.5"></p></div>
-      </div>
-      <button id="downloadBtn" class="w-full btn-primary justify-center"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>Download PDF</button>
-    </div>
-    <div class="mt-6 p-4 bg-amber-50 dark:bg-amber-900/10 border border-amber-200 dark:border-amber-900/30 rounded-xl">
-      <p class="text-xs text-amber-700 dark:text-amber-400 leading-relaxed"><strong>Note:</strong> This tool places each image on its own page as a picture — it doesn't read or recognize any text. If you need the pages searchable, run the result through OCR PDF afterward.</p>
-    </div>
-  </main>
-
-  
-  <section class="max-w-2xl mx-auto px-4 mb-10">
-    <div class="prose-content space-y-5 text-ink-600 dark:text-ink-400 leading-relaxed text-[15px]">
-
-      <h2 class="font-display font-700 text-xl text-ink-800 dark:text-ink-200 pt-2">How to convert scanned images to PDF</h2>
-      <ol class="space-y-3 list-decimal list-inside">
-        <li>Drop one or more scanned images (JPG, PNG, or WebP) into the tool above, or click to browse.</li>
-        <li>Choose a page size — A4, Letter, or "Fit to image" — and an orientation.</li>
-        <li>Click "Convert to PDF" and download the result. Each image becomes its own page, in the order you added them.</li>
-      </ol>
-
-      <h2 class="font-display font-700 text-xl text-ink-800 dark:text-ink-200 pt-2">How PDFly's Scan to PDF works</h2>
-      <p>This tool turns a batch of photos or scanned pages into a single, shareable PDF — useful when your scanner app or phone camera only outputs separate image files. It runs entirely in your browser using the pdf-lib library: each image is embedded onto its own page, scaled and centered within your chosen margins, and the finished PDF is assembled locally. Nothing is uploaded at any point.</p>
-      <p>Because it embeds images as-is, it's best thought of as a page assembler rather than a true scanner — it won't straighten a crooked photo, remove shadows, or clean up a dim scan. For that kind of cleanup, use your phone's scanning app or an image editor before converting.</p>
-
-      <h2 class="font-display font-700 text-xl text-ink-800 dark:text-ink-200 pt-2">Choosing page size and orientation</h2>
-      <ul class="space-y-2 list-disc list-inside">
-        <li><strong class="text-ink-700 dark:text-ink-300">A4 / Letter:</strong> places your image on a standard fixed page size with a small margin — the safest choice if the PDF will be printed or shared for official use.</li>
-        <li><strong class="text-ink-700 dark:text-ink-300">Fit to image:</strong> creates a page sized to match the image itself, so there's no extra white space or scaling — good for photos or documents that don't match a standard paper size.</li>
-        <li><strong class="text-ink-700 dark:text-ink-300">Orientation:</strong> switch to landscape if your images are wider than they are tall; this only affects A4/Letter, since "Fit to image" already matches the image's own shape.</li>
-      </ul>
-
-      <h2 class="font-display font-700 text-xl text-ink-800 dark:text-ink-200 pt-2">Making the text searchable afterward</h2>
-      <p>Scan to PDF only places images on pages — it doesn't read or recognize the text inside them, so the result isn't searchable or selectable on its own. If you need to search, copy, or select text from your scanned pages, run the finished PDF through <a href="/tools/ocr-pdf" class="text-forge-500 hover:text-forge-600 underline">OCR PDF</a> next; it adds an invisible, searchable text layer behind each page image without changing how the page looks.</p>
-
-      <h2 class="font-display font-700 text-xl text-ink-800 dark:text-ink-200 pt-2">Common mistakes</h2>
-      <ul class="space-y-2 list-disc list-inside">
-        <li>Uploading images out of order and expecting to reorder them afterward — set the order by the sequence you select or drag files in, since pages follow upload order.</li>
-        <li>Expecting the tool to straighten, crop, or brighten photos — it embeds images exactly as provided.</li>
-        <li>Forgetting to run OCR afterward when a searchable or copy-pasteable PDF is actually what's needed.</li>
-      </ul>
-
-      <h2 class="font-display font-700 text-xl text-ink-800 dark:text-ink-200 pt-2">Troubleshooting</h2>
-      <ul class="space-y-2 list-disc list-inside">
-        <li><strong class="text-ink-700 dark:text-ink-300">An image won't embed:</strong> the tool supports JPG, PNG, and WebP. If a file fails, try re-saving it as a JPG or PNG first.</li>
-        <li><strong class="text-ink-700 dark:text-ink-300">Images look shrunk or have too much white space:</strong> switch the page size to "Fit to image" so the page matches the image dimensions instead of a fixed A4/Letter size.</li>
-        <li><strong class="text-ink-700 dark:text-ink-300">Pages are in the wrong order:</strong> clear the selection and re-upload the images in the order you want them to appear.</li>
-        <li><strong class="text-ink-700 dark:text-ink-300">Large photo batches are slow:</strong> everything happens in your device's memory, so many high-resolution photos at once can be slower on phones or older computers.</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="max-w-2xl mx-auto px-4 mb-10">
-    <h2 class="font-display font-800 text-2xl text-ink-900 dark:text-white mb-6">Frequently asked questions</h2>
-    <div class="space-y-3">
-      <div class="faq-item"><button class="faq-question">Is Scan to PDF free?<span class="faq-icon"><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 4v16m8-8H4"/></svg></span></button><div class="faq-answer">Yes, converting scanned images to PDF is free on PDFly, with no signup required.</div></div>
-
-      <div class="faq-item"><button class="faq-question">Are my images uploaded to a server?<span class="faq-icon"><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 4v16m8-8H4"/></svg></span></button><div class="faq-answer">No. The conversion runs entirely in your browser using the pdf-lib library. Images are read and embedded into the PDF locally and never sent anywhere.</div></div>
-
-      <div class="faq-item"><button class="faq-question">What's the difference between page sizes?<span class="faq-icon"><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 4v16m8-8H4"/></svg></span></button><div class="faq-answer">A4 and Letter place your image on a standard fixed-size page, scaled to fit with a small margin. "Fit to image" instead creates a page sized to match the image itself, so there's no wasted white space or scaling.</div></div>
-
-      <div class="faq-item"><button class="faq-question">Will the text in my scanned images be searchable?<span class="faq-icon"><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 4v16m8-8H4"/></svg></span></button><div class="faq-answer">No. This tool embeds each image as a picture on the page — it does not read or recognize any text. For a searchable PDF, run the result through <a href="/tools/ocr-pdf" class="text-forge-500 hover:text-forge-600 underline">OCR PDF</a> afterward.</div></div>
-
-      <div class="faq-item"><button class="faq-question">Can I reorder the pages before converting?<span class="faq-icon"><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 4v16m8-8H4"/></svg></span></button><div class="faq-answer">Images are added to the PDF in the order you upload them. Select and upload your files in the order you want them to appear as pages.</div></div>
-
-      <div class="faq-item"><button class="faq-question">What image formats are supported?<span class="faq-icon"><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 4v16m8-8H4"/></svg></span></button><div class="faq-answer">JPG/JPEG and PNG embed directly. Other formats like WebP are converted automatically during the process.</div></div>
-    </div>
-  </section>
-
-  <section class="max-w-2xl mx-auto px-4 mb-8"><!-- RELATED-LINKS-BLOCK -->
-  <div class="p-5 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl">
-    <p class="font-display font-700 text-sm text-ink-800 dark:text-ink-100 mb-3">Related</p>
-    <div class="flex flex-wrap gap-2">
-        <a href="/blog/scan-to-pdf" class="text-sm px-3 py-1.5 rounded-lg border border-ink-200 dark:border-ink-800 text-ink-500 dark:text-ink-400 hover:text-forge-500 hover:border-forge-400 transition-colors">Read the guide</a>
-        <a href="/students-pdf-tools" class="text-sm px-3 py-1.5 rounded-lg border border-ink-200 dark:border-ink-800 text-ink-500 dark:text-ink-400 hover:text-forge-500 hover:border-forge-400 transition-colors">PDF tools for students</a>
-        <a href="/" class="text-sm px-3 py-1.5 rounded-lg border border-ink-200 dark:border-ink-800 text-ink-500 dark:text-ink-400 hover:text-forge-500 hover:border-forge-400 transition-colors">All PDF tools</a>
-        </div>
-  </div>
+<div class="hidden result-card" id="result">
+<div class="flex items-center gap-3 mb-4">
+<div class="w-10 h-10 rounded-xl bg-green-100 dark:bg-green-900/30 flex items-center justify-center flex-shrink-0"><svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></div>
+<div><p class="font-display font-700 text-ink-800 dark:text-ink-100">PDF Created!</p><p class="text-xs text-ink-500 mt-0.5" id="resultInfo"></p></div>
+</div>
+<button class="w-full btn-primary justify-center" id="downloadBtn"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>Download PDF</button>
+</div>
+<div class="mt-6 p-4 bg-amber-50 dark:bg-amber-900/10 border border-amber-200 dark:border-amber-900/30 rounded-xl">
+<p class="text-xs text-amber-700 dark:text-amber-400 leading-relaxed"><strong>Note:</strong> This tool places each image on its own page as a picture — it doesn't read or recognize any text. If you need the pages searchable, run the result through OCR PDF afterward.</p>
+</div>
+</main>
+<section class="max-w-2xl mx-auto px-4 mb-10">
+<div class="prose-content space-y-5 text-ink-600 dark:text-ink-400 leading-relaxed text-[15px]">
+<h2 class="font-display font-700 text-xl text-ink-800 dark:text-ink-200 pt-2">How to convert scanned images to PDF</h2>
+<ol class="space-y-3 list-decimal list-inside">
+<li>Drop one or more scanned images (JPG, PNG, or WebP) into the tool above, or click to browse.</li>
+<li>Choose a page size — A4, Letter, or "Fit to image" — and an orientation.</li>
+<li>Click "Convert to PDF" and download the result. Each image becomes its own page, in the order you added them.</li>
+</ol>
+<h2 class="font-display font-700 text-xl text-ink-800 dark:text-ink-200 pt-2">How PDFly's Scan to PDF works</h2>
+<p>This tool turns a batch of photos or scanned pages into a single, shareable PDF — useful when your scanner app or phone camera only outputs separate image files. It runs entirely in your browser using the pdf-lib library: each image is embedded onto its own page, scaled and centered within your chosen margins, and the finished PDF is assembled locally. Nothing is uploaded at any point.</p>
+<p>Because it embeds images as-is, it's best thought of as a page assembler rather than a true scanner — it won't straighten a crooked photo, remove shadows, or clean up a dim scan. For that kind of cleanup, use your phone's scanning app or an image editor before converting.</p>
+<h2 class="font-display font-700 text-xl text-ink-800 dark:text-ink-200 pt-2">Choosing page size and orientation</h2>
+<ul class="space-y-2 list-disc list-inside">
+<li><strong class="text-ink-700 dark:text-ink-300">A4 / Letter:</strong> places your image on a standard fixed page size with a small margin — the safest choice if the PDF will be printed or shared for official use.</li>
+<li><strong class="text-ink-700 dark:text-ink-300">Fit to image:</strong> creates a page sized to match the image itself, so there's no extra white space or scaling — good for photos or documents that don't match a standard paper size.</li>
+<li><strong class="text-ink-700 dark:text-ink-300">Orientation:</strong> switch to landscape if your images are wider than they are tall; this only affects A4/Letter, since "Fit to image" already matches the image's own shape.</li>
+</ul>
+<h2 class="font-display font-700 text-xl text-ink-800 dark:text-ink-200 pt-2">Making the text searchable afterward</h2>
+<p>Scan to PDF only places images on pages — it doesn't read or recognize the text inside them, so the result isn't searchable or selectable on its own. If you need to search, copy, or select text from your scanned pages, run the finished PDF through <a class="text-forge-500 hover:text-forge-600 underline" href="/tools/ocr-pdf">OCR PDF</a> next; it adds an invisible, searchable text layer behind each page image without changing how the page looks.</p>
+<h2 class="font-display font-700 text-xl text-ink-800 dark:text-ink-200 pt-2">Common mistakes</h2>
+<ul class="space-y-2 list-disc list-inside">
+<li>Uploading images out of order and expecting to reorder them afterward — set the order by the sequence you select or drag files in, since pages follow upload order.</li>
+<li>Expecting the tool to straighten, crop, or brighten photos — it embeds images exactly as provided.</li>
+<li>Forgetting to run OCR afterward when a searchable or copy-pasteable PDF is actually what's needed.</li>
+</ul>
+<h2 class="font-display font-700 text-xl text-ink-800 dark:text-ink-200 pt-2">Troubleshooting</h2>
+<ul class="space-y-2 list-disc list-inside">
+<li><strong class="text-ink-700 dark:text-ink-300">An image won't embed:</strong> the tool supports JPG, PNG, and WebP. If a file fails, try re-saving it as a JPG or PNG first.</li>
+<li><strong class="text-ink-700 dark:text-ink-300">Images look shrunk or have too much white space:</strong> switch the page size to "Fit to image" so the page matches the image dimensions instead of a fixed A4/Letter size.</li>
+<li><strong class="text-ink-700 dark:text-ink-300">Pages are in the wrong order:</strong> clear the selection and re-upload the images in the order you want them to appear.</li>
+<li><strong class="text-ink-700 dark:text-ink-300">Large photo batches are slow:</strong> everything happens in your device's memory, so many high-resolution photos at once can be slower on phones or older computers.</li>
+</ul>
+</div>
 </section>
-
-
+<section class="max-w-2xl mx-auto px-4 mb-10">
+<h2 class="font-display font-800 text-2xl text-ink-900 dark:text-white mb-6">Frequently asked questions</h2>
+<div class="space-y-3">
+<div class="faq-item"><button class="faq-question">Is Scan to PDF free?<span class="faq-icon"><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 4v16m8-8H4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg></span></button><div class="faq-answer">Yes, converting scanned images to PDF is free on PDFly, with no signup required.</div></div>
+<div class="faq-item"><button class="faq-question">Are my images uploaded to a server?<span class="faq-icon"><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 4v16m8-8H4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg></span></button><div class="faq-answer">No. The conversion runs entirely in your browser using the pdf-lib library. Images are read and embedded into the PDF locally and never sent anywhere.</div></div>
+<div class="faq-item"><button class="faq-question">What's the difference between page sizes?<span class="faq-icon"><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 4v16m8-8H4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg></span></button><div class="faq-answer">A4 and Letter place your image on a standard fixed-size page, scaled to fit with a small margin. "Fit to image" instead creates a page sized to match the image itself, so there's no wasted white space or scaling.</div></div>
+<div class="faq-item"><button class="faq-question">Will the text in my scanned images be searchable?<span class="faq-icon"><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 4v16m8-8H4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg></span></button><div class="faq-answer">No. This tool embeds each image as a picture on the page — it does not read or recognize any text. For a searchable PDF, run the result through <a class="text-forge-500 hover:text-forge-600 underline" href="/tools/ocr-pdf">OCR PDF</a> afterward.</div></div>
+<div class="faq-item"><button class="faq-question">Can I reorder the pages before converting?<span class="faq-icon"><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 4v16m8-8H4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg></span></button><div class="faq-answer">Images are added to the PDF in the order you upload them. Select and upload your files in the order you want them to appear as pages.</div></div>
+<div class="faq-item"><button class="faq-question">What image formats are supported?<span class="faq-icon"><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 4v16m8-8H4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg></span></button><div class="faq-answer">JPG/JPEG and PNG embed directly. Other formats like WebP are converted automatically during the process.</div></div>
+</div>
+</section>
+<section class="max-w-2xl mx-auto px-4 mb-8"><!-- RELATED-LINKS-BLOCK -->
+<div class="p-5 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl">
+<p class="font-display font-700 text-sm text-ink-800 dark:text-ink-100 mb-3">Related</p>
+<div class="flex flex-wrap gap-2">
+<a class="text-sm px-3 py-1.5 rounded-lg border border-ink-200 dark:border-ink-800 text-ink-500 dark:text-ink-400 hover:text-forge-500 hover:border-forge-400 transition-colors" href="/blog/scan-to-pdf">Read the guide</a>
+<a class="text-sm px-3 py-1.5 rounded-lg border border-ink-200 dark:border-ink-800 text-ink-500 dark:text-ink-400 hover:text-forge-500 hover:border-forge-400 transition-colors" href="/students-pdf-tools">PDF tools for students</a>
+<a class="text-sm px-3 py-1.5 rounded-lg border border-ink-200 dark:border-ink-800 text-ink-500 dark:text-ink-400 hover:text-forge-500 hover:border-forge-400 transition-colors" href="/">All PDF tools</a>
+</div>
+</div>
+</section>
 <footer class="border-t border-ink-200 dark:border-ink-800 py-8 mt-4 bg-white dark:bg-ink-900">
-    <div class="max-w-2xl mx-auto px-4 text-center text-sm text-ink-400"><p>© 2026 <a href="/" class="hover:text-forge-500 transition-colors">PDFly</a> · <a href="/pages/about" class="hover:text-forge-500 transition-colors">About</a> · <a href="/pages/privacy" class="hover:text-forge-500 transition-colors">Privacy</a> · <a href="/pages/terms" class="hover:text-forge-500 transition-colors">Terms</a> · <a href="/pages/disclaimer" class="hover:text-forge-500 transition-colors">Disclaimer</a></p></div>
-  </footer>
-
-  <script src="../assets/js/main.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
-  <script>
+<div class="max-w-2xl mx-auto px-4 text-center text-sm text-ink-400"><p>© 2026 <a class="hover:text-forge-500 transition-colors" href="/">PDFly</a> · <a class="hover:text-forge-500 transition-colors" href="/pages/about">About</a> · <a class="hover:text-forge-500 transition-colors" href="/pages/privacy">Privacy</a> · <a class="hover:text-forge-500 transition-colors" href="/pages/terms">Terms</a> · <a class="hover:text-forge-500 transition-colors" href="/pages/disclaimer">Disclaimer</a></p><p class="mt-3 text-xs text-ink-400">Processing happens inside your browser whenever supported by this tool. If a feature requires server processing (such as AI or OCR), it is clearly indicated on the tool page before processing begins.</p></div>
+</footer>
+<script src="../assets/js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+<script>
     let imageFiles = [];
     const dropZone = document.getElementById('dropZone'), fileInput = document.getElementById('fileInput');
     setupDropZone(dropZone, fileInput, handleFiles, { multiple: true, accept: 'image/*' });

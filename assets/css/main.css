@@ -147,4 +147,83 @@ input[type="range"]::-webkit-slider-thumb:hover { transform: scale(1.2); }
 @media (max-width: 640px) {
   .tool-hero { padding-top: 80px; padding-bottom: 32px; }
   .drop-zone { padding: 36px 16px; }
+  .tool-hero-v2 { padding-top: 76px; padding-bottom: 20px; }
+  .drop-zone-v2 { padding: 32px 16px; }
+  .drop-zone-v2-icon { width: 68px; height: 68px; }
+  .drop-zone-v2-icon svg { width: 32px; height: 32px; }
 }
+
+/* ===== Premium tool hero v2 ===== */
+.tool-hero-v2 {
+  padding-top: 96px; padding-bottom: 28px; text-align: center;
+  position: relative; overflow: hidden;
+  background:
+    radial-gradient(ellipse 700px 380px at 18% -10%, rgba(37,99,235,.10), transparent 60%),
+    radial-gradient(ellipse 600px 340px at 85% 0%, rgba(139,92,246,.09), transparent 60%),
+    linear-gradient(180deg, var(--forge-50) 0%, transparent 75%);
+}
+.dark .tool-hero-v2 {
+  background:
+    radial-gradient(ellipse 700px 380px at 18% -10%, rgba(37,99,235,.14), transparent 60%),
+    radial-gradient(ellipse 600px 340px at 85% 0%, rgba(139,92,246,.12), transparent 60%),
+    linear-gradient(180deg, rgba(37,99,235,.07) 0%, transparent 75%);
+}
+.hero-blob { position: absolute; border-radius: 999px; filter: blur(48px); pointer-events: none; }
+.hero-float-icon {
+  position: absolute; opacity: .5; pointer-events: none;
+  animation: heroFloat 6s ease-in-out infinite;
+}
+.hero-float-icon.delay-1 { animation-delay: 1.2s; }
+.hero-float-icon.delay-2 { animation-delay: 2.4s; }
+@keyframes heroFloat { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+@media (max-width: 640px) { .hero-float-icon { display: none; } }
+
+.hero-badges-row {
+  display: inline-flex; flex-wrap: wrap; align-items: center; justify-content: center;
+  gap: 4px; padding: 6px; margin-top: 22px;
+  background: white; border: 1px solid var(--ink-200); border-radius: 999px;
+  box-shadow: 0 2px 12px rgba(0,0,0,.05);
+}
+.dark .hero-badges-row { background: rgba(255,255,255,.04); border-color: rgba(255,255,255,.1); }
+.hero-badge-chip {
+  display: inline-flex; align-items: center; gap: 5px;
+  font-size: 12.5px; font-weight: 600; color: var(--ink-500);
+  padding: 6px 12px; border-radius: 999px;
+}
+.dark .hero-badge-chip { color: #b3aa9d; }
+.hero-badge-chip svg { width: 14px; height: 14px; color: #22c55e; flex-shrink: 0; }
+
+.drop-zone-v2 {
+  border: 2px dashed rgba(37,99,235,.35);
+  border-radius: 20px; padding: 44px 24px; text-align: center; cursor: pointer;
+  transition: all .25s ease; position: relative; overflow: hidden;
+  background: linear-gradient(180deg, rgba(37,99,235,.05), rgba(255,255,255,.6));
+  box-shadow: 0 0 0 6px rgba(37,99,235,.05), 0 12px 40px -12px rgba(37,99,235,.25);
+}
+.dark .drop-zone-v2 {
+  background: linear-gradient(180deg, rgba(37,99,235,.09), rgba(255,255,255,.02));
+  box-shadow: 0 0 0 6px rgba(37,99,235,.08), 0 12px 40px -12px rgba(0,0,0,.4);
+}
+.drop-zone-v2:hover, .drop-zone-v2.drag-over {
+  border-color: var(--forge-500); transform: scale(1.008);
+  box-shadow: 0 0 0 8px rgba(37,99,235,.1), 0 16px 48px -12px rgba(37,99,235,.35);
+}
+.drop-zone-v2-icon {
+  width: 84px; height: 84px; margin: 0 auto 18px; border-radius: 22px;
+  background: linear-gradient(135deg, var(--forge-500), #7c3aed);
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 8px 24px -6px rgba(37,99,235,.5);
+}
+.drop-zone-v2-icon svg { width: 40px; height: 40px; color: white; }
+
+.feature-strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+@media (max-width: 640px) { .feature-strip { grid-template-columns: repeat(2, 1fr); } }
+.feature-strip-item {
+  padding: 16px 10px; text-align: center; background: white;
+  border: 1px solid var(--ink-200); border-radius: 14px; transition: all .2s;
+}
+.dark .feature-strip-item { background: rgba(255,255,255,.03); border-color: rgba(255,255,255,.08); }
+.feature-strip-item:hover { border-color: var(--forge-400); box-shadow: var(--shadow); transform: translateY(-2px); }
+.feature-strip-item .emoji { font-size: 22px; display: block; margin-bottom: 6px; }
+.feature-strip-item p { font-size: 12.5px; font-weight: 700; font-family: 'Syne', sans-serif; color: var(--ink-700); }
+.dark .feature-strip-item p { color: #d8d2c6; }
