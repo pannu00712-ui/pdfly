@@ -1,0 +1,80 @@
+/* ============================================================
+   PDFly MEGA MENU — CSS
+   Ise apni assets/css/main.css file ke END mein paste kar dena.
+   ============================================================ */
+
+.nav-dd-mega {
+  position: relative;
+}
+
+.nav-dd-mega-panel {
+  display: none;
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  width: min(920px, 92vw);
+  padding: 28px 32px;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 24px;
+  box-shadow: 0 24px 48px -12px rgba(0, 0, 0, 0.18);
+  z-index: 70;
+  max-height: 78vh;
+  overflow-y: auto;
+}
+
+.nav-dd-mega[open] .nav-dd-mega-panel {
+  display: grid;
+}
+
+.nav-dd-mega-col {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.nav-dd-mega-heading {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-400, #9ca3af);
+  margin-bottom: 12px;
+}
+
+.nav-dd-mega-link {
+  font-size: 13.5px;
+  line-height: 1.9;
+  color: var(--ink-500, #6b7280);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: color 0.15s ease;
+}
+
+.nav-dd-mega-link:hover {
+  color: var(--forge-500, #ea580c);
+}
+
+/* Dark mode text colors — agar aapki site .dark class use karti hai */
+.dark .nav-dd-mega-link {
+  color: var(--ink-400, #9ca3af);
+}
+.dark .nav-dd-mega-link:hover {
+  color: var(--forge-500, #ea580c);
+}
+
+/* Mobile: mega menu ko chhota screen par narrow single column bana do */
+@media (max-width: 900px) {
+  .nav-dd-mega-panel {
+    grid-template-columns: repeat(2, 1fr);
+    right: -60px;
+    width: 94vw;
+  }
+}
+
+@media (max-width: 560px) {
+  .nav-dd-mega-panel {
+    grid-template-columns: 1fr;
+    right: -16px;
+  }
+}
