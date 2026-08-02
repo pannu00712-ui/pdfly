@@ -179,6 +179,11 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"PDFly","url":"https://pdfly.uk","description":"56 free browser-based PDF tools","potentialAction":{"@type":"SearchAction","target":"https://pdfly.uk/search?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"PDFly","url":"https://pdfly.uk","logo":"https://pdfly.uk/logo.png","sameAs":["https://x.com/pdflyuk","https://linkedin.com/company/pdfly-tools","https://github.com/pannu00712-ui/pdfly","https://www.instagram.com/pdfly.uk/","https://www.youtube.com/@pdfly-uk","https://mastodon.social/@pdfly","https://www.facebook.com/pdfly.uk/","https://www.reddit.com/user/pdfly-uk/","https://www.tiktok.com/@pdfly.uk"]}</script>
   <script src="https://analytics.ahrefs.com/analytics.js" data-key="VmqStOhNtLiTsE983txKMA" async></script>
+  <link rel="manifest" href="/manifest.json"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+  <meta name="apple-mobile-web-app-title" content="PDFly"/>
+  <script defer src="/assets/js/pwa-register.js"></script>
 </head>
 
 <body class="bg-white dark:bg-surface-dark text-heading dark:text-gray-100 antialiased">
@@ -544,7 +549,13 @@
 
     <div class="pt-8 border-t border-borderc dark:border-surface-border flex flex-col sm:flex-row items-center justify-between gap-3">
       <p class="text-xs text-gray-400">© 2026 PDFly. All rights reserved.</p>
-      <p class="text-xs text-gray-400">Built for the way you work.</p>
+      <div class="flex items-center gap-4">
+        <button type="button" data-pwa-install hidden class="inline-flex items-center gap-1.5 text-xs font-600 text-primary border border-primary/30 hover:bg-primary/5 dark:hover:bg-primary/10 rounded-lg px-3 py-2 transition-colors duration-200">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3"/></svg>
+          Install App
+        </button>
+        <p class="text-xs text-gray-400">Built for the way you work.</p>
+      </div>
     </div>
   </div>
 </footer>
