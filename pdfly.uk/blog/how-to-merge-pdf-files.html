@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="../favicon.ico?v=2" sizes="any"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png?v=2"/>
+  <link rel="icon" type="image/png" sizes="192x192" href="../android-chrome-192.png?v=2"/>
+  <link rel="icon" type="image/png" sizes="512x512" href="../android-chrome-512.png?v=2"/>
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png?v=2"/>
+  <link rel="mask-icon" href="../mask-icon-v2.svg" color="#2563EB"/>
+  <link rel="manifest" href="../site.webmanifest?v=2"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to Merge PDFs Without Breaking Formatting | PDFly</title>
+  <meta name="description" content="A practical walkthrough for combining PDFs into one file — the methods that actually hold up, and the mistakes I've made so you don't have to." />
+  <link rel="canonical" href="https://pdfly.uk/blog/how-to-merge-pdf-files" />
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="How to Merge PDFs Without Breaking Formatting | PDFly"/>
+  <meta property="og:description" content="A practical walkthrough for combining PDFs into one file — the methods that actually hold up, and the mistakes I've made so you don't have to."/>
+  <meta property="og:url" content="https://pdfly.uk/blog/how-to-merge-pdf-files"/>
+  <meta property="og:image" content="https://pdfly.uk/og-image.png"/>
+  <meta property="og:site_name" content="PDFly"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="How to Merge PDFs Without Breaking Formatting | PDFly"/>
+  <meta name="twitter:description" content="A practical walkthrough for combining PDFs into one file — the methods that actually hold up, and the mistakes I've made so you don't have to."/>
+  <meta name="twitter:image" content="https://pdfly.uk/og-image.png"/>
+  <meta name="robots" content="index, follow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/tailwind-built.css"/>
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <script src="https://analytics.ahrefs.com/analytics.js" data-key="VmqStOhNtLiTsE983txKMA" async></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"How to Merge PDF Files Without the Formatting Breaking","description":"A practical walkthrough for combining PDFs into one file \u2014 the methods that actually hold up, and the mistakes I've made so you don't have to.","datePublished":"2026-07-23","dateModified":"2026-07-23","author":{"@type":"Person","name":"Alex Rivera","url":"https://pdfly.uk/pages/author"},"publisher":{"@type":"Organization","name":"PDFly","logo":{"@type":"ImageObject","url":"https://pdfly.uk/logo.png","width":512,"height":512}},"image":"https://pdfly.uk/og-image.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://pdfly.uk/blog/how-to-merge-pdf-files"}}</script>
+</head>
+<body class="bg-ink-50 dark:bg-ink-950 text-ink-800 dark:text-ink-100 font-body antialiased">
+
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-ink-50/90 dark:bg-ink-950/90 backdrop-blur-xl border-b border-ink-200 dark:border-ink-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6"><div class="flex items-center justify-between h-16">
+      <a href="/" class="flex items-center gap-2.5">
+        <svg class="w-8 h-8 rounded-lg" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="40" height="40" rx="11" fill="#2563EB"/><path d="M13 11.5C13 10.6716 13.6716 10 14.5 10H22.5L27 14.5V28.5C27 29.3284 26.3284 30 25.5 30H14.5C13.6716 30 13 29.3284 13 28.5V11.5Z" fill="white"/><path d="M22.5 10L27 14.5H23.5C22.9477 14.5 22.5 14.0523 22.5 13.5V10Z" fill="#BFD3FE"/><rect x="16" y="17" width="3" height="3" rx="0.75" fill="#2563EB"/><rect x="16" y="21.5" width="3" height="3" rx="0.75" fill="#2563EB"/><path d="M20.5 17H23.25C24.2165 17 25 17.7835 25 18.75C25 19.7165 24.2165 20.5 23.25 20.5H20.5V17Z" stroke="#2563EB" stroke-width="1.4" stroke-linejoin="round"/><path d="M20.5 20.5V25" stroke="#2563EB" stroke-width="1.4" stroke-linecap="round"/></svg>
+        <span class="font-display text-xl text-ink-900 dark:text-white"><span class="font-800 text-forge-500">PDF</span><span class="font-600">ly</span></span>
+      </a>
+      <div class="flex items-center gap-3">
+        <a href="/" class="hidden sm:flex items-center gap-1 text-sm text-ink-400 hover:text-forge-500 transition-colors"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg> All Tools</a>
+        <button id="darkToggle" class="w-9 h-9 rounded-lg flex items-center justify-center text-ink-500 hover:bg-ink-100 dark:hover:bg-ink-800 transition-colors">
+          <svg class="w-4 h-4 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+          <svg class="w-4 h-4 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+        </button>
+      </div>
+    </div></div>
+  </nav>
+
+  <article class="pt-28 pb-20 px-4 max-w-2xl mx-auto">
+    <p class="text-xs font-display font-600 text-forge-500 uppercase tracking-widest mb-3"><a href="/" class="hover:underline">PDFly</a> · Blog</p>
+    <h1 class="font-display font-800 text-3xl sm:text-4xl text-ink-900 dark:text-white mb-6 leading-tight">How to Merge PDF Files Without the Formatting Breaking</h1>
+    <div class="prose-content text-ink-600 dark:text-ink-400 leading-relaxed space-y-4">
+<p>Last month I had eleven separate PDFs for one client proposal — a cover letter, a pricing sheet, three case studies, a couple of scanned signatures, and some appendix pages someone had exported individually for no reason I could figure out. The client asked for "one file, please." That phrase has caused me more low-grade stress over the years than it probably should.</p>
+
+<p>Merging PDFs sounds like it should take ten seconds, and honestly, most of the time it does. But there's a version of this task that goes wrong — pages come out in the wrong order, a landscape spreadsheet gets squished into portrait, or you email the file and later notice a watermark from whatever free tool you grabbed in a hurry. Here's what I've actually learned from doing this more times than I'd like to admit.</p>
+
+<h2>Why this comes up more than you'd expect</h2>
+
+<p>It's rarely just "I have two PDFs, please combine them." Usually it's messier than that — a monthly report split across finance, marketing, and ops files that all need to land in one document. A portfolio where every project got exported separately. Tax season, where every receipt is its own little PDF and your accountant just wants one file to open instead of forty attachments. Job or grad school applications where the portal only accepts a single upload, and you're merging a resume, transcript, and cover letter at 11pm the night it's due.</p>
+
+<p>None of these are complicated tasks on paper. What makes them annoying is that most people don't do it often enough to have a go-to method, so every time feels like starting from scratch.</p>
+
+<h2>A few things worth checking before you merge anything</h2>
+
+<p>I used to skip this step and regret it. If your files have mixed page orientations — say a portrait report and a landscape spreadsheet — some tools will rotate or squeeze pages to force everything into one shape, and it looks bad. Worth checking your source files for orientation first.</p>
+
+<p>If any of the PDFs are scanned images rather than actual text (old contracts, handwritten notes, that kind of thing), a basic merge tool will just stitch the images together — you won't be able to search or select text in the result. If you need that, you're looking at OCR, not just merging.</p>
+
+<p>And if you're combining a stack of large files, keep an eye on the final size. I've had a merged file bounce back from an email server more than once because it quietly ballooned past the attachment limit.</p>
+
+<h2>The method I actually use</h2>
+
+<p>For most jobs, I open <a href="/tools/merge-pdf" class="text-forge-500 hover:underline">PDFly's merge tool</a> in a browser tab, drag in the files, and reorder them by dragging the thumbnails — that part matters more than people expect, since most tools just stack files in whatever order you dropped them, not the order you actually want. Once the order looks right, I hit merge and download. It preserves the original page sizes and orientation instead of forcing everything into one shape, which was the exact problem I mentioned above.</p>
+
+<p>The reason I default to this over other options is mostly inertia — no install, works from any computer including ones that aren't mine, and I've never had it slap a watermark on the output, which is more than I can say for a couple of "free" desktop tools I tried early on.</p>
+
+<h2>If you're on Windows and prefer to stay offline</h2>
+
+<p>PDF24 Creator is worth having installed if you'd rather not upload anything anywhere, even briefly. It's a proper desktop app — you open the merge tool, drag your files in, reorder with the arrow buttons, and save. It's a bit more clicking than a browser tool, but everything stays on your machine, which matters if you're dealing with contracts or anything you'd rather not put through a web upload even for a few seconds.</p>
+
+<h2>If you're on a Mac, you already have a merge tool</h2>
+
+<p>This one surprises people: Preview, the default app that opens every PDF on macOS, can merge files. Open one PDF, switch to the thumbnail sidebar (View → Thumbnails), then just drag the other PDF files straight into that sidebar. Preview adds their pages to the end, and you can drag individual pages around afterward if the order's off. Export when you're done.</p>
+
+<p>It works fine for two or three files. Past that, or with anything more than about fifty pages combined, I've noticed it starts to lag and occasionally garble the page order, which is when I switch to something else instead of fighting with it.</p>
+
+<h2>What I'd skip</h2>
+
+<p>Adobe Acrobat Reader's free "Combine Files" feature exists, but it caps you at three files and tends to stamp a watermark on the result. If you're sending this to a client, that's not a great look. I only reach for it if I genuinely have nothing else installed and need to merge exactly two pages of something unimportant.</p>
+
+<h2>Mistakes I've made, so you don't have to</h2>
+
+<p>I once sent a merged PDF to a client without opening it first, and page 4 was actually from an unrelated file I'd left in the folder. Open the finished document and skim through it before you send it anywhere that matters — it takes thirty seconds and has saved me from at least three embarrassing follow-up emails.</p>
+
+<p>Order matters more than you'd think, too. Most tools merge files in the order you dropped or uploaded them, not some logical order they infer for you. If you uploaded chapter one, chapter three, then chapter two, that's exactly how it'll come out unless you manually reorder.</p>
+
+<p>And keep half an eye on file size if you're combining a lot of large documents — a merged file that's too big to email is a genuinely common way to lose an afternoon.</p>
+
+<h2>Naming your files before you start actually helps</h2>
+
+<p>This is a small thing that saves real time: if you name your source files something like "01-cover-letter.pdf", "02-pricing.pdf", "03-case-study.pdf" before you even open a merge tool, you barely need to reorder anything once they're uploaded — most tools sort alphabetically by default, so the order's already right.</p>
+
+<h2>Which approach actually fits your situation</h2>
+
+<p>If you want it done in under a minute and don't want to install anything, PDFly's browser tool is the one I'd point you to first. If you're merging anything sensitive and would rather not upload it even briefly, PDF24 on Windows keeps everything local. Mac users doing a quick two-file merge already have Preview sitting there — no reason to look further for something that small. And if you're merging PDFs regularly enough that this is a weekly task, it's worth just keeping one browser tab bookmarked rather than re-deciding your method every time.</p>
+
+<p>Either way — once your files are combined, take the thirty seconds to actually open and check the result before you send it. That one habit will save you more headaches than any tool comparison ever will.</p>
+    </div>
+    <div class="mt-10 pt-6 border-t border-ink-200 dark:border-ink-800 flex items-center gap-3">
+      <div class="w-10 h-10 rounded-full bg-gradient-to-br from-forge-400 to-forge-600 flex items-center justify-center text-white font-display font-700 text-sm flex-shrink-0">A</div>
+      <div><p class="text-sm font-display font-600 text-ink-800 dark:text-ink-200">Alex Rivera</p><p class="text-xs text-ink-400">PDFly Team</p></div>
+    </div>
+    <div class="mt-8">
+      <a href="/" class="inline-flex items-center gap-1 text-sm text-forge-500 hover:underline">← Back to all tools</a>
+    </div>
+  </article>
+
+  <section class="max-w-2xl mx-auto px-4 mb-8"><!-- RELATED-LINKS-BLOCK -->
+  <div class="p-5 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl">
+    <p class="font-display font-700 text-sm text-ink-800 dark:text-ink-100 mb-3">Related</p>
+    <div class="flex flex-wrap gap-2">
+        <a href="/tools/merge-pdf" class="text-sm px-3 py-1.5 rounded-lg border border-ink-200 dark:border-ink-800 text-ink-500 dark:text-ink-400 hover:text-forge-500 hover:border-forge-400 transition-colors">Try Merge PDF</a>
+        <a href="/business-pdf-tools" class="text-sm px-3 py-1.5 rounded-lg border border-ink-200 dark:border-ink-800 text-ink-500 dark:text-ink-400 hover:text-forge-500 hover:border-forge-400 transition-colors">PDF tools for business</a>
+        <a href="/blog/split-pdf" class="text-sm px-3 py-1.5 rounded-lg border border-ink-200 dark:border-ink-800 text-ink-500 dark:text-ink-400 hover:text-forge-500 hover:border-forge-400 transition-colors">Related article</a>
+        <a href="/blog/best-free-pdf-tools" class="text-sm px-3 py-1.5 rounded-lg border border-ink-200 dark:border-ink-800 text-ink-500 dark:text-ink-400 hover:text-forge-500 hover:border-forge-400 transition-colors">7 free PDF tools I actually use</a>
+        <a href="/blog" class="text-sm px-3 py-1.5 rounded-lg border border-ink-200 dark:border-ink-800 text-ink-500 dark:text-ink-400 hover:text-forge-500 hover:border-forge-400 transition-colors">All PDF guides</a>
+        </div>
+  </div>
+</section>
+<footer class="border-t border-ink-200 dark:border-ink-800 py-8 bg-white dark:bg-ink-900">
+    <div class="max-w-2xl mx-auto px-4 text-center text-sm text-ink-400">
+      <p>© 2026 <a href="/" class="hover:text-forge-500 transition-colors">PDFly</a> · <a href="/pages/about" class="hover:text-forge-500 transition-colors">About</a> · <a href="/pages/privacy" class="hover:text-forge-500 transition-colors">Privacy</a> · <a href="/pages/terms" class="hover:text-forge-500 transition-colors">Terms</a> · <a href="/pages/disclaimer" class="hover:text-forge-500 transition-colors">Disclaimer</a></p>
+    </div>
+  </footer>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

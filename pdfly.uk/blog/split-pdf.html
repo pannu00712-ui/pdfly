@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="../favicon.ico?v=2" sizes="any"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png?v=2"/>
+  <link rel="icon" type="image/png" sizes="192x192" href="../android-chrome-192.png?v=2"/>
+  <link rel="icon" type="image/png" sizes="512x512" href="../android-chrome-512.png?v=2"/>
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png?v=2"/>
+  <link rel="mask-icon" href="../mask-icon-v2.svg" color="#2563EB"/>
+  <link rel="manifest" href="../site.webmanifest?v=2"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to Split a PDF Into Manageable Files | PDFly</title>
+  <meta name="description" content="Split a large PDF into smaller files by page range, file size, or every N pages. Free, browser-based, and perfect for emailing or sharing sections." />
+  <link rel="canonical" href="https://pdfly.uk/blog/split-pdf" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="How to Split a PDF: Break Large Documents Into Manageable Files" />
+  <meta property="og:description" content="Split a large PDF into smaller files by page range, file size, or every N pages. Free, browser-based, and perfect for emailing or sharing sections." />
+  <meta property="og:url" content="https://pdfly.uk/blog/split-pdf" />
+  <meta property="og:image" content="https://pdfly.uk/og-image.png" />
+  <meta property="og:site_name" content="PDFly" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="How to Split a PDF: Break Large Documents Into Manageable Files" />
+  <meta name="twitter:description" content="Split a large PDF into smaller files by page range, file size, or every N pages. Free, browser-based, and perfect for emailing or sharing sections." />
+  <meta name="twitter:image" content="https://pdfly.uk/og-image.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/tailwind-built.css"/>
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can I split a PDF by file size?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — you can set a target file size, and the tool will split the PDF so each part is around that size."}}, {"@type": "Question", "name": "Will splitting reduce the quality of my PDF?", "acceptedAnswer": {"@type": "Answer", "text": "No — splitting just divides the pages. The content, quality, and formatting of each page remain exactly the same."}}, {"@type": "Question", "name": "Can I split a PDF into individual pages?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — you can choose to split after every page, which creates a separate PDF for each page."}}]}
+  </script>
+  <script src="https://analytics.ahrefs.com/analytics.js" data-key="VmqStOhNtLiTsE983txKMA" async></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"How to Split a PDF: Break Large Documents Into Manageable Files","description":"Split a large PDF into smaller files by page range, file size, or every N pages. Free, browser-based, and perfect for emailing or sharing sections.","datePublished":"2026-07-12","dateModified":"2026-07-23","author":{"@type":"Person","name":"Alex Rivera","url":"https://pdfly.uk/pages/author"},"publisher":{"@type":"Organization","name":"PDFly","logo":{"@type":"ImageObject","url":"https://pdfly.uk/logo.png","width":512,"height":512}},"image":"https://pdfly.uk/og-image.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://pdfly.uk/blog/split-pdf"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"How to Split a PDF: Break Large Documents Into Manageable Files","description":"Split a large PDF into smaller files by page range, file size, or every N pages. Free, browser-based, and perfect for emailing or sharing sections.","step":[{"@type":"HowToStep","position":1,"name":"Open a tool like PDFly's Split PDF.","text":"Open a tool like PDFly's Split PDF."},{"@type":"HowToStep","position":2,"name":"Upload your PDF.","text":"Upload your PDF."},{"@type":"HowToStep","position":3,"name":"Choose how to split: By page range: Split after a specifi...","text":"Choose how to split: By page range: Split after a specific page number. This is the most common method."},{"@type":"HowToStep","position":4,"name":"By file size: Split into files of a certain size. This is...","text":"By file size: Split into files of a certain size. This is useful for email attachments."},{"@type":"HowToStep","position":5,"name":"Every N pages: Split after every N pages. This is useful ...","text":"Every N pages: Split after every N pages. This is useful for breaking a document into equal chunks."},{"@type":"HowToStep","position":6,"name":"Individual pages: Each page becomes its own PDF. This is ...","text":"Individual pages: Each page becomes its own PDF. This is useful when you need to process each page separately."},{"@type":"HowToStep","position":7,"name":"Click process and download your split files (usually as a...","text":"Click process and download your split files (usually as a ZIP)."}]}</script>
+</head>
+<body class="bg-ink-50 dark:bg-ink-950 text-ink-800 dark:text-ink-100 font-body antialiased">
+
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-ink-50/90 dark:bg-ink-950/90 backdrop-blur-xl border-b border-ink-200 dark:border-ink-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6"><div class="flex items-center justify-between h-16">
+      <a href="/" class="flex items-center gap-2.5">
+        <svg class="w-8 h-8 rounded-lg" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="40" height="40" rx="11" fill="#2563EB"/><path d="M13 11.5C13 10.6716 13.6716 10 14.5 10H22.5L27 14.5V28.5C27 29.3284 26.3284 30 25.5 30H14.5C13.6716 30 13 29.3284 13 28.5V11.5Z" fill="white"/><path d="M22.5 10L27 14.5H23.5C22.9477 14.5 22.5 14.0523 22.5 13.5V10Z" fill="#BFD3FE"/><rect x="16" y="17" width="3" height="3" rx="0.75" fill="#2563EB"/><rect x="16" y="21.5" width="3" height="3" rx="0.75" fill="#2563EB"/><path d="M20.5 17H23.25C24.2165 17 25 17.7835 25 18.75C25 19.7165 24.2165 20.5 23.25 20.5H20.5V17Z" stroke="#2563EB" stroke-width="1.4" stroke-linejoin="round"/><path d="M20.5 20.5V25" stroke="#2563EB" stroke-width="1.4" stroke-linecap="round"/></svg>
+        <span class="font-display text-xl text-ink-900 dark:text-white"><span class="font-800 text-forge-500">PDF</span><span class="font-600">ly</span></span>
+      </a>
+      <div class="flex items-center gap-3">
+        <a href="/tools/split-pdf" class="hidden sm:flex items-center gap-1.5 text-sm font-medium text-white bg-forge-500 hover:bg-forge-600 px-4 py-2 rounded-lg transition-colors">Try This Tool</a>
+        <button id="darkToggle" class="w-9 h-9 rounded-lg flex items-center justify-center text-ink-500 hover:bg-ink-100 dark:hover:bg-ink-800 transition-colors">
+          <svg class="w-4 h-4 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+          <svg class="w-4 h-4 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+        </button>
+      </div>
+    </div></div>
+  </nav>
+
+  <article class="pt-28 pb-20 px-4 max-w-2xl mx-auto">
+    <div class="mb-8">
+      <a href="/blog" class="text-xs text-forge-500 hover:text-forge-600 font-medium">← Back to Blog</a>
+      <p class="text-xs font-display font-600 text-forge-500 uppercase tracking-widest mt-4 mb-3">PDF Guide</p>
+      <h1 class="font-display font-800 text-3xl sm:text-4xl text-ink-900 dark:text-white mb-4 leading-tight">How to Split a PDF: Break Large Documents Into Manageable Files</h1>
+      <div class="flex items-center gap-3 text-xs text-ink-400">
+        <span>By <a href="/pages/author" class="text-forge-500 hover:underline">Alex Rivera</a></span>
+        <span>·</span>
+        <span>Updated July 2026</span>
+        <span>·</span>
+        <span>6 min read</span>
+      </div>
+    </div>
+
+    <div class="prose-content space-y-5 text-ink-600 dark:text-ink-400 leading-relaxed">
+      <p>You've got a 200-page PDF. You only need to send chapters 4 and 5 to a client, but the whole file is too big to email. You could extract those pages, but there's a better way: split the PDF into separate files, and send just the ones you need.</p>
+
+      <p>Splitting a PDF is like cutting a loaf of bread into slices. You decide where the cuts happen, and each slice becomes its own independent file. It's perfect for sharing, emailing, or archiving parts of a larger document.</p>
+
+      <p>This sounds minor, but it comes up constantly — becomes essential as soon as you start working with large PDFs. A 200-page document is hard to email, hard to navigate, and hard to share in pieces. Splitting solves all of these problems.</p>
+
+      <h2 class="font-display font-700 text-xl text-ink-800 dark:text-ink-200 pt-2">Why split a PDF?</h2>
+      <p>There are several reasons to split a PDF into multiple files:</p>
+      <ul class="space-y-2 list-disc list-inside">
+        <li><strong class="text-ink-700 dark:text-ink-300">Email limits:</strong> Many email services cap file sizes at 25MB. Splitting reduces the size of each file. This is the most common reason.</li>
+        <li><strong class="text-ink-700 dark:text-ink-300">Sharing only parts:</strong> Send just the chapters or sections a client needs. This is more considerate than sending the whole document.</li>
+        <li><strong class="text-ink-700 dark:text-ink-300">Archiving:</strong> Break a large document into smaller, more manageable files. This makes it easier to find specific sections later.</li>
+        <li><strong class="text-ink-700 dark:text-ink-300">Processing:</strong> Some tools work better with smaller files. Splitting a large PDF can make it easier to process.</li>
+      </ul>
+
+      <p>There's also a use case in document management: splitting is often the first step before merging. You might split a document into sections, remove a section, and then merge the remaining sections back together.</p>
+
+      <h2 class="font-display font-700 text-xl text-ink-800 dark:text-ink-200 pt-2">The quickest route to split a PDF</h2>
+      <p>You don't need to open the PDF in an editor or use complex software. A dedicated tool splits your PDF in seconds.</p>
+      <ol class="space-y-3 list-decimal list-inside">
+        <li>Open a tool like <a href="/tools/split-pdf" class="text-forge-500 hover:underline">PDFly's Split PDF</a>.</li>
+        <li>Upload your PDF.</li>
+        <li>Choose how to split:
+          <ul class="list-disc list-inside ml-4 mt-1">
+            <li><strong class="text-ink-700 dark:text-ink-300">By page range:</strong> Split after a specific page number. This is the most common method.</li>
+            <li><strong class="text-ink-700 dark:text-ink-300">By file size:</strong> Split into files of a certain size. This is useful for email attachments.</li>
+            <li><strong class="text-ink-700 dark:text-ink-300">Every N pages:</strong> Split after every N pages. This is useful for breaking a document into equal chunks.</li>
+            <li><strong class="text-ink-700 dark:text-ink-300">Individual pages:</strong> Each page becomes its own PDF. This is useful when you need to process each page separately.</li>
+          </ul>
+        </li>
+        <li>Click process and download your split files (usually as a ZIP).</li>
+      </ol>
+
+      <p>The split is usually complete in a few seconds. The tool doesn't need to render the document — it just copies pages into new files.</p>
+
+      <h2 class="font-display font-700 text-xl text-ink-800 dark:text-ink-200 pt-2">Split options explained</h2>
+      <ul class="space-y-2 list-disc list-inside">
+        <li><strong class="text-ink-700 dark:text-ink-300">By page range:</strong> You specify pages like "1-10, 11-20, 21-30." Each range becomes its own file. This gives you full control.</li>
+        <li><strong class="text-ink-700 dark:text-ink-300">By file size:</strong> The tool splits the PDF into files that are around, say, 5MB each. The split happens at page boundaries. This is useful for email limits.</li>
+        <li><strong class="text-ink-700 dark:text-ink-300">Every N pages:</strong> If you choose 10, pages 1-10 become one file, 11-20 become another, and so on. This is the simplest method.</li>
+        <li><strong class="text-ink-700 dark:text-ink-300">Individual pages:</strong> A 50-page PDF becomes 50 separate PDFs, one per page. This is useful for processing each page separately.</li>
+      </ul>
+
+      <p>The by-file-size option is the most sophisticated. The tool has to estimate the size of each split file, which depends on the content of each page. It's not always perfect, but it's usually close enough.</p>
+
+      <h2 class="font-display font-700 text-xl text-ink-800 dark:text-ink-200 pt-2">Split vs. extract: what's the difference?</h2>
+      <ul class="space-y-2 list-disc list-inside">
+        <li><strong class="text-ink-700 dark:text-ink-300">Split:</strong> Breaks a PDF into multiple files. Everything is divided into separate documents.</li>
+        <li><strong class="text-ink-700 dark:text-ink-300">Extract:</strong> Pulls selected pages into a new file. The original stays intact.</li>
+      </ul>
+      <p>Use split when you want to break the whole document into parts. Use extract when you only need a few specific pages.</p>
+
+      <p>The choice depends on your goal. If you're sending a large document in multiple emails, split is the right tool. If you're sharing a single chapter from a document, extract is the right tool.</p>
+
+      <div class="mt-10 p-6 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl text-center">
+        <p class="font-display font-700 text-ink-800 dark:text-ink-100 mb-1">Need to break a PDF into smaller files?</p>
+        <p class="text-sm text-ink-500 dark:text-ink-400 mb-4">Split your PDF in seconds — no uploads, no signup, no watermarks.</p>
+        <a href="/tools/split-pdf" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-forge-500 hover:bg-forge-600 text-white text-sm font-medium transition-colors">Open Split PDF Tool</a>
+      </div>
+
+      <section class="faq-section mt-12 pt-6 border-t border-ink-200 dark:border-ink-800">
+        <h2 class="font-display font-700 text-xl text-ink-800 dark:text-ink-200 pt-2 mb-4">Frequently Asked Questions</h2>
+      
+        <div class="space-y-4">
+          <div>
+            <h3 class="font-display font-600 text-ink-800 dark:text-ink-200 text-base">Can I split a PDF by file size?</h3>
+            <p class="text-ink-500 dark:text-ink-400 text-sm">Yes — you can set a target file size, and the tool will split the PDF so each part is around that size.</p>
+          </div>
+          <div>
+            <h3 class="font-display font-600 text-ink-800 dark:text-ink-200 text-base">Will splitting reduce the quality of my PDF?</h3>
+            <p class="text-ink-500 dark:text-ink-400 text-sm">No — splitting just divides the pages. The content, quality, and formatting of each page remain exactly the same.</p>
+          </div>
+          <div>
+            <h3 class="font-display font-600 text-ink-800 dark:text-ink-200 text-base">Can I split a PDF into individual pages?</h3>
+            <p class="text-ink-500 dark:text-ink-400 text-sm">Yes — you can choose to split after every page, which creates a separate PDF for each page.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </article>
+
+  <section class="max-w-2xl mx-auto px-4 mb-8"><!-- RELATED-LINKS-BLOCK -->
+  <div class="p-5 bg-white dark:bg-ink-900 border border-ink-200 dark:border-ink-800 rounded-2xl">
+    <p class="font-display font-700 text-sm text-ink-800 dark:text-ink-100 mb-3">Related</p>
+    <div class="flex flex-wrap gap-2">
+        <a href="/tools/split-pdf" class="text-sm px-3 py-1.5 rounded-lg border border-ink-200 dark:border-ink-800 text-ink-500 dark:text-ink-400 hover:text-forge-500 hover:border-forge-400 transition-colors">Try Split PDF</a>
+        <a href="/business-pdf-tools" class="text-sm px-3 py-1.5 rounded-lg border border-ink-200 dark:border-ink-800 text-ink-500 dark:text-ink-400 hover:text-forge-500 hover:border-forge-400 transition-colors">PDF tools for business</a>
+        <a href="/blog/how-to-merge-pdf-files" class="text-sm px-3 py-1.5 rounded-lg border border-ink-200 dark:border-ink-800 text-ink-500 dark:text-ink-400 hover:text-forge-500 hover:border-forge-400 transition-colors">Related article</a>
+        <a href="/blog" class="text-sm px-3 py-1.5 rounded-lg border border-ink-200 dark:border-ink-800 text-ink-500 dark:text-ink-400 hover:text-forge-500 hover:border-forge-400 transition-colors">All PDF guides</a>
+        </div>
+  </div>
+</section>
+<footer class="border-t border-ink-200 dark:border-ink-800 py-8 bg-white dark:bg-ink-900">
+    <div class="max-w-2xl mx-auto px-4 text-center text-sm text-ink-400">
+      <p>© 2026 <a href="/" class="hover:text-forge-500 transition-colors">PDFly</a> · <a href="/pages/privacy" class="hover:text-forge-500 transition-colors">Privacy</a> · <a href="/pages/terms" class="hover:text-forge-500 transition-colors">Terms</a> · <a href="/pages/security" class="hover:text-forge-500 transition-colors">Security</a> · <a href="/pages/faq" class="hover:text-forge-500 transition-colors">FAQ</a></p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
