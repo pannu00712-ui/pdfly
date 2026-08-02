@@ -134,6 +134,38 @@
   var currentCat = "all";
   var currentQuery = "";
 
+  var CAT_INFO = {
+    organize: { label: "Arrange & Sort", color: "#2563eb" },
+    convert: { label: "Swap Formats", color: "#d97706" },
+    edit: { label: "Mark & Shape", color: "#db2777" },
+    security: { label: "Lock & Sign", color: "#16a34a" },
+    ai: { label: "AI Toolkit", color: "#7c3aed" },
+    utility: { label: "Handy Extras", color: "#ea580c" }
+  };
+
+  function cardHTML(t) {
+    var accent = t.c === "ai" ? "ai" : "primary";
+    return (
+      '<a href="' + t.h + '" class="tool-card group bg-white dark:bg-surface-card border border-borderc dark:border-surface-border rounded-card p-5 flex items-start gap-4">' +
+        '<div class="w-10 h-10 rounded-lg bg-' + (t.c === "ai" ? "ai/10" : "primary-50 dark:bg-primary/10") + ' flex items-center justify-center shrink-0">' +
+          icon(t.i, "w-[18px] h-[18px] text-" + accent) +
+        "</div>" +
+        '<div class="min-w-0 flex-1">' +
+          '<div class="flex items-center justify-between gap-2">' +
+            '<h3 class="font-600 text-[15px] text-heading dark:text-white truncate">' + t.n + "</h3>" +
+            '<svg class="arrow w-4 h-4 text-gray-300 dark:text-gray-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>' +
+          "</div>" +
+          '<p class="text-sm text-body dark:text-gray-400 mt-0.5 leading-snug">' + t.d + "</p>" +
+        "</div>" +
+      "</a>"
+    );
+  }
+
+  function headingHTML(cat) {
+    var info = CAT_INFO[cat];
+    if (!info) return "";
+    return '<h3 class="col-span-full text-sm font-700 uppercase tracking-wide text-heading dark:text-white flex items-center gap-2 mt-4 mb-1 first:mt-0"><span class="w-2 h-2 rounded-full" style="background:' + info.color + '"></span>' + info.label + "</h3>";
+  }
   function renderGrid(filter, query) {
     if (!grid) return;
     currentCat = filter !== undefined ? filter : currentCat;
@@ -148,23 +180,21 @@
     }
 
     if (noResults) noResults.classList.toggle("show", list.length === 0);
-    grid.innerHTML = list.map(function (t) {
-      var accent = t.c === "ai" ? "ai" : "primary";
-      return (
-        '<a href="' + t.h + '" class="tool-card group bg-white dark:bg-surface-card border border-borderc dark:border-surface-border rounded-card p-5 flex items-start gap-4">' +
-          '<div class="w-10 h-10 rounded-lg bg-' + (t.c === "ai" ? "ai/10" : "primary-50 dark:bg-primary/10") + ' flex items-center justify-center shrink-0">' +
-            icon(t.i, "w-[18px] h-[18px] text-" + accent) +
-          "</div>" +
-          '<div class="min-w-0 flex-1">' +
-            '<div class="flex items-center justify-between gap-2">' +
-              '<h3 class="font-600 text-[15px] text-heading dark:text-white truncate">' + t.n + "</h3>" +
-              '<svg class="arrow w-4 h-4 text-gray-300 dark:text-gray-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>' +
-            "</div>" +
-            '<p class="text-sm text-body dark:text-gray-400 mt-0.5 leading-snug">' + t.d + "</p>" +
-          "</div>" +
-        "</a>"
-      );
-    }).join("");
+
+    // Group into category sections with headings only when browsing "all" tools with no active search.
+    if (currentCat === "all" && !currentQuery) {
+      var order = ["organize", "convert", "edit", "security", "ai", "utility"];
+      var html = "";
+      order.forEach(function (cat) {
+        var group = list.filter(function (t) { return t.c === cat; });
+        if (!group.length) return;
+        html += headingHTML(cat);
+        html += group.map(cardHTML).join("");
+      });
+      grid.innerHTML = html;
+    } else {
+      grid.innerHTML = list.map(cardHTML).join("");
+    }
   }
   renderGrid("all");
 
