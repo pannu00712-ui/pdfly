@@ -3,6 +3,18 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 
+.nav-dd-desktop { display: none; }
+@media (min-width: 1024px) { .nav-dd-desktop { display: flex; align-items: center; gap: 2px; margin-right: 4px; } }
+.nav-dd { position: relative; }
+.nav-dd summary { list-style: none; cursor: pointer; }
+.nav-dd summary::-webkit-details-marker { display: none; }
+.nav-dd summary::marker { content: ""; }
+.nav-dd-chev { transition: transform .2s ease; }
+.nav-dd[open] .nav-dd-chev { transform: rotate(180deg); }
+.nav-dd-panel { position: absolute; top: 100%; left: 0; margin-top: 6px; min-width: 190px; z-index: 60; box-shadow: 0 10px 30px rgba(0,0,0,.12); }
+.nav-dd-panel a { font-weight: 500; }
+.nav-dd-see-all { font-weight: 600; }
+
 :root {
   --forge-50: #eff6ff; --forge-100: #dbeafe;
   --forge-400: #2563eb; --forge-500: #2563eb;
