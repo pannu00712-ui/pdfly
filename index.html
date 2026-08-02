@@ -201,6 +201,15 @@
         <span class="text-xl tracking-tight"><span class="font-800 text-primary">PDF</span><span class="font-600 text-heading dark:text-white">ly</span></span>
       </a>
 
+      <div class="hidden lg:flex items-center gap-1 h-full mr-auto ml-6" id="quickLinks">
+        <a href="/tools/compress-pdf" class="px-3 py-2 rounded-lg text-[15px] font-500 text-body dark:text-gray-300 hover:text-heading dark:hover:text-white hover:bg-gray-100 dark:hover:bg-white/5 transition-colors duration-200">Compress</a>
+        <a href="/pdf-conversion-tools" class="px-3 py-2 rounded-lg text-[15px] font-500 text-body dark:text-gray-300 hover:text-heading dark:hover:text-white hover:bg-gray-100 dark:hover:bg-white/5 transition-colors duration-200">Convert</a>
+        <a href="/tools/merge-pdf" class="px-3 py-2 rounded-lg text-[15px] font-500 text-body dark:text-gray-300 hover:text-heading dark:hover:text-white hover:bg-gray-100 dark:hover:bg-white/5 transition-colors duration-200">Merge</a>
+        <a href="/tools/pdf-editor" class="px-3 py-2 rounded-lg text-[15px] font-500 text-body dark:text-gray-300 hover:text-heading dark:hover:text-white hover:bg-gray-100 dark:hover:bg-white/5 transition-colors duration-200">Edit</a>
+        <a href="/tools/sign-pdf" class="px-3 py-2 rounded-lg text-[15px] font-500 text-body dark:text-gray-300 hover:text-heading dark:hover:text-white hover:bg-gray-100 dark:hover:bg-white/5 transition-colors duration-200">Sign</a>
+        <a href="/ai-pdf-tools" class="px-3 py-2 rounded-lg text-[15px] font-500 text-ai hover:text-ai hover:bg-gray-100 dark:hover:bg-white/5 transition-colors duration-200">AI PDF</a>
+      </div>
+
       <div class="flex items-center gap-4 lg:gap-6">
       <div class="hidden lg:flex items-center gap-1 h-full" id="megaWrap">
         <div class="relative h-full flex items-center" id="megaTrigger">
@@ -209,30 +218,51 @@
             <svg class="w-3.5 h-3.5 transition-transform duration-200" id="megaChev" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
           </button>
 
-          <div id="megaMenu" class="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[760px] bg-white dark:bg-surface-card border border-borderc dark:border-surface-border rounded-card shadow-lift p-6 grid grid-cols-3 gap-x-8 gap-y-6">
+          <div id="megaMenu" class="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[980px] bg-white dark:bg-surface-card border border-borderc dark:border-surface-border rounded-card shadow-lift p-6 grid grid-cols-6 gap-x-6 gap-y-6">
             <div>
-              <p class="text-xs font-700 uppercase tracking-wide text-gray-400 mb-3">Organize</p>
+              <p class="text-xs font-700 uppercase tracking-wide text-gray-400 mb-3 flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full" style="background:#2563eb"></span>Arrange &amp; Sort</p>
               <a href="/tools/merge-pdf" class="block text-sm font-500 text-body dark:text-gray-300 hover:text-primary py-1">Merge PDF</a>
               <a href="/tools/split-pdf" class="block text-sm font-500 text-body dark:text-gray-300 hover:text-primary py-1">Split PDF</a>
               <a href="/tools/compress-pdf" class="block text-sm font-500 text-body dark:text-gray-300 hover:text-primary py-1">Compress PDF</a>
               <a href="/tools/organize-pdf" class="block text-sm font-500 text-body dark:text-gray-300 hover:text-primary py-1">Organize Pages</a>
             </div>
             <div>
-              <p class="text-xs font-700 uppercase tracking-wide text-gray-400 mb-3">Convert</p>
+              <p class="text-xs font-700 uppercase tracking-wide text-gray-400 mb-3 flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full" style="background:#d97706"></span>Swap Formats</p>
               <a href="/tools/pdf-to-word" class="block text-sm font-500 text-body dark:text-gray-300 hover:text-primary py-1">PDF to Word</a>
               <a href="/tools/word-to-pdf" class="block text-sm font-500 text-body dark:text-gray-300 hover:text-primary py-1">Word to PDF</a>
               <a href="/tools/pdf-to-jpg" class="block text-sm font-500 text-body dark:text-gray-300 hover:text-primary py-1">PDF to JPG</a>
               <a href="/tools/jpg-to-pdf" class="block text-sm font-500 text-body dark:text-gray-300 hover:text-primary py-1">JPG to PDF</a>
+              <a href="/pdf-conversion-tools" class="block text-sm font-600 text-primary hover:text-primary-hover py-1 pt-1.5 mt-1 border-t border-borderc dark:border-surface-border">See all convert tools →</a>
             </div>
             <div>
-              <p class="text-xs font-700 uppercase tracking-wide text-gray-400 mb-3 flex items-center gap-1.5">AI-Powered <span class="w-1.5 h-1.5 rounded-full bg-ai"></span></p>
+              <p class="text-xs font-700 uppercase tracking-wide text-gray-400 mb-3 flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full" style="background:#db2777"></span>Mark &amp; Shape</p>
+              <a href="/tools/pdf-editor" class="block text-sm font-500 text-body dark:text-gray-300 hover:text-primary py-1">PDF Editor</a>
+              <a href="/tools/annotate-pdf" class="block text-sm font-500 text-body dark:text-gray-300 hover:text-primary py-1">Annotate PDF</a>
+              <a href="/tools/watermark-pdf" class="block text-sm font-500 text-body dark:text-gray-300 hover:text-primary py-1">Watermark PDF</a>
+              <a href="/tools/redact-pdf" class="block text-sm font-500 text-body dark:text-gray-300 hover:text-primary py-1">Redact PDF</a>
+            </div>
+            <div>
+              <p class="text-xs font-700 uppercase tracking-wide text-gray-400 mb-3 flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full" style="background:#16a34a"></span>Lock &amp; Sign</p>
+              <a href="/tools/protect-pdf" class="block text-sm font-500 text-body dark:text-gray-300 hover:text-primary py-1">Protect PDF</a>
+              <a href="/tools/unlock-pdf" class="block text-sm font-500 text-body dark:text-gray-300 hover:text-primary py-1">Unlock PDF</a>
+              <a href="/tools/sign-pdf" class="block text-sm font-500 text-body dark:text-gray-300 hover:text-primary py-1">Sign PDF</a>
+            </div>
+            <div>
+              <p class="text-xs font-700 uppercase tracking-wide text-gray-400 mb-3 flex items-center gap-1.5">AI Toolkit <span class="w-1.5 h-1.5 rounded-full bg-ai"></span></p>
               <a href="/tools/chat-with-pdf" class="block text-sm font-500 text-body dark:text-gray-300 hover:text-ai py-1">Chat with PDF</a>
               <a href="/tools/pdf-summarizer" class="block text-sm font-500 text-body dark:text-gray-300 hover:text-ai py-1">Summarize PDF</a>
               <a href="/tools/pdf-translator" class="block text-sm font-500 text-body dark:text-gray-300 hover:text-ai py-1">Translate PDF</a>
               <a href="/tools/ocr-pdf" class="block text-sm font-500 text-body dark:text-gray-300 hover:text-ai py-1">OCR PDF</a>
               <a href="/ai-pdf-tools" class="block text-sm font-600 text-ai hover:text-ai py-1 pt-1.5 mt-1 border-t border-borderc dark:border-surface-border">See all AI PDF tools →</a>
             </div>
-            <div class="col-span-3 pt-4 border-t border-borderc dark:border-surface-border flex items-center justify-between">
+            <div>
+              <p class="text-xs font-700 uppercase tracking-wide text-gray-400 mb-3 flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full" style="background:#ea580c"></span>Handy Extras</p>
+              <a href="/tools/pdf-reader" class="block text-sm font-500 text-body dark:text-gray-300 hover:text-primary py-1">PDF Reader</a>
+              <a href="/tools/compare-pdf" class="block text-sm font-500 text-body dark:text-gray-300 hover:text-primary py-1">Compare PDF</a>
+              <a href="/tools/scan-to-pdf" class="block text-sm font-500 text-body dark:text-gray-300 hover:text-primary py-1">Scan to PDF</a>
+              <a href="/tools/extract-pages" class="block text-sm font-500 text-body dark:text-gray-300 hover:text-primary py-1">Extract Pages</a>
+            </div>
+            <div class="col-span-6 pt-4 border-t border-borderc dark:border-surface-border flex items-center justify-between">
               <p class="text-sm text-gray-400">56 tools total — organize, convert, edit, secure &amp; more</p>
               <a href="#tools" class="text-sm font-600 text-primary hover:text-primary-hover flex items-center gap-1">Browse all tools <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></a>
             </div>
@@ -273,23 +303,8 @@
   </div>
 </nav>
 
-<!-- ================= PERSISTENT CATEGORY BAR ================= -->
-<div id="topCatBar" role="tablist" aria-label="Filter PDF tools by category">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div id="topCatBarInner">
-      <button class="filter-tab top-cat-pill" data-cat="all" aria-selected="true" role="tab"><span class="top-cat-dot" style="background:#6b6358"></span>All tools</button>
-      <button class="filter-tab top-cat-pill" data-cat="organize" aria-selected="false" role="tab"><span class="top-cat-dot" style="background:#2563eb"></span>Arrange &amp; Sort</button>
-      <button class="filter-tab top-cat-pill" data-cat="convert" aria-selected="false" role="tab"><span class="top-cat-dot" style="background:#d97706"></span>Swap Formats</button>
-      <button class="filter-tab top-cat-pill" data-cat="edit" aria-selected="false" role="tab"><span class="top-cat-dot" style="background:#db2777"></span>Mark &amp; Shape</button>
-      <button class="filter-tab top-cat-pill" data-cat="security" aria-selected="false" role="tab"><span class="top-cat-dot" style="background:#16a34a"></span>Lock &amp; Sign</button>
-      <button class="filter-tab top-cat-pill" data-cat="ai" aria-selected="false" role="tab"><span class="top-cat-dot" style="background:#4f46e5"></span>AI Toolkit</button>
-      <button class="filter-tab top-cat-pill" data-cat="utility" aria-selected="false" role="tab"><span class="top-cat-dot" style="background:#ea580c"></span>Handy Extras</button>
-    </div>
-  </div>
-</div>
-
 <!-- ================= HERO ================= -->
-<section class="relative pt-40 pb-24 px-4 overflow-hidden">
+<section class="relative pt-28 pb-24 px-4 overflow-hidden">
   <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
     <div class="absolute -top-24 left-1/2 -translate-x-1/2 w-[900px] h-[500px] bg-gradient-to-b from-primary-50 dark:from-primary/10 to-transparent rounded-full blur-3xl opacity-70"></div>
   </div>
@@ -389,21 +404,6 @@
   </div>
 </section>
 
-<!-- ================= TOOL CATEGORIES ================= -->
-<section class="py-20 px-4 bg-section dark:bg-white/[0.02] border-y border-borderc dark:border-surface-border">
-  <div class="max-w-6xl mx-auto">
-    <div class="reveal max-w-xl mb-14">
-      <p class="text-xs font-700 uppercase tracking-widest text-primary mb-3">What you need, organized</p>
-      <h2 class="font-800 text-3xl sm:text-[40px] leading-tight tracking-tight text-heading dark:text-white mb-4">One toolbox, six ways to use it</h2>
-      <p class="text-body dark:text-gray-400 text-lg">Every tool runs the same way — instantly, privately, in your browser.</p>
-    </div>
-
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5" id="categoryCards">
-      <!-- filled by JS -->
-    </div>
-  </div>
-</section>
-
 <!-- ================= FEATURES (alternating) ================= -->
 <section id="features" class="py-24 px-4 bg-section dark:bg-white/[0.02] border-y border-borderc dark:border-surface-border scroll-mt-20">
   <div class="max-w-6xl mx-auto space-y-28">
@@ -435,45 +435,6 @@
             <p class="text-xs text-gray-400 mt-1">No network request sent</p>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="grid lg:grid-cols-2 gap-14 items-center">
-      <div class="reveal">
-        <div class="rounded-card border border-borderc dark:border-surface-border bg-white dark:bg-surface-card shadow-soft p-8">
-          <div class="flex items-end gap-2 h-32">
-            <div class="w-8 bg-primary-100 dark:bg-primary/20 rounded-t-md" style="height:35%"></div>
-            <div class="w-8 bg-primary-100 dark:bg-primary/20 rounded-t-md" style="height:55%"></div>
-            <div class="w-8 bg-primary rounded-t-md" style="height:95%"></div>
-            <div class="w-8 bg-primary-100 dark:bg-primary/20 rounded-t-md" style="height:40%"></div>
-            <div class="w-8 bg-primary-100 dark:bg-primary/20 rounded-t-md" style="height:60%"></div>
-          </div>
-          <p class="text-xs font-600 text-gray-400 mt-4 text-center">Median tool completion time: under 2 seconds</p>
-        </div>
-      </div>
-      <div class="reveal" style="transition-delay:80ms">
-        <div class="w-11 h-11 rounded-xl bg-orange-50 dark:bg-accent/10 flex items-center justify-center mb-6">
-          <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-        </div>
-        <h3 class="font-800 text-3xl tracking-tight text-heading dark:text-white mb-4">Built for speed</h3>
-        <p class="text-body dark:text-gray-400 text-lg leading-relaxed mb-6">No upload queue, no server round-trip, no waiting behind other people's files. Because processing happens on your own hardware, most operations finish before a typical page finishes loading.</p>
-        <ul class="space-y-3">
-          <li class="flex items-start gap-2.5 text-body dark:text-gray-300"><svg class="w-5 h-5 text-success shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>No queueing behind other users</li>
-          <li class="flex items-start gap-2.5 text-body dark:text-gray-300"><svg class="w-5 h-5 text-success shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>No file-size throttling</li>
-          <li class="flex items-start gap-2.5 text-body dark:text-gray-300"><svg class="w-5 h-5 text-success shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Batch multiple files without slowdown</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="max-w-2xl mx-auto text-center">
-      <div class="reveal">
-        <div class="w-11 h-11 rounded-xl bg-ai/10 flex items-center justify-center mb-6 mx-auto">
-          <svg class="w-5 h-5 text-ai" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
-        </div>
-        <h3 class="font-800 text-3xl tracking-tight text-heading dark:text-white mb-4">AI that reads your documents, not your data</h3>
-        <p class="text-body dark:text-gray-400 text-lg leading-relaxed mb-6">Ask questions, get a plain-language summary, or translate a contract in seconds. Our AI tools process only the specific request you make — nothing is stored or used to train models.</p>
-        <a href="/tools/chat-with-pdf" class="inline-flex items-center gap-1.5 text-ai font-600 hover:gap-2.5 transition-all duration-200">Try Chat with PDF <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a>
-        <a href="/ai-pdf-tools" class="block mt-2 text-sm text-body dark:text-gray-400 hover:text-ai transition-colors duration-200">Or see all AI PDF tools →</a>
       </div>
     </div>
 
