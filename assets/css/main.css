@@ -571,3 +571,24 @@ input[type="range"]::-webkit-slider-thumb:hover { transform: scale(1.2); }
 .nav-dd-mega-col-company .nav-dd-mega-link:hover {
   padding-left: 8px;
 }
+
+/* ---- Fix: center the mega menu instead of overflowing off-screen ---- */
+.nav-dd-mega-panel {
+  right: auto !important;
+  left: 50% !important;
+  transform: translateX(-50%);
+  width: min(820px, 94vw) !important;
+}
+.nav-dd-mega-grid {
+  grid-template-columns: repeat(6, 1fr) !important;
+}
+.nav-dd-mega-col-company {
+  display: none !important;
+}
+@media (max-width: 900px) {
+  .nav-dd-mega-grid { grid-template-columns: repeat(2, 1fr) !important; }
+}
+@media (max-width: 560px) {
+  .nav-dd-mega-panel { left: auto !important; right: -16px !important; transform: none; }
+  .nav-dd-mega-grid { grid-template-columns: 1fr !important; }
+}
