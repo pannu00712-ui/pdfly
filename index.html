@@ -119,10 +119,37 @@
 
   /* Sticky search + filter bar */
   #toolsSticky{
-    position: sticky; top: 72px; z-index: 100;
+    position: sticky; top: 122px; z-index: 100;
     background: rgba(255,255,255,0.95); backdrop-filter: blur(12px);
     border-bottom: 1px solid #E5E7EB;
   }
+
+  /* Persistent category bar — sits under the navbar, visible from the first
+     scroll frame instead of only appearing once you reach the tools grid. */
+  #topCatBar{
+    position: fixed; top: 72px; left: 0; right: 0; z-index: 90;
+    background: rgba(255,255,255,0.92); backdrop-filter: blur(10px);
+    border-bottom: 1px solid #E5E7EB;
+  }
+  html.dark #topCatBar{ background: rgba(10,14,26,0.92); border-bottom-color:#1E2636; }
+  #topCatBarInner{
+    display:flex; gap:8px; padding:10px 0; overflow-x:auto;
+    -webkit-overflow-scrolling:touch; scrollbar-width:none;
+  }
+  #topCatBarInner::-webkit-scrollbar{ display:none; }
+  .top-cat-pill{
+    display:flex; align-items:center; gap:7px; white-space:nowrap;
+    font-size:13px; font-weight:600; padding:7px 14px 7px 12px;
+    border-radius:999px; border:1px solid #E5E7EB; background:#fff; color:#374151;
+    transition: background 150ms ease, color 150ms ease, border-color 150ms ease;
+  }
+  .top-cat-dot{ width:7px; height:7px; border-radius:50%; flex-shrink:0; display:inline-block; }
+  html.dark .top-cat-pill{ background:#111826; border-color:#1E2636; color:#D1D5DB; }
+  .top-cat-pill:hover[aria-selected="false"]{ border-color:#CBD5E1; color:#111827; }
+  html.dark .top-cat-pill:hover[aria-selected="false"]{ border-color:#2A3446; color:#fff; }
+  .top-cat-pill[aria-selected="true"]{ background:#2563EB; border-color:#2563EB; color:#fff; }
+  .top-cat-pill[aria-selected="true"] .top-cat-dot{ background:#fff !important; }
+  @media (max-width: 640px){ #topCatBar{ top: 64px; } }
   html.dark #toolsSticky{ background: rgba(10,14,26,0.95); border-bottom-color:#1E2636; }
   #toolSearch{
     width:100%; font-size:15px; padding:11px 16px 11px 42px; border-radius:12px;
@@ -244,6 +271,21 @@
   </div>
 </nav>
 
+<!-- ================= PERSISTENT CATEGORY BAR ================= -->
+<div id="topCatBar" role="tablist" aria-label="Filter PDF tools by category">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div id="topCatBarInner">
+      <button class="filter-tab top-cat-pill" data-cat="all" aria-selected="true" role="tab"><span class="top-cat-dot" style="background:#6b6358"></span>All tools</button>
+      <button class="filter-tab top-cat-pill" data-cat="organize" aria-selected="false" role="tab"><span class="top-cat-dot" style="background:#2563eb"></span>Arrange &amp; Sort</button>
+      <button class="filter-tab top-cat-pill" data-cat="convert" aria-selected="false" role="tab"><span class="top-cat-dot" style="background:#d97706"></span>Swap Formats</button>
+      <button class="filter-tab top-cat-pill" data-cat="edit" aria-selected="false" role="tab"><span class="top-cat-dot" style="background:#db2777"></span>Mark &amp; Shape</button>
+      <button class="filter-tab top-cat-pill" data-cat="security" aria-selected="false" role="tab"><span class="top-cat-dot" style="background:#16a34a"></span>Lock &amp; Sign</button>
+      <button class="filter-tab top-cat-pill" data-cat="ai" aria-selected="false" role="tab"><span class="top-cat-dot" style="background:#4f46e5"></span>AI Toolkit</button>
+      <button class="filter-tab top-cat-pill" data-cat="utility" aria-selected="false" role="tab"><span class="top-cat-dot" style="background:#ea580c"></span>Handy Extras</button>
+    </div>
+  </div>
+</div>
+
 <!-- ================= HERO ================= -->
 <section class="relative pt-40 pb-24 px-4 overflow-hidden">
   <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
@@ -351,21 +393,6 @@
   </div>
 </section>
 
-<!-- ================= TOOL CATEGORIES ================= -->
-<section class="py-20 px-4 bg-section dark:bg-white/[0.02] border-y border-borderc dark:border-surface-border">
-  <div class="max-w-6xl mx-auto">
-    <div class="reveal max-w-xl mb-14">
-      <p class="text-xs font-700 uppercase tracking-widest text-primary mb-3">What you need, organized</p>
-      <h2 class="font-800 text-3xl sm:text-[40px] leading-tight tracking-tight text-heading dark:text-white mb-4">One toolbox, six ways to use it</h2>
-      <p class="text-body dark:text-gray-400 text-lg">Every tool runs the same way — instantly, privately, in your browser.</p>
-    </div>
-
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5" id="categoryCards">
-      <!-- filled by JS -->
-    </div>
-  </div>
-</section>
-
 <!-- ================= ALL TOOLS GRID ================= -->
 <section id="tools" class="py-24 px-4 scroll-mt-20">
   <div class="max-w-6xl mx-auto">
@@ -379,20 +406,9 @@
 
   <div id="toolsSticky">
     <div class="max-w-6xl mx-auto px-4 py-4">
-      <div class="relative mb-3">
+      <div class="relative mb-1">
         <svg class="absolute left-3.5 top-1/2 -translate-y-1/2 w-[18px] h-[18px] text-gray-400 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M17 10a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
         <input type="text" id="toolSearch" placeholder="Search PDF tools..." autocomplete="off" aria-label="Search PDF tools"/>
-      </div>
-      <div class="flex justify-center">
-        <div class="flex gap-2 px-1" id="filterTabs" role="tablist">
-          <button class="filter-tab" data-cat="all" aria-selected="true" role="tab">All tools</button>
-          <button class="filter-tab" data-cat="organize" aria-selected="false" role="tab">Organize</button>
-          <button class="filter-tab" data-cat="convert" aria-selected="false" role="tab">Convert</button>
-          <button class="filter-tab" data-cat="edit" aria-selected="false" role="tab">Edit &amp; annotate</button>
-          <button class="filter-tab" data-cat="security" aria-selected="false" role="tab">Security</button>
-          <button class="filter-tab" data-cat="ai" aria-selected="false" role="tab">AI-powered</button>
-          <button class="filter-tab" data-cat="utility" aria-selected="false" role="tab">Utilities</button>
-        </div>
       </div>
     </div>
   </div>
@@ -404,6 +420,21 @@
     <p id="noResults" class="text-center text-body dark:text-gray-400 py-16">
       No tools match your search. Try a different keyword or category.
     </p>
+  </div>
+</section>
+
+<!-- ================= TOOL CATEGORIES ================= -->
+<section class="py-20 px-4 bg-section dark:bg-white/[0.02] border-y border-borderc dark:border-surface-border">
+  <div class="max-w-6xl mx-auto">
+    <div class="reveal max-w-xl mb-14">
+      <p class="text-xs font-700 uppercase tracking-widest text-primary mb-3">What you need, organized</p>
+      <h2 class="font-800 text-3xl sm:text-[40px] leading-tight tracking-tight text-heading dark:text-white mb-4">One toolbox, six ways to use it</h2>
+      <p class="text-body dark:text-gray-400 text-lg">Every tool runs the same way — instantly, privately, in your browser.</p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5" id="categoryCards">
+      <!-- filled by JS -->
+    </div>
   </div>
 </section>
 
@@ -468,25 +499,15 @@
       </div>
     </div>
 
-    <div class="grid lg:grid-cols-2 gap-14 items-center">
-      <div class="reveal order-2 lg:order-1">
-        <div class="w-11 h-11 rounded-xl bg-ai/10 flex items-center justify-center mb-6">
+    <div class="max-w-2xl mx-auto text-center">
+      <div class="reveal">
+        <div class="w-11 h-11 rounded-xl bg-ai/10 flex items-center justify-center mb-6 mx-auto">
           <svg class="w-5 h-5 text-ai" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
         </div>
         <h3 class="font-800 text-3xl tracking-tight text-heading dark:text-white mb-4">AI that reads your documents, not your data</h3>
         <p class="text-body dark:text-gray-400 text-lg leading-relaxed mb-6">Ask questions, get a plain-language summary, or translate a contract in seconds. Our AI tools process only the specific request you make — nothing is stored or used to train models.</p>
         <a href="/tools/chat-with-pdf" class="inline-flex items-center gap-1.5 text-ai font-600 hover:gap-2.5 transition-all duration-200">Try Chat with PDF <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg></a>
         <a href="/ai-pdf-tools" class="block mt-2 text-sm text-body dark:text-gray-400 hover:text-ai transition-colors duration-200">Or see all AI PDF tools →</a>
-      </div>
-      <div class="reveal order-1 lg:order-2" style="transition-delay:80ms">
-        <div class="rounded-card border border-borderc dark:border-surface-border bg-white dark:bg-surface-card shadow-soft p-6 space-y-3">
-          <div class="flex justify-end">
-            <div class="bg-primary text-white text-sm rounded-2xl rounded-br-md px-4 py-2.5 max-w-[75%]">What's the notice period in section 4?</div>
-          </div>
-          <div class="flex justify-start">
-            <div class="bg-gray-100 dark:bg-white/5 text-heading dark:text-gray-200 text-sm rounded-2xl rounded-bl-md px-4 py-2.5 max-w-[80%]">Section 4.2 requires 30 days' written notice before termination.</div>
-          </div>
-        </div>
       </div>
     </div>
 

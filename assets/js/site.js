@@ -95,12 +95,12 @@
   ];
 
   var CATEGORIES = [
-    { key: "organize", name: "Organize", desc: "Merge, split, compress, and clean up page order.", from: "#2563EB", to: "#1D4ED8", icon: "layers" },
-    { key: "convert", name: "Convert", desc: "Move between PDF, Office, image, and text formats.", from: "#3B82F6", to: "#2563EB", icon: "convert" },
-    { key: "edit", name: "Edit & annotate", desc: "Mark up, watermark, redact, and fine-tune pages.", from: "#0EA5E9", to: "#2563EB", icon: "pencil" },
-    { key: "security", name: "Security", desc: "Password-protect, unlock, and sign documents.", from: "#22C55E", to: "#16A34A", icon: "shield" },
-    { key: "ai", name: "AI-powered", desc: "Summarize, translate, and chat with your files.", from: "#7C3AED", to: "#5B21B6", icon: "sparkles" },
-    { key: "utility", name: "Utilities", desc: "Read, compare, scan, and manage individual pages.", from: "#F97316", to: "#EA580C", icon: "reader" }
+    { key: "organize", name: "Arrange & Sort", desc: "Bring scattered pages into one clean, ordered file.", from: "#2563EB", to: "#1D4ED8", icon: "layers" },
+    { key: "convert", name: "Swap Formats", desc: "Hop between PDF, Office, image, and text on the fly.", from: "#3B82F6", to: "#2563EB", icon: "convert" },
+    { key: "edit", name: "Mark & Shape", desc: "Draw, stamp, redact, and fine-tune every page.", from: "#0EA5E9", to: "#2563EB", icon: "pencil" },
+    { key: "security", name: "Lock & Sign", desc: "Password-guard, unlock, and put your signature on file.", from: "#22C55E", to: "#16A34A", icon: "shield" },
+    { key: "ai", name: "AI Toolkit", desc: "Let AI summarize, translate, and chat through your files.", from: "#7C3AED", to: "#5B21B6", icon: "sparkles" },
+    { key: "utility", name: "Handy Extras", desc: "Compare, scan, and shuffle individual pages around.", from: "#F97316", to: "#EA580C", icon: "reader" }
   ];
 
   function icon(name, cls) {
@@ -177,7 +177,11 @@
     renderGrid(cat, undefined);
   }
   tabs.forEach(function (btn) {
-    btn.addEventListener("click", function () { setFilter(btn.getAttribute("data-cat")); });
+    btn.addEventListener("click", function () {
+      setFilter(btn.getAttribute("data-cat"));
+      var toolsSection = document.getElementById("tools");
+      if (toolsSection) toolsSection.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
   });
   document.querySelectorAll("[data-filter]").forEach(function (el) {
     el.addEventListener("click", function () {
