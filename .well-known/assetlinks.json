@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "uk.pdfly.twa",
+        "sha256_cert_fingerprints": ["E7:14:75:A9:3C:78:34:F5:43:CD:76:71:66:F0:7D:5D:ED:5C:59:88:F4:CE:20:C5:49:A8:8D:78:3B:35:41:43"]
+      }
+    }]
