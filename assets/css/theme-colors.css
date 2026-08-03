@@ -170,3 +170,19 @@ html.dark .dark\:hover\:border-gray-600:hover { border-color: #4b5563; }
 .shadow-soft { box-shadow: 0 1px 2px rgba(17,24,39,0.04), 0 8px 24px -12px rgba(17,24,39,0.08); }
 .shadow-lift { box-shadow: 0 12px 32px -8px rgba(37,99,235,0.18), 0 4px 12px -4px rgba(17,24,39,0.08); }
 .transition-transform { transition-property: transform; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 150ms; }
+
+/* Fix: the mega menu panel (#megaMenu, 980px wide) was centered relative
+   to its trigger button ("All Tools"), which sits toward the left side
+   of the nav — not relative to the viewport. On real screen widths this
+   pushed the panel's right edge off-screen. Anchor it to the viewport
+   instead using fixed positioning, so it's always centered regardless
+   of where the trigger button sits in the nav bar. ID selector specificity
+   overrides the .absolute/.top-full/.left-1/2/.-translate-x-1/2 utility
+   classes already on the element without needing !important. */
+#megaMenu {
+  position: fixed;
+  top: 84px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: calc(100vw - 2rem);
+}
