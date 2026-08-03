@@ -55,3 +55,27 @@ html.dark .dark\:border-primary\/20 { border-color: rgb(37 99 235 / 0.2); }
 html.dark .dark\:border-surface-border { border-color: #1E2636; }
 html.dark .dark\:from-primary\/10 { --tw-gradient-from: rgb(37 99 235 / 0.1) var(--tw-gradient-from-position); --tw-gradient-to: rgb(37 99 235 / 0) var(--tw-gradient-to-position); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to); }
 html.dark .dark\:hover\:bg-primary\/10:hover { background-color: rgb(37 99 235 / 0.1); }
+
+/* Arbitrary-value utilities (Tailwind bracket syntax) used on the homepage.
+   These were previously JIT-compiled by the Tailwind Play CDN; the static
+   build doesn't scan for bracket-syntax classes, so they're added explicitly
+   here to avoid unstyled/oversized elements (e.g. icons rendering at their
+   native SVG size instead of 18px). */
+.h-\[18px\] { height: 18px; }
+.w-\[18px\] { width: 18px; }
+.h-\[72px\] { height: 72px; }
+.h-\[500px\] { height: 500px; }
+.w-\[900px\] { width: 900px; }
+.w-\[980px\] { width: 980px; }
+.max-h-\[80vh\] { max-height: 80vh; }
+.leading-\[1\.06\] { line-height: 1.06; }
+.left-\[8\%\] { left: 8%; }
+.right-\[10\%\] { right: 10%; }
+.top-\[65\%\] { top: 65%; }
+.top-\[70\%\] { top: 70%; }
+.top-\[75\%\] { top: 75%; }
+.text-\[13px\] { font-size: 13px; }
+.text-\[15px\] { font-size: 15px; }
+.text-\[40px\] { font-size: 40px; }
+.text-\[44px\] { font-size: 44px; }
+.text-\[68px\] { font-size: 68px; }
