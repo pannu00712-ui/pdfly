@@ -95,12 +95,12 @@
   ];
 
   var CATEGORIES = [
-    { key: "organize", name: "Arrange & Sort", desc: "Bring scattered pages into one clean, ordered file.", from: "#2563EB", to: "#1D4ED8", icon: "layers" },
-    { key: "convert", name: "Swap Formats", desc: "Hop between PDF, Office, image, and text on the fly.", from: "#3B82F6", to: "#2563EB", icon: "convert" },
-    { key: "edit", name: "Mark & Shape", desc: "Draw, stamp, redact, and fine-tune every page.", from: "#0EA5E9", to: "#2563EB", icon: "pencil" },
-    { key: "security", name: "Lock & Sign", desc: "Password-guard, unlock, and put your signature on file.", from: "#22C55E", to: "#16A34A", icon: "shield" },
-    { key: "ai", name: "AI Toolkit", desc: "Let AI summarize, translate, and chat through your files.", from: "#7C3AED", to: "#5B21B6", icon: "sparkles" },
-    { key: "utility", name: "Handy Extras", desc: "Compare, scan, and shuffle individual pages around.", from: "#F97316", to: "#EA580C", icon: "reader" }
+    { key: "organize", name: "Organize", desc: "Merge, split, compress, and clean up page order.", from: "#2563EB", to: "#1D4ED8", icon: "layers" },
+    { key: "convert", name: "Convert", desc: "Move between PDF, Office, image, and text formats.", from: "#3B82F6", to: "#2563EB", icon: "convert" },
+    { key: "edit", name: "Edit & annotate", desc: "Mark up, watermark, redact, and fine-tune pages.", from: "#0EA5E9", to: "#2563EB", icon: "pencil" },
+    { key: "security", name: "Security", desc: "Password-protect, unlock, and sign documents.", from: "#22C55E", to: "#16A34A", icon: "shield" },
+    { key: "ai", name: "AI-powered", desc: "Summarize, translate, and chat with your files.", from: "#7C3AED", to: "#5B21B6", icon: "sparkles" },
+    { key: "utility", name: "Utilities", desc: "Read, compare, scan, and manage individual pages.", from: "#F97316", to: "#EA580C", icon: "reader" }
   ];
 
   function icon(name, cls) {
@@ -134,38 +134,6 @@
   var currentCat = "all";
   var currentQuery = "";
 
-  var CAT_INFO = {
-    organize: { label: "Arrange & Sort", color: "#2563eb" },
-    convert: { label: "Swap Formats", color: "#d97706" },
-    edit: { label: "Mark & Shape", color: "#db2777" },
-    security: { label: "Lock & Sign", color: "#16a34a" },
-    ai: { label: "AI Toolkit", color: "#7c3aed" },
-    utility: { label: "Handy Extras", color: "#ea580c" }
-  };
-
-  function cardHTML(t) {
-    var accent = t.c === "ai" ? "ai" : "primary";
-    return (
-      '<a href="' + t.h + '" class="tool-card group bg-white dark:bg-surface-card border border-borderc dark:border-surface-border rounded-card p-5 flex items-start gap-4">' +
-        '<div class="w-10 h-10 rounded-lg bg-' + (t.c === "ai" ? "ai/10" : "primary-50 dark:bg-primary/10") + ' flex items-center justify-center shrink-0">' +
-          icon(t.i, "w-[18px] h-[18px] text-" + accent) +
-        "</div>" +
-        '<div class="min-w-0 flex-1">' +
-          '<div class="flex items-center justify-between gap-2">' +
-            '<h3 class="font-600 text-[15px] text-heading dark:text-white truncate">' + t.n + "</h3>" +
-            '<svg class="arrow w-4 h-4 text-gray-300 dark:text-gray-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>' +
-          "</div>" +
-          '<p class="text-sm text-body dark:text-gray-400 mt-0.5 leading-snug">' + t.d + "</p>" +
-        "</div>" +
-      "</a>"
-    );
-  }
-
-  function headingHTML(cat) {
-    var info = CAT_INFO[cat];
-    if (!info) return "";
-    return '<h3 class="col-span-full text-sm font-700 uppercase tracking-wide text-heading dark:text-white flex items-center gap-2 mt-4 mb-1 first:mt-0"><span class="w-2 h-2 rounded-full" style="background:' + info.color + '"></span>' + info.label + "</h3>";
-  }
   function renderGrid(filter, query) {
     if (!grid) return;
     currentCat = filter !== undefined ? filter : currentCat;
@@ -180,21 +148,23 @@
     }
 
     if (noResults) noResults.classList.toggle("show", list.length === 0);
-
-    // Group into category sections with headings only when browsing "all" tools with no active search.
-    if (currentCat === "all" && !currentQuery) {
-      var order = ["organize", "convert", "edit", "security", "ai", "utility"];
-      var html = "";
-      order.forEach(function (cat) {
-        var group = list.filter(function (t) { return t.c === cat; });
-        if (!group.length) return;
-        html += headingHTML(cat);
-        html += group.map(cardHTML).join("");
-      });
-      grid.innerHTML = html;
-    } else {
-      grid.innerHTML = list.map(cardHTML).join("");
-    }
+    grid.innerHTML = list.map(function (t) {
+      var accent = t.c === "ai" ? "ai" : "primary";
+      return (
+        '<a href="' + t.h + '" class="tool-card group bg-white dark:bg-surface-card border border-borderc dark:border-surface-border rounded-card p-5 flex items-start gap-4">' +
+          '<div class="w-10 h-10 rounded-lg bg-' + (t.c === "ai" ? "ai/10" : "primary-50 dark:bg-primary/10") + ' flex items-center justify-center shrink-0">' +
+            icon(t.i, "w-[18px] h-[18px] text-" + accent) +
+          "</div>" +
+          '<div class="min-w-0 flex-1">' +
+            '<div class="flex items-center justify-between gap-2">' +
+              '<h3 class="font-600 text-[15px] text-heading dark:text-white truncate">' + t.n + "</h3>" +
+              '<svg class="arrow w-4 h-4 text-gray-300 dark:text-gray-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>' +
+            "</div>" +
+            '<p class="text-sm text-body dark:text-gray-400 mt-0.5 leading-snug">' + t.d + "</p>" +
+          "</div>" +
+        "</a>"
+      );
+    }).join("");
   }
   renderGrid("all");
 
@@ -207,11 +177,7 @@
     renderGrid(cat, undefined);
   }
   tabs.forEach(function (btn) {
-    btn.addEventListener("click", function () {
-      setFilter(btn.getAttribute("data-cat"));
-      var toolsSection = document.getElementById("tools");
-      if (toolsSection) toolsSection.scrollIntoView({ behavior: "smooth", block: "start" });
-    });
+    btn.addEventListener("click", function () { setFilter(btn.getAttribute("data-cat")); });
   });
   document.querySelectorAll("[data-filter]").forEach(function (el) {
     el.addEventListener("click", function () {
