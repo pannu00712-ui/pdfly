@@ -2,10 +2,8 @@
    Safe no-op in browsers that don't support these APIs. */
 (function () {
   if ("serviceWorker" in navigator) {
-    window.addEventListener("load", function () {
-      navigator.serviceWorker.register("/service-worker.js").catch(function (err) {
-        console.warn("PDFly: service worker registration failed", err);
-      });
+    navigator.serviceWorker.register("/service-worker.js").catch(function (err) {
+      console.warn("PDFly: service worker registration failed", err);
     });
   }
 
