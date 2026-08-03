@@ -3,6 +3,8 @@
   "short_name": "PDFly",
   "description": "Free online PDF tools — merge, split, compress, convert, edit, sign and more, right in your browser.",
   "id": "/",
+  "lang": "en-GB",
+  "dir": "ltr",
   "start_url": "/?source=pwa",
   "scope": "/",
   "display": "standalone",
