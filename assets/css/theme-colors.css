@@ -79,3 +79,16 @@ html.dark .dark\:hover\:bg-primary\/10:hover { background-color: rgb(37 99 235 /
 .text-\[40px\] { font-size: 40px; }
 .text-\[44px\] { font-size: 44px; }
 .text-\[68px\] { font-size: 68px; }
+
+/* Missing responsive (lg:) variants used on the homepage nav and hero.
+   The static Tailwind build did not include these breakpoint-prefixed
+   utilities, which meant elements like the desktop nav links and mega
+   menu (hidden lg:flex) stayed permanently hidden at all screen sizes,
+   since there was no lg: override to switch them back to visible. */
+@media (min-width: 1024px) {
+  .lg\:flex { display: flex; }
+  .lg\:hidden { display: none; }
+  .lg\:gap-6 { gap: 1.5rem; }
+  .lg\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .lg\:text-\[68px\] { font-size: 68px; }
+}
