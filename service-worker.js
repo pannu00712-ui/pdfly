@@ -10,7 +10,7 @@ const OFFLINE_URL = "/offline.html";
 const SHELL_ASSETS = [
   "/",
   "/index.html",
-  "/manifest.json",
+  "/site.webmanifest",
   "/favicon.ico",
   "/android-chrome-192.png",
   "/android-chrome-512.png",
