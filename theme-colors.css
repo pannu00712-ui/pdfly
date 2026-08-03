@@ -1,0 +1,81 @@
+/* Static utility classes for PDFly's custom Tailwind theme colors.
+   Generated to replace the Tailwind Play CDN (cdn.tailwindcss.com), which
+   JIT-compiles classes in the browser using eval()/new Function() and gets
+   blocked by a Content-Security-Policy. These rules mirror the values from
+   the tailwind.config theme.extend.colors block exactly, so no visual
+   change occurs when the CDN script is removed. Load AFTER tailwind-built.css
+   and main.css. */
+
+/* base colors */
+.bg-ai { background-color: #7C3AED; }
+.bg-ai\/10 { background-color: rgb(124 58 237 / 0.1); }
+.bg-ai\/5 { background-color: rgb(124 58 237 / 0.05); }
+.text-ai { color: #7C3AED; }
+.border-ai\/20 { border-color: rgb(124 58 237 / 0.2); }
+.hover\:bg-ai\/5:hover { background-color: rgb(124 58 237 / 0.05); }
+.hover\:border-ai\/40:hover { border-color: rgb(124 58 237 / 0.4); }
+.hover\:text-ai:hover { color: #7C3AED; }
+
+.bg-heading { background-color: #111827; }
+.text-heading { color: #111827; }
+.hover\:text-heading:hover { color: #111827; }
+
+.bg-primary { background-color: #2563EB; }
+.bg-primary-50 { background-color: #EFF4FF; }
+.bg-primary\/20 { background-color: rgb(37 99 235 / 0.2); }
+.bg-primary\/5 { background-color: rgb(37 99 235 / 0.05); }
+.hover\:bg-primary\/5:hover { background-color: rgb(37 99 235 / 0.05); }
+.hover\:bg-primary-hover:hover { background-color: #1D4ED8; }
+.text-primary { color: #2563EB; }
+.hover\:text-primary:hover { color: #2563EB; }
+.hover\:text-primary-hover:hover { color: #1D4ED8; }
+.border-primary-100 { border-color: #DCE7FF; }
+.border-primary\/30 { border-color: rgb(37 99 235 / 0.3); }
+.from-primary-50 { --tw-gradient-from: #EFF4FF var(--tw-gradient-from-position); --tw-gradient-to: rgb(239 244 255 / 0) var(--tw-gradient-to-position); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to); }
+
+.bg-section { background-color: #F8FAFC; }
+
+.bg-success { background-color: #22C55E; }
+.bg-success\/15 { background-color: rgb(34 197 94 / 0.15); }
+.text-success { color: #22C55E; }
+
+.text-accent { color: #F97316; }
+
+.text-body { color: #4B5563; }
+
+.border-borderc { border-color: #E5E7EB; }
+
+/* dark mode variants */
+html.dark .dark\:bg-accent\/10 { background-color: rgb(249 115 22 / 0.1); }
+html.dark .dark\:bg-primary\/10 { background-color: rgb(37 99 235 / 0.1); }
+html.dark .dark\:bg-surface-card { background-color: #111826; }
+html.dark .dark\:bg-surface-dark { background-color: #0A0E1A; }
+html.dark .dark\:border-accent\/20 { border-color: rgb(249 115 22 / 0.2); }
+html.dark .dark\:border-primary\/20 { border-color: rgb(37 99 235 / 0.2); }
+html.dark .dark\:border-surface-border { border-color: #1E2636; }
+html.dark .dark\:from-primary\/10 { --tw-gradient-from: rgb(37 99 235 / 0.1) var(--tw-gradient-from-position); --tw-gradient-to: rgb(37 99 235 / 0) var(--tw-gradient-to-position); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to); }
+html.dark .dark\:hover\:bg-primary\/10:hover { background-color: rgb(37 99 235 / 0.1); }
+
+/* Arbitrary-value utilities (Tailwind bracket syntax) used on the homepage.
+   These were previously JIT-compiled by the Tailwind Play CDN; the static
+   build doesn't scan for bracket-syntax classes, so they're added explicitly
+   here to avoid unstyled/oversized elements (e.g. icons rendering at their
+   native SVG size instead of 18px). */
+.h-\[18px\] { height: 18px; }
+.w-\[18px\] { width: 18px; }
+.h-\[72px\] { height: 72px; }
+.h-\[500px\] { height: 500px; }
+.w-\[900px\] { width: 900px; }
+.w-\[980px\] { width: 980px; }
+.max-h-\[80vh\] { max-height: 80vh; }
+.leading-\[1\.06\] { line-height: 1.06; }
+.left-\[8\%\] { left: 8%; }
+.right-\[10\%\] { right: 10%; }
+.top-\[65\%\] { top: 65%; }
+.top-\[70\%\] { top: 70%; }
+.top-\[75\%\] { top: 75%; }
+.text-\[13px\] { font-size: 13px; }
+.text-\[15px\] { font-size: 15px; }
+.text-\[40px\] { font-size: 40px; }
+.text-\[44px\] { font-size: 44px; }
+.text-\[68px\] { font-size: 68px; }
