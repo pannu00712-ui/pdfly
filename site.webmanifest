@@ -24,6 +24,17 @@
   "categories": ["productivity", "utilities"],
   "lang": "en-US",
   "dir": "ltr",
+  "launch_handler": {
+    "client_mode": "focus-existing"
+  },
+  "file_handlers": [
+    {
+      "action": "/tools/pdf-reader?source=file_handler",
+      "accept": {
+        "application/pdf": [".pdf"]
+      }
+    }
+  ],
   "shortcuts": [
     {
       "name": "Merge PDF",
