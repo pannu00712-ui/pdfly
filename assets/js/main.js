@@ -1,7 +1,7 @@
 /* ===== PDFly — main.js ===== */
 
 (function () {
-  const saved = localStorage.getItem('pdfforge-theme');
+  const saved = localStorage.getItem('pdfly-theme');
   if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
     document.documentElement.classList.add('dark');
   }
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const btn = document.getElementById('darkToggle');
   if (btn) btn.addEventListener('click', () => {
     const isDark = document.documentElement.classList.toggle('dark');
-    localStorage.setItem('pdfforge-theme', isDark ? 'dark' : 'light');
+    localStorage.setItem('pdfly-theme', isDark ? 'dark' : 'light');
   });
   const menuBtn = document.getElementById('mobileMenu');
   const mobileNav = document.getElementById('mobileNav');
