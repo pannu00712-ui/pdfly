@@ -92,6 +92,29 @@
 <p>For the actual protection step, I use <a href="/tools/protect-pdf">PDFly's Protect PDF tool</a> — it applies real encryption rather than a token password prompt, and it's straightforward enough that I don't have to second-guess whether I set it up correctly. I still double check the metadata separately, since password protection and metadata scrubbing aren't the same job, no matter how often people assume they are.</p>
 
 <p>None of this makes a document bulletproof. Nothing really does. But most of the security failures I've seen — including my own — weren't from someone deliberately breaking in. They were from a file that quietly carried more information than anyone realized, sent to someone who technically shouldn't have had it. That's a much more ordinary problem than most security advice makes it sound, and it's also, thankfully, a much easier one to fix once you know to look for it.</p>
+
+      <section class="faq-section mt-12 pt-6 border-t border-ink-200 dark:border-ink-800">
+        <h2 class="font-display font-700 text-xl text-ink-800 dark:text-ink-200 pt-2 mb-4">Frequently Asked Questions</h2>
+
+        <div class="space-y-4">
+          <div>
+            <h3 class="font-display font-600 text-ink-800 dark:text-ink-200 text-base">Does a password automatically make a PDF secure?</h3>
+            <p class="text-ink-500 dark:text-ink-400 text-sm">Not necessarily. Some tools still default to weaker encryption for compatibility with older readers. For genuinely sensitive documents, check whether the tool applies proper AES-256 encryption rather than the older, easier-to-crack RC4 standard.</p>
+          </div>
+          <div>
+            <h3 class="font-display font-600 text-ink-800 dark:text-ink-200 text-base">Is a black box over text the same as redaction?</h3>
+            <p class="text-ink-500 dark:text-ink-400 text-sm">No. Covering text visually can leave the underlying data still selectable and recoverable in the file's structure. Proper redaction actually strips the data out rather than just hiding it.</p>
+          </div>
+          <div>
+            <h3 class="font-display font-600 text-ink-800 dark:text-ink-200 text-base">What's the difference between typing my name, drawing a signature, and a digital signature?</h3>
+            <p class="text-ink-500 dark:text-ink-400 text-sm">Typing or drawing a signature is fine for everyday agreements. A true digital signature is cryptographic — it verifies the document hasn't been altered since it was signed, which matters for anything with legal weight.</p>
+          </div>
+          <div>
+            <h3 class="font-display font-600 text-ink-800 dark:text-ink-200 text-base">Can a PDF reveal information I didn't intend to share, even without opening it?</h3>
+            <p class="text-ink-500 dark:text-ink-400 text-sm">Yes — metadata like author name, software used, or file paths can be embedded in a PDF regardless of what's visible on the page. It's worth checking metadata separately before sharing anything sensitive.</p>
+          </div>
+        </div>
+      </section>
     </div>
     <div class="mt-10 pt-6 border-t border-ink-200 dark:border-ink-800 flex items-center gap-3">
       <div class="w-10 h-10 rounded-full bg-gradient-to-br from-forge-400 to-forge-600 flex items-center justify-center text-white font-display font-700 text-sm flex-shrink-0">A</div>
